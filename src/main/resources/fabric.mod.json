@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "improved_end",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Improved End",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Pyrix25633",
+    "Ruken"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,20 +15,23 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/improved_end/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.pyriken.improved_end.ImprovedEnd"
+    ],
+    "client": [
+      "net.pyriken.improved_end.ImprovedEndClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "improved_end.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.11.3",
+    "fabricloader": ">=0.12.12",
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17"
