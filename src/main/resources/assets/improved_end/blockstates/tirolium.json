@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "improved_end:block/tirolium"
+      },
+      {
+        "model": "improved_end:block/tirolium",
+        "y": 90
+      },
+      {
+        "model": "improved_end:block/tirolium",
+        "y": 180
+      },
+      {
+        "model": "improved_end:block/tirolium",
+        "y": 270
+      }
+    ]
+  }
+}
