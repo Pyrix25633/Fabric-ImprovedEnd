@@ -1,5 +1,13 @@
 {
   "block.improved_end.tirolium": "Tirolium",
+  "block.improved_end.ziorolium": "Ziorolium",
+  "block.improved_end.serolium": "Serolium",
+  "block.improved_end.tedorolium": "Tedorolium",
+  "block.improved_end.gratorolium": "Gratorolium",
+  "block.improved_end.piorolium": "Piorolium",
+  "block.improved_end.yamperolium": "Yamperolium",
+  "block.improved_end.xiorolium": "Xiorolium",
+  "block.improved_end.aggorolium": "Aggorolium",
 
   "itemGroup.improved_end.improved_end": "Improved End"
 }

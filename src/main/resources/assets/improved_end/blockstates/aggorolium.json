@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "improved_end:block/aggorolium"
+      },
+      {
+        "model": "improved_end:block/aggorolium",
+        "y": 90
+      },
+      {
+        "model": "improved_end:block/aggorolium",
+        "y": 180
+      },
+      {
+        "model": "improved_end:block/aggorolium",
+        "y": 270
+      }
+    ]
+  }
+}

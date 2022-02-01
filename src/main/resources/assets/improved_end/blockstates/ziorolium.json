@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "improved_end:block/ziorolium"
+      },
+      {
+        "model": "improved_end:block/ziorolium",
+        "y": 90
+      },
+      {
+        "model": "improved_end:block/ziorolium",
+        "y": 180
+      },
+      {
+        "model": "improved_end:block/ziorolium",
+        "y": 270
+      }
+    ]
+  }
+}
