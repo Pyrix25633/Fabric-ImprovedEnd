@@ -30,9 +30,9 @@ public class ModBlocks {
             new EndGrassBlock(endGrassSettings));
     public static final Block GRATOROLIUM = registerBlock("gratorolium",
             new EndGrassBlock(endGrassSettings));
-    public static final Block PIOROLIUM = registerBlock("piorolium",
-            new EndGrassBlock(endGrassSettings));
     public static final Block YAMPEROLIUM = registerBlock("yamperolium",
+            new EndGrassBlock(endGrassSettings));
+    public static final Block PIOROLIUM = registerBlock("piorolium",
             new EndGrassBlock(endGrassSettings));
     public static final Block XIOROLIUM = registerBlock("xiorolium",
             new EndGrassBlock(endGrassSettings));
