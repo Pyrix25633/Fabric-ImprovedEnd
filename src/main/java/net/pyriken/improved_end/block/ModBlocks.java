@@ -3,6 +3,7 @@ package net.pyriken.improved_end.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -16,28 +17,28 @@ import net.pyriken.improved_end.item.ModItemGroup;
 public class ModBlocks {
     //Variables to better control block hardness and resistance
     static final float woodHardness = 2f, woodResistance = 2f, stoneHardness = 1.5f, stoneResistance = 2.2f;
-    static final FabricBlockSettings endGrassSettings = FabricBlockSettings.of(Material.SOLID_ORGANIC)
-            .strength(stoneHardness, stoneResistance).sounds(BlockSoundGroup.GRASS).requiresTool();
+    static final FabricBlockSettings endGrassSettings = FabricBlockSettings.of(Material.STONE)
+            .strength(stoneHardness, stoneResistance).sounds(BlockSoundGroup.STONE).requiresTool();
 
     //"End Grass"
     public static final Block TIROLIUM = registerBlock("tirolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.BLACK)));
     public static final Block ZIOROLIUM = registerBlock("ziorolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.PURPLE)));
     public static final Block SEROLIUM = registerBlock("serolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.PINK)));
     public static final Block TEDOROLIUM = registerBlock("tedorolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.RED)));
     public static final Block GRATOROLIUM = registerBlock("gratorolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.ORANGE)));
     public static final Block YAMPEROLIUM = registerBlock("yamperolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.YELLOW)));
     public static final Block PIOROLIUM = registerBlock("piorolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.PALE_GREEN)));
     public static final Block XIOROLIUM = registerBlock("xiorolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.CYAN)));
     public static final Block AGGOROLIUM = registerBlock("aggorolium",
-            new EndGrassBlock(endGrassSettings));
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.BLUE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
