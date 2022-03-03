@@ -21,24 +21,16 @@ public class ModBlocks {
             .strength(stoneHardness, stoneResistance).sounds(BlockSoundGroup.STONE).requiresTool();
 
     //"End Grass"
-    public static final Block TIROLIUM = registerBlock("tirolium",
+    public static final Block DARK_GRASS = registerBlock("dark_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.BLACK)));
-    public static final Block ZIOROLIUM = registerBlock("ziorolium",
+    public static final Block INFUSORIAL_GRASS = registerBlock("infusorial_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.PURPLE)));
-    public static final Block SEROLIUM = registerBlock("serolium",
+    public static final Block BUDDING_GRASS = registerBlock("budding_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.PINK)));
-    public static final Block TEDOROLIUM = registerBlock("tedorolium",
+    public static final Block REDLEAF_GRASS = registerBlock("redleaf_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.RED)));
-    public static final Block GRATOROLIUM = registerBlock("gratorolium",
+    public static final Block FIRE_GRASS = registerBlock("fire_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.ORANGE)));
-    public static final Block YAMPEROLIUM = registerBlock("yamperolium",
-            new EndGrassBlock(endGrassSettings.mapColor(MapColor.YELLOW)));
-    public static final Block PIOROLIUM = registerBlock("piorolium",
-            new EndGrassBlock(endGrassSettings.mapColor(MapColor.PALE_GREEN)));
-    public static final Block XIOROLIUM = registerBlock("xiorolium",
-            new EndGrassBlock(endGrassSettings.mapColor(MapColor.CYAN)));
-    public static final Block AGGOROLIUM = registerBlock("aggorolium",
-            new EndGrassBlock(endGrassSettings.mapColor(MapColor.BLUE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

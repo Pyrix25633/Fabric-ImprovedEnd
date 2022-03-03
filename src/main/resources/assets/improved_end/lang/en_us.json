@@ -1,13 +1,9 @@
 {
-  "block.improved_end.tirolium": "Tirolium",
-  "block.improved_end.ziorolium": "Ziorolium",
-  "block.improved_end.serolium": "Serolium",
-  "block.improved_end.tedorolium": "Tedorolium",
-  "block.improved_end.gratorolium": "Gratorolium",
-  "block.improved_end.yamperolium": "Yamperolium",
-  "block.improved_end.piorolium": "Piorolium",
-  "block.improved_end.xiorolium": "Xiorolium",
-  "block.improved_end.aggorolium": "Aggorolium",
+  "block.improved_end.dark_grass": "Dark Grass",
+  "block.improved_end.infusorial_grass": "Infusorial Grass",
+  "block.improved_end.budding_grass": "Budding Grass",
+  "block.improved_end.redleaf_grass": "Redleaf Grass",
+  "block.improved_end.fire_grass": "Fire Grass",
 
   "itemGroup.improved_end.improved_end": "Improved End"
 }

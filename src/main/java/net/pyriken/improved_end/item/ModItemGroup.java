@@ -9,5 +9,5 @@ import net.pyriken.improved_end.block.ModBlocks;
 
 public class ModItemGroup {
     public static final ItemGroup IMPROVED_END = FabricItemGroupBuilder.build(new Identifier(ImprovedEnd.MOD_ID,
-            "improved_end"), () -> new ItemStack(ModBlocks.TIROLIUM));
+            "improved_end"), () -> new ItemStack(ModBlocks.DARK_GRASS));
 }

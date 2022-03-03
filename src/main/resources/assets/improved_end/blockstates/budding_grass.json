@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "improved_end:block/budding/budding_grass"
+      },
+      {
+        "model": "improved_end:block/budding/budding_grass",
+        "y": 90
+      },
+      {
+        "model": "improved_end:block/budding/budding_grass",
+        "y": 180
+      },
+      {
+        "model": "improved_end:block/budding/budding_grass",
+        "y": 270
+      }
+    ]
+  }
+}

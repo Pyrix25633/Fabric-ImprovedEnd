@@ -1,14 +1,10 @@
 {
   "replace": false,
   "values": [
-    "improved_end:tirolium",
-    "improved_end:ziorolium",
-    "improved_end:serolium",
-    "improved_end:tedorolium",
-    "improved_end:gratorolium",
-    "improved_end:yamperolium",
-    "improved_end:piorolium",
-    "improved_end:xiorolium",
-    "improved_end:aggorolium"
+    "improved_end:dark_grass",
+    "improved_end:infusorial_grass",
+    "improved_end:budding_grass",
+    "improved_end:redleaf_grass",
+    "improved_end:fire_grass"
   ]
 }
