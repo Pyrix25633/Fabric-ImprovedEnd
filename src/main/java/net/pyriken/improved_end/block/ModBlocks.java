@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.pyriken.improved_end.ImprovedEnd;
 import net.pyriken.improved_end.block.custom.EndGrassBlock;
+import net.pyriken.improved_end.block.custom.ModLogBlock;
 import net.pyriken.improved_end.item.ModItemGroup;
 
 public class ModBlocks {
@@ -19,18 +20,54 @@ public class ModBlocks {
     static final float woodHardness = 2f, woodResistance = 2f, stoneHardness = 1.5f, stoneResistance = 2.2f;
     static final FabricBlockSettings endGrassSettings = FabricBlockSettings.of(Material.STONE)
             .strength(stoneHardness, stoneResistance).sounds(BlockSoundGroup.STONE).requiresTool();
+    static final FabricBlockSettings woodSettings = FabricBlockSettings.of(Material.WOOD)
+            .strength(woodHardness, woodResistance).sounds(BlockSoundGroup.WOOD);
 
-    //"End Grass"
+    //Dark
     public static final Block DARK_GRASS = registerBlock("dark_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.BLACK)));
+    public static final Block DARK_LOG = registerBlock("dark_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    //Infusorial
     public static final Block INFUSORIAL_GRASS = registerBlock("infusorial_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.PURPLE)));
+    public static final Block INFUSORIAL_LOG = registerBlock("infusorial_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    //Budding
     public static final Block BUDDING_GRASS = registerBlock("budding_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.PINK)));
+    public static final Block BUDDING_LOG = registerBlock("budding_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    //Redleaf
     public static final Block REDLEAF_GRASS = registerBlock("redleaf_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.RED)));
+    public static final Block REDLEAF_LOG = registerBlock("redleaf_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    //Fire
     public static final Block FIRE_GRASS = registerBlock("fire_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.ORANGE)));
+    public static final Block FIRE_LOG = registerBlock("fire_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    //Shining
+    public static final Block SHINING_GRASS = registerBlock("shining_grass",
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.YELLOW)));
+    public static final Block SHINING_LOG = registerBlock("shining_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    //Serene
+    public static final Block SERENE_GRASS = registerBlock("serene_grass",
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.LIME)));
+    public static final Block SERENE_LOG = registerBlock("serene_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    //Scab
+    public static final Block SCAB_GRASS = registerBlock("scab_grass",
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.LIGHT_BLUE)));
+    public static final Block SCAB_LOG = registerBlock("scab_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    //Indigo
+    public static final Block INDIGO_GRASS = registerBlock("indigo_grass",
+            new EndGrassBlock(endGrassSettings.mapColor(MapColor.BLUE)));
+    public static final Block INDIGO_LOG = registerBlock("indigo_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

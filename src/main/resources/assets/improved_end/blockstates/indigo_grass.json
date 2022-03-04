@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "improved_end:block/indigo/indigo_grass"
+      },
+      {
+        "model": "improved_end:block/indigo/indigo_grass",
+        "y": 90
+      },
+      {
+        "model": "improved_end:block/indigo/indigo_grass",
+        "y": 180
+      },
+      {
+        "model": "improved_end:block/indigo/indigo_grass",
+        "y": 270
+      }
+    ]
+  }
+}

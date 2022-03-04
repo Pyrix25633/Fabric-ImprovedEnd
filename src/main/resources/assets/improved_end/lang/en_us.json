@@ -1,9 +1,30 @@
 {
   "block.improved_end.dark_grass": "Dark Grass",
+  "block.improved_end.dark_log": "Dark Log",
+
   "block.improved_end.infusorial_grass": "Infusorial Grass",
+  "block.improved_end.infusorial_log": "Infusorial Log",
+
   "block.improved_end.budding_grass": "Budding Grass",
+  "block.improved_end.budding_log": "Budding Log",
+
   "block.improved_end.redleaf_grass": "Redleaf Grass",
+  "block.improved_end.redleaf_log": "Redleaf Log",
+
   "block.improved_end.fire_grass": "Fire Grass",
+  "block.improved_end.fire_log": "Fire Log",
+
+  "block.improved_end.shining_grass": "Shining Grass",
+  "block.improved_end.shining_log": "Shining Log",
+
+  "block.improved_end.serene_grass": "Serene Grass",
+  "block.improved_end.serene_log": "Serene Log",
+
+  "block.improved_end.scab_grass": "Scab Grass",
+  "block.improved_end.scab_log": "Scab Log",
+
+  "block.improved_end.indigo_grass": "Indigo Grass",
+  "block.improved_end.indigo_log": "Indigo Log",
 
   "itemGroup.improved_end.improved_end": "Improved End"
 }

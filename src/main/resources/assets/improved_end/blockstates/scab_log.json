@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "improved_end:block/scab/scab_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "improved_end:block/scab/scab_log"
+    },
+    "axis=z": {
+      "model": "improved_end:block/scab/scab_log_horizontal",
+      "x": 90
+    }
+  }
+}
