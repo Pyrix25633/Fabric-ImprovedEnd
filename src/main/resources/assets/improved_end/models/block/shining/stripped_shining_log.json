@@ -1,0 +1,8 @@
+{
+	"parent" : "minecraft:block/cube_column",
+	"textures" : 
+	{
+		"end" : "improved_end:block/shining/stripped_shining_log_top",
+		"side" : "improved_end:block/shining/stripped_shining_log"
+	}
+}

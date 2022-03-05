@@ -1,0 +1,20 @@
+{
+	"variants" : 
+	{
+		"axis=x" : 
+		{
+			"model" : "improved_end:block/shining/stripped_shining_log_horizontal",
+			"x" : 90,
+			"y" : 90
+		},
+		"axis=y" : 
+		{
+			"model" : "improved_end:block/shining/stripped_shining_log"
+		},
+		"axis=z" : 
+		{
+			"model" : "improved_end:block/shining/stripped_shining_log_horizontal",
+			"x" : 90
+		}
+	}
+}

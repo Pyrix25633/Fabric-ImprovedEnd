@@ -28,45 +28,63 @@ public class ModBlocks {
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.BLACK)));
     public static final Block DARK_LOG = registerBlock("dark_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block STRIPPED_DARK_LOG = registerBlock("stripped_dark_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     //Infusorial
     public static final Block INFUSORIAL_GRASS = registerBlock("infusorial_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.PURPLE)));
     public static final Block INFUSORIAL_LOG = registerBlock("infusorial_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block STRIPPED_INFUSORIAL_LOG = registerBlock("stripped_infusorial_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     //Budding
     public static final Block BUDDING_GRASS = registerBlock("budding_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.PINK)));
     public static final Block BUDDING_LOG = registerBlock("budding_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block STRIPPED_BUDDING_LOG = registerBlock("stripped_budding_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
     //Redleaf
     public static final Block REDLEAF_GRASS = registerBlock("redleaf_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.RED)));
     public static final Block REDLEAF_LOG = registerBlock("redleaf_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block STRIPPED_REDLEAF_LOG = registerBlock("stripped_redleaf_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
     //Fire
     public static final Block FIRE_GRASS = registerBlock("fire_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.ORANGE)));
     public static final Block FIRE_LOG = registerBlock("fire_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block STRIPPED_FIRE_LOG = registerBlock("stripped_fire_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
     //Shining
     public static final Block SHINING_GRASS = registerBlock("shining_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.YELLOW)));
     public static final Block SHINING_LOG = registerBlock("shining_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block STRIPPED_SHINING_LOG = registerBlock("stripped_shining_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
     //Serene
     public static final Block SERENE_GRASS = registerBlock("serene_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.LIME)));
     public static final Block SERENE_LOG = registerBlock("serene_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block STRIPPED_SERENE_LOG = registerBlock("stripped_serene_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
     //Scab
     public static final Block SCAB_GRASS = registerBlock("scab_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.LIGHT_BLUE)));
     public static final Block SCAB_LOG = registerBlock("scab_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block STRIPPED_SCAB_LOG = registerBlock("stripped_scab_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     //Indigo
     public static final Block INDIGO_GRASS = registerBlock("indigo_grass",
             new EndGrassBlock(endGrassSettings.mapColor(MapColor.BLUE)));
     public static final Block INDIGO_LOG = registerBlock("indigo_log",
+            new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block STRIPPED_INDIGO_LOG = registerBlock("stripped_indigo_log",
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     private static Block registerBlock(String name, Block block) {
