@@ -2,38 +2,56 @@
   "block.improved_end.dark_grass": "Dark Grass",
   "block.improved_end.dark_log": "Dark Log",
   "block.improved_end.stripped_dark_log": "Stripped Dark Log",
+  "block.improved_end.dark_wood": "Dark Wood",
+  "block.improved_end.stripped_dark_wood": "Stripped Dark Wood",
 
   "block.improved_end.infusorial_grass": "Infusorial Grass",
   "block.improved_end.infusorial_log": "Infusorial Log",
   "block.improved_end.stripped_infusorial_log": "Stripped Infusorial Log",
+  "block.improved_end.infusorial_wood": "Infusorial Wood",
+  "block.improved_end.stripped_infusorial_wood": "Stripped Infusorial Wood",
 
   "block.improved_end.budding_grass": "Budding Grass",
   "block.improved_end.budding_log": "Budding Log",
   "block.improved_end.stripped_budding_log": "Stripped Budding Log",
+  "block.improved_end.budding_wood": "Budding Wood",
+  "block.improved_end.stripped_budding_wood": "Stripped Budding Wood",
 
   "block.improved_end.redleaf_grass": "Redleaf Grass",
   "block.improved_end.redleaf_log": "Redleaf Log",
   "block.improved_end.stripped_redleaf_log": "Stripped Redleaf Log",
+  "block.improved_end.redleaf_wood": "Redleaf Wood",
+  "block.improved_end.stripped_redleaf_wood": "Stripped Redleaf Wood",
 
   "block.improved_end.fire_grass": "Fire Grass",
   "block.improved_end.fire_log": "Fire Log",
   "block.improved_end.stripped_fire_log": "Stripped Fire Log",
+  "block.improved_end.fire_wood": "Fire Wood",
+  "block.improved_end.stripped_fire_wood": "Stripped Fire Wood",
 
   "block.improved_end.shining_grass": "Shining Grass",
   "block.improved_end.shining_log": "Shining Log",
   "block.improved_end.stripped_shining_log": "Stripped Shining Log",
+  "block.improved_end.shining_wood": "Shining Wood",
+  "block.improved_end.stripped_shining_wood": "Stripped Shining Wood",
 
   "block.improved_end.serene_grass": "Serene Grass",
   "block.improved_end.serene_log": "Serene Log",
   "block.improved_end.stripped_serene_log": "Stripped Serene Log",
+  "block.improved_end.serene_wood": "Serene Wood",
+  "block.improved_end.stripped_serene_wood": "Stripped Serene Wood",
 
   "block.improved_end.scab_grass": "Scab Grass",
   "block.improved_end.scab_log": "Scab Log",
   "block.improved_end.stripped_scab_log": "Stripped Scab Log",
+  "block.improved_end.scab_wood": "Scab Wood",
+  "block.improved_end.stripped_scab_wood": "Stripped Scab Wood",
 
   "block.improved_end.indigo_grass": "Indigo Grass",
   "block.improved_end.indigo_log": "Indigo Log",
   "block.improved_end.stripped_indigo_log": "Stripped Indigo Log",
+  "block.improved_end.indigo_wood": "Indigo Wood",
+  "block.improved_end.stripped_indigo_wood": "Stripped Indigo Wood",
 
   "itemGroup.improved_end.improved_end": "Improved End"
 }

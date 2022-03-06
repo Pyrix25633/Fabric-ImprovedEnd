@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "improved_end:scab_log",
-    "improved_end:stripped_scab_log"
+    "improved_end:stripped_scab_log",
+    "improved_end:scab_wood",
+    "improved_end:stripped_scab_wood"
   ]
 }

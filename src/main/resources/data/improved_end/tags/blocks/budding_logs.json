@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "improved_end:budding_log",
-    "improved_end:stripped_budding_log"
+    "improved_end:stripped_budding_log",
+    "improved_end:budding_wood",
+    "improved_end:stripped_budding_wood"
   ]
 }

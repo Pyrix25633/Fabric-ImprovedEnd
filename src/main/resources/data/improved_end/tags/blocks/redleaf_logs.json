@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "improved_end:redleaf_log",
-    "improved_end:stripped_redleaf_log"
+    "improved_end:stripped_redleaf_log",
+    "improved_end:redleaf_wood",
+    "improved_end:stripped_redleaf_wood"
   ]
 }

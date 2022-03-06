@@ -45,32 +45,59 @@ public class ModLogBlock extends Block {
                     playerItem.getItem() == Items.IRON_AXE || playerItem.getItem() == Items.DIAMOND_AXE || playerItem.getItem() == Items.NETHERITE_AXE)) {
                 //Strip Log
                 finished = true;
-                if(state.isOf(ModBlocks.DARK_LOG)) {
+                if(state.isOf(ModBlocks.DARK_LOG)) { //Dark
                     toPlace = ModBlocks.STRIPPED_DARK_LOG;
                 }
-                else if(state.isOf(ModBlocks.INFUSORIAL_LOG)) {
+                else if(state.isOf(ModBlocks.DARK_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_DARK_WOOD;
+                }
+                else if(state.isOf(ModBlocks.INFUSORIAL_LOG)) { //Infusorial
                     toPlace = ModBlocks.STRIPPED_INFUSORIAL_LOG;
                 }
-                else if(state.isOf(ModBlocks.BUDDING_LOG)) {
+                else if(state.isOf(ModBlocks.INFUSORIAL_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_INFUSORIAL_WOOD;
+                }
+                else if(state.isOf(ModBlocks.BUDDING_LOG)) { //Budding
                     toPlace = ModBlocks.STRIPPED_BUDDING_LOG;
                 }
-                else if(state.isOf(ModBlocks.REDLEAF_LOG)) {
+                else if(state.isOf(ModBlocks.BUDDING_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_BUDDING_WOOD;
+                }
+                else if(state.isOf(ModBlocks.REDLEAF_LOG)) { //Redleaf
                     toPlace = ModBlocks.STRIPPED_REDLEAF_LOG;
                 }
-                else if(state.isOf(ModBlocks.FIRE_LOG)) {
+                else if(state.isOf(ModBlocks.REDLEAF_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_REDLEAF_WOOD;
+                }
+                else if(state.isOf(ModBlocks.FIRE_LOG)) { //Fire
                     toPlace = ModBlocks.STRIPPED_FIRE_LOG;
                 }
-                else if(state.isOf(ModBlocks.SHINING_LOG)) {
+                else if(state.isOf(ModBlocks.FIRE_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_FIRE_WOOD;
+                }
+                else if(state.isOf(ModBlocks.SHINING_LOG)) { //Shining
                     toPlace = ModBlocks.STRIPPED_SHINING_LOG;
                 }
-                else if(state.isOf(ModBlocks.SERENE_LOG)) {
+                else if(state.isOf(ModBlocks.SHINING_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_SHINING_WOOD;
+                }
+                else if(state.isOf(ModBlocks.SERENE_LOG)) { //Serene
                     toPlace = ModBlocks.STRIPPED_SERENE_LOG;
                 }
-                else if(state.isOf(ModBlocks.SCAB_LOG)) {
+                else if(state.isOf(ModBlocks.SERENE_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_SERENE_WOOD;
+                }
+                else if(state.isOf(ModBlocks.SCAB_LOG)) { //Scab
                     toPlace = ModBlocks.STRIPPED_SCAB_LOG;
                 }
-                else if(state.isOf(ModBlocks.INDIGO_LOG)) {
+                else if(state.isOf(ModBlocks.SCAB_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_SCAB_WOOD;
+                }
+                else if(state.isOf(ModBlocks.INDIGO_LOG)) { //Indigo
                     toPlace = ModBlocks.STRIPPED_INDIGO_LOG;
+                }
+                else if(state.isOf(ModBlocks.INDIGO_WOOD)) {
+                    toPlace = ModBlocks.STRIPPED_INDIGO_WOOD;
                 }
                 else {
                     finished = false;

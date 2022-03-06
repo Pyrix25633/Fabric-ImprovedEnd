@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "improved_end:fire_log",
-    "improved_end:stripped_fire_log"
+    "improved_end:stripped_fire_log",
+    "improved_end:fire_wood",
+    "improved_end:stripped_fire_wood"
   ]
 }
