@@ -1,0 +1,15 @@
+{
+	"group" : "planks",
+	"ingredients" : 
+	[
+		{
+			"tag" : "improved_end:dark_logs"
+		}
+	],
+	"result" : 
+	{
+		"count" : 4,
+		"item" : "improved_end:dark_planks"
+	},
+	"type" : "minecraft:crafting_shapeless"
+}

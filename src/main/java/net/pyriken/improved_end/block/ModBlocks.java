@@ -124,6 +124,24 @@ public class ModBlocks {
             new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Planks
+    public static final Block DARK_PLANKS = registerBlock("dark_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_PLANKS = registerBlock("infusorial_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_PLANKS = registerBlock("budding_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_PLANKS = registerBlock("redleaf_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_PLANKS = registerBlock("fire_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_PLANKS = registerBlock("shining_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_PLANKS = registerBlock("serene_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_PLANKS = registerBlock("scab_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_PLANKS = registerBlock("indigo_planks",
+            new Block(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
