@@ -12,12 +12,13 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.pyriken.improved_end.ImprovedEnd;
 import net.pyriken.improved_end.block.custom.EndGrassBlock;
+import net.pyriken.improved_end.block.custom.HollowLogBlock;
 import net.pyriken.improved_end.block.custom.ModLogBlock;
 import net.pyriken.improved_end.item.ModItemGroup;
 
 public class ModBlocks {
     //Variables to better control block hardness and resistance
-    static final float woodHardness = 2f, woodResistance = 2f, stoneHardness = 1.5f, stoneResistance = 2.2f;
+    static final float woodHardness = 2f, woodResistance = 3f, stoneHardness = 2f, stoneResistance = 6f;
     static final FabricBlockSettings endGrassSettings = FabricBlockSettings.of(Material.STONE)
             .strength(stoneHardness, stoneResistance).sounds(BlockSoundGroup.STONE).requiresTool();
     static final FabricBlockSettings woodSettings = FabricBlockSettings.of(Material.WOOD)
@@ -142,6 +143,26 @@ public class ModBlocks {
             new Block(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_PLANKS = registerBlock("indigo_planks",
             new Block(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    
+    //Hollow Logs
+    public static final Block HOLLOW_DARK_LOG = registerBlock("hollow_dark_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK).nonOpaque()));
+    public static final Block HOLLOW_INFUSORIAL_LOG = registerBlock("hollow_infusorial_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE).nonOpaque()));
+    public static final Block HOLLOW_BUDDING_LOG = registerBlock("hollow_budding_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK).nonOpaque()));
+    public static final Block HOLLOW_REDLEAF_LOG = registerBlock("hollow_redleaf_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED).nonOpaque()));
+    public static final Block HOLLOW_FIRE_LOG = registerBlock("hollow_fire_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE).nonOpaque()));
+    public static final Block HOLLOW_SHINING_LOG = registerBlock("hollow_shining_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW).nonOpaque()));
+    public static final Block HOLLOW_SERENE_LOG = registerBlock("hollow_serene_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME).nonOpaque()));
+    public static final Block HOLLOW_SCAB_LOG = registerBlock("hollow_scab_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).nonOpaque()));
+    public static final Block HOLLOW_INDIGO_LOG = registerBlock("hollow_indigo_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

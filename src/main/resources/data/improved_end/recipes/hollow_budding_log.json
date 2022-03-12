@@ -1,0 +1,21 @@
+{
+	"key" : 
+	{
+		"#" : 
+		{
+			"item" : "improved_end:budding_log"
+		}
+	},
+	"pattern" : 
+	[
+		"###",
+		"# #",
+		"###"
+	],
+	"result" : 
+	{
+		"count" : 8,
+		"item" : "improved_end:hollow_budding_log"
+	},
+	"type" : "minecraft:crafting_shaped"
+}

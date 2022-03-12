@@ -1,0 +1,9 @@
+{
+	"parent" : "improved_end:block/hollow_log",
+	"textures" : 
+	{
+		"front" : "improved_end:block/indigo/indigo_log_top",
+		"in" : "improved_end:block/indigo/stripped_indigo_log",
+		"out" : "improved_end:block/indigo/indigo_log"
+	}
+}

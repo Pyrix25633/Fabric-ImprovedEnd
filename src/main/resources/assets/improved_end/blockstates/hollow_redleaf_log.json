@@ -1,0 +1,69 @@
+{
+	"multipart" : 
+	[
+		{
+			"apply" : 
+			{
+				"model" : "improved_end:block/redleaf/hollow_redleaf_log_horizontal",
+				"y" : 90
+			},
+			"when" : 
+			{
+				"axis" : "x"
+			}
+		},
+		{
+			"apply" : 
+			{
+				"model" : "improved_end:block/hollow_log_mossy_x"
+			},
+			"when" : 
+			{
+				"axis" : "x",
+				"mossy" : "true"
+			}
+		},
+		{
+			"apply" : 
+			{
+				"model" : "improved_end:block/redleaf/hollow_redleaf_log"
+			},
+			"when" : 
+			{
+				"axis" : "y"
+			}
+		},
+		{
+			"apply" : 
+			{
+				"model" : "improved_end:block/hollow_log_mossy_y"
+			},
+			"when" : 
+			{
+				"axis" : "y",
+				"mossy" : "true"
+			}
+		},
+		{
+			"apply" : 
+			{
+				"model" : "improved_end:block/redleaf/hollow_redleaf_log_horizontal"
+			},
+			"when" : 
+			{
+				"axis" : "z"
+			}
+		},
+		{
+			"apply" : 
+			{
+				"model" : "improved_end:block/hollow_log_mossy_z"
+			},
+			"when" : 
+			{
+				"axis" : "z",
+				"mossy" : "true"
+			}
+		}
+	]
+}

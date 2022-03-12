@@ -1,0 +1,20 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"0": "block/moss_block",
+		"particle": "block/moss_block"
+	},
+	"elements": [
+		{
+			"from": [2, 2, 0],
+			"to": [14, 3, 16],
+			"faces": {
+				"north": {"uv": [2, 0, 14, 1], "texture": "#0"},
+				"south": {"uv": [2, 0, 14, 1], "texture": "#0"},
+				"up": {"uv": [2, 0, 14, 16], "texture": "#0"}
+			}
+		}
+	]
+}

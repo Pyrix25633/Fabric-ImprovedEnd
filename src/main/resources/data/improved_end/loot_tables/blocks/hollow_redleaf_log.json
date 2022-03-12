@@ -1,0 +1,48 @@
+{
+	"pools" : 
+	[
+		{
+			"conditions" : 
+			[
+				{
+					"condition" : "minecraft:survives_explosion"
+				}
+			],
+			"entries" : 
+			[
+				{
+					"name" : "improved_end:hollow_redleaf_log",
+					"type" : "minecraft:item"
+				}
+			],
+			"rolls" : 1
+		},
+		{
+			"conditions" : 
+			[
+				{
+					"condition" : "minecraft:survives_explosion"
+				}
+			],
+			"entries" : 
+			[
+				{
+					"conditions" : 
+					[
+						{
+							"block" : "improved_end:hollow_redleaf_log",
+							"condition" : "minecraft:block_state_property",
+							"properties" : 
+							{
+								"mossy" : "true"
+							}
+						}
+					],
+					"name" : "minecraft:moss_carpet",
+					"type" : "minecraft:item"
+				}
+			],
+			"rolls" : 1
+		}
+	]
+}
