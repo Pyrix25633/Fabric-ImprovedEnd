@@ -1,0 +1,9 @@
+{
+	"parent" : "improved_end:block/hollow_log_horizontal",
+	"textures" : 
+	{
+		"front" : "improved_end:block/serene/stripped_serene_log_top",
+		"in" : "improved_end:block/serene/stripped_serene_log",
+		"out" : "improved_end:block/serene/stripped_serene_log"
+	}
+}

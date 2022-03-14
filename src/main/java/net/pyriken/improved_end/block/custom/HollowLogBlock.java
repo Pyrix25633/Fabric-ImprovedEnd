@@ -174,30 +174,30 @@ public class HollowLogBlock extends Block implements Waterloggable{
                     playerItem.getItem() == Items.IRON_AXE || playerItem.getItem() == Items.GOLDEN_AXE ||
                     playerItem.getItem() == Items.DIAMOND_AXE || playerItem.getItem() == Items.NETHERITE_AXE) {
                 finished = true;
-                /*
-                if(state.isOf(ModBlocks.HOLLOW_OAK_LOG)) {
-                    toPlace = ModBlocks.STRIPPED_HOLLOW_OAK_LOG;
+
+                if(state.isOf(ModBlocks.HOLLOW_DARK_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_DARK_LOG;
                 }
-                else if(state.isOf(ModBlocks.HOLLOW_SPRUCE_LOG)) {
-                    toPlace = ModBlocks.STRIPPED_HOLLOW_SPRUCE_LOG;
+                else if(state.isOf(ModBlocks.HOLLOW_INFUSORIAL_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_INFUSORIAL_LOG;
                 }
-                else if(state.isOf(ModBlocks.HOLLOW_BIRCH_LOG)) {
-                    toPlace = ModBlocks.STRIPPED_HOLLOW_BIRCH_LOG;
+                else if(state.isOf(ModBlocks.HOLLOW_BUDDING_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_BUDDING_LOG;
                 }
-                else if(state.isOf(ModBlocks.HOLLOW_ACACIA_LOG)) {
-                    toPlace = ModBlocks.STRIPPED_HOLLOW_ACACIA_LOG;
+                else if(state.isOf(ModBlocks.HOLLOW_REDLEAF_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_REDLEAF_LOG;
                 }
-                else if(state.isOf(ModBlocks.HOLLOW_JUNGLE_LOG)) {
-                    toPlace = ModBlocks.STRIPPED_HOLLOW_JUNGLE_LOG;
+                else if(state.isOf(ModBlocks.HOLLOW_FIRE_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_FIRE_LOG;
                 }
-                else if(state.isOf(ModBlocks.HOLLOW_DARK_OAK_LOG)) {
-                    toPlace = ModBlocks.STRIPPED_HOLLOW_DARK_OAK_LOG;
+                else if(state.isOf(ModBlocks.HOLLOW_SHINING_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_SERENE_LOG;
                 }
-                else if(state.isOf(ModBlocks.HOLLOW_CRIMSON_STEM)) {
-                    toPlace = ModBlocks.STRIPPED_HOLLOW_CRIMSON_STEM;
+                else if(state.isOf(ModBlocks.HOLLOW_SCAB_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_SCAB_LOG;
                 }
-                else if(state.isOf(ModBlocks.HOLLOW_WARPED_STEM)) {
-                    toPlace = ModBlocks.STRIPPED_HOLLOW_WARPED_STEM;
+                else if(state.isOf(ModBlocks.HOLLOW_INDIGO_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_INDIGO_LOG;
                 }
                 else {
                     finished = false;
@@ -209,7 +209,7 @@ public class HollowLogBlock extends Block implements Waterloggable{
                     playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
                             SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                */
+                }
             }
         }
 

@@ -59,6 +59,16 @@
     "improved_end:hollow_shining_log",
     "improved_end:hollow_serene_log",
     "improved_end:hollow_scab_log",
-    "improved_end:hollow_indigo_log"
+    "improved_end:hollow_indigo_log",
+
+    "improved_end:stripped_hollow_dark_log",
+    "improved_end:stripped_hollow_infusorial_log",
+    "improved_end:stripped_hollow_budding_log",
+    "improved_end:stripped_hollow_redleaf_log",
+    "improved_end:stripped_hollow_fire_log",
+    "improved_end:stripped_hollow_shining_log",
+    "improved_end:stripped_hollow_serene_log",
+    "improved_end:stripped_hollow_scab_log",
+    "improved_end:stripped_hollow_indigo_log"
   ]
 }

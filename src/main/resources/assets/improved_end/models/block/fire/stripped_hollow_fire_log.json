@@ -1,0 +1,9 @@
+{
+	"parent" : "improved_end:block/hollow_log",
+	"textures" : 
+	{
+		"front" : "improved_end:block/fire/stripped_fire_log_top",
+		"in" : "improved_end:block/fire/stripped_fire_log",
+		"out" : "improved_end:block/fire/stripped_fire_log"
+	}
+}

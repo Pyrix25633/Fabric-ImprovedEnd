@@ -164,6 +164,26 @@ public class ModBlocks {
     public static final Block HOLLOW_INDIGO_LOG = registerBlock("hollow_indigo_log",
             new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE).nonOpaque()));
 
+    //Stripped Hollow Logs
+    public static final Block STRIPPED_HOLLOW_DARK_LOG = registerBlock("stripped_hollow_dark_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK).nonOpaque()));
+    public static final Block STRIPPED_HOLLOW_INFUSORIAL_LOG = registerBlock("stripped_hollow_infusorial_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE).nonOpaque()));
+    public static final Block STRIPPED_HOLLOW_BUDDING_LOG = registerBlock("stripped_hollow_budding_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK).nonOpaque()));
+    public static final Block STRIPPED_HOLLOW_REDLEAF_LOG = registerBlock("stripped_hollow_redleaf_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED).nonOpaque()));
+    public static final Block STRIPPED_HOLLOW_FIRE_LOG = registerBlock("stripped_hollow_fire_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE).nonOpaque()));
+    public static final Block STRIPPED_HOLLOW_SHINING_LOG = registerBlock("stripped_hollow_shining_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW).nonOpaque()));
+    public static final Block STRIPPED_HOLLOW_SERENE_LOG = registerBlock("stripped_hollow_serene_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME).nonOpaque()));
+    public static final Block STRIPPED_HOLLOW_SCAB_LOG = registerBlock("stripped_hollow_scab_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).nonOpaque()));
+    public static final Block STRIPPED_HOLLOW_INDIGO_LOG = registerBlock("stripped_hollow_indigo_log",
+            new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE).nonOpaque()));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registry.BLOCK, new Identifier(ImprovedEnd.MOD_ID, name), block);

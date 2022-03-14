@@ -69,5 +69,15 @@
   "block.improved_end.hollow_scab_log": "Hollow Scab Log",
   "block.improved_end.hollow_indigo_log": "Hollow Indigo Log",
 
+  "block.improved_end.stripped_hollow_dark_log": "Stripped Hollow Dark Log",
+  "block.improved_end.stripped_hollow_infusorial_log": "Stripped Hollow Infusorial Log",
+  "block.improved_end.stripped_hollow_budding_log": "Stripped Hollow Budding Log",
+  "block.improved_end.stripped_hollow_redleaf_log": "Stripped Hollow Redleaf Log",
+  "block.improved_end.stripped_hollow_fire_log": "Stripped Hollow Fire Log",
+  "block.improved_end.stripped_hollow_shining_log": "Stripped Hollow Shining Log",
+  "block.improved_end.stripped_hollow_serene_log": "Stripped Hollow Serene Log",
+  "block.improved_end.stripped_hollow_scab_log": "Stripped Hollow Scab Log",
+  "block.improved_end.stripped_hollow_indigo_log": "Stripped Hollow Indigo Log",
+
   "itemGroup.improved_end.improved_end": "Improved End"
 }

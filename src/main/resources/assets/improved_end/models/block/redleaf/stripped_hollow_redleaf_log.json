@@ -1,0 +1,9 @@
+{
+	"parent" : "improved_end:block/hollow_log",
+	"textures" : 
+	{
+		"front" : "improved_end:block/redleaf/stripped_redleaf_log_top",
+		"in" : "improved_end:block/redleaf/stripped_redleaf_log",
+		"out" : "improved_end:block/redleaf/stripped_redleaf_log"
+	}
+}

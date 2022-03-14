@@ -1,0 +1,21 @@
+{
+	"key" : 
+	{
+		"#" : 
+		{
+			"item" : "improved_end:stripped_fire_log"
+		}
+	},
+	"pattern" : 
+	[
+		"###",
+		"# #",
+		"###"
+	],
+	"result" : 
+	{
+		"count" : 8,
+		"item" : "improved_end:stripped_hollow_fire_log"
+	},
+	"type" : "minecraft:crafting_shaped"
+}
