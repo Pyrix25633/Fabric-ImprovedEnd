@@ -2,6 +2,8 @@ package net.pyriken.improved_end;
 
 import net.fabricmc.api.ClientModInitializer;
 
+import net.pyriken.improved_end.block.ModBlocks;
+import net.pyriken.improved_end.util.ModRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -12,6 +14,10 @@ public class ImprovedEndClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
+        ModBlocks.registerModBlocks();
+
+        ModRegistries.cutoutBlocks();
+
         LOGGER.info("Hello Fabric world!");
     }
 }

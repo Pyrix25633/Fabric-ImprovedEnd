@@ -2,9 +2,8 @@ package net.pyriken.improved_end.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
@@ -15,14 +14,21 @@ import net.pyriken.improved_end.block.custom.EndGrassBlock;
 import net.pyriken.improved_end.block.custom.HollowLogBlock;
 import net.pyriken.improved_end.block.custom.ModLogBlock;
 import net.pyriken.improved_end.item.ModItemGroup;
+import net.pyriken.improved_end.util.MinecraftBlocks;
 
 public class ModBlocks {
+    AbstractBlock.TypedContextPredicate<EntityType<?>> allowsSpawningPredicate;
+    AbstractBlock.ContextPredicate blockVisionPredicate;
     //Variables to better control block hardness and resistance
-    static final float woodHardness = 2f, woodResistance = 3f, stoneHardness = 2f, stoneResistance = 6f;
+    static final float woodHardness = 2f, woodResistance = 3f, stoneHardness = 2f, stoneResistance = 6f,
+            leavesStrength = 0.2f;
     static final FabricBlockSettings endGrassSettings = FabricBlockSettings.of(Material.STONE)
             .strength(stoneHardness, stoneResistance).sounds(BlockSoundGroup.STONE).requiresTool();
     static final FabricBlockSettings woodSettings = FabricBlockSettings.of(Material.WOOD)
             .strength(woodHardness, woodResistance).sounds(BlockSoundGroup.WOOD);
+    static final FabricBlockSettings leavesSettings = FabricBlockSettings.of(Material.LEAVES).strength(leavesStrength)
+            .sounds(BlockSoundGroup.GRASS).nonOpaque().ticksRandomly().allowsSpawning(MinecraftBlocks::canSpawnOnLeaves)
+            .suffocates(MinecraftBlocks::never).blockVision(MinecraftBlocks::never);
 
     //Grass
     public static final Block DARK_GRASS = registerBlock("dark_grass",
@@ -183,6 +189,26 @@ public class ModBlocks {
             new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).nonOpaque()));
     public static final Block STRIPPED_HOLLOW_INDIGO_LOG = registerBlock("stripped_hollow_indigo_log",
             new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE).nonOpaque()));
+
+    //Leaves
+    public static final Block DARK_LEAVES = registerBlock("dark_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_LEAVES = registerBlock("infusorial_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_LEAVES = registerBlock("budding_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_LEAVES = registerBlock("redleaf_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_LEAVES = registerBlock("fire_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_LEAVES = registerBlock("shining_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_LEAVES = registerBlock("serene_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_LEAVES = registerBlock("scab_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_LEAVES = registerBlock("indigo_leaves",
+            new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

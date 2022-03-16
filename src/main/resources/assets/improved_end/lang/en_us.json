@@ -79,5 +79,15 @@
   "block.improved_end.stripped_hollow_scab_log": "Stripped Hollow Scab Log",
   "block.improved_end.stripped_hollow_indigo_log": "Stripped Hollow Indigo Log",
 
+  "block.improved_end.dark_leaves": "Dark Leaves",
+  "block.improved_end.infusorial_leaves": "Infusorial Leaves",
+  "block.improved_end.budding_leaves": "Budding Leaves",
+  "block.improved_end.redleaf_leaves": "Redleaf Leaves",
+  "block.improved_end.fire_leaves": "Fire Leaves",
+  "block.improved_end.shining_leaves": "Shining Leaves",
+  "block.improved_end.serene_leaves": "Serene Leaves",
+  "block.improved_end.scab_leaves": "Scab Leaves",
+  "block.improved_end.indigo_leaves": "Indigo Leaves",
+
   "itemGroup.improved_end.improved_end": "Improved End"
 }
