@@ -89,5 +89,12 @@
   "block.improved_end.scab_leaves": "Scab Leaves",
   "block.improved_end.indigo_leaves": "Indigo Leaves",
 
-  "itemGroup.improved_end.improved_end": "Improved End"
+  "block.improved_end.polished_end_stone": "Polished End Stone",
+  "block.improved_end.end_stone_tiles": "End Stone Tiles",
+  "block.improved_end.cracked_end_stone_bricks": "Cracked End Stone Bricks",
+  "block.improved_end.chiseled_end_stone_bricks": "Chiseled End Stone Bricks",
+  "block.improved_end.end_stone_pillar": "End Stone Pillar",
+  "block.improved_end.cracked_purpur": "Cracked Purpur",
+
+  "itemGroup.improved_end.improved_end_biomes": "Improved End Biomes"
 }

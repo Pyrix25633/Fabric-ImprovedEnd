@@ -9,6 +9,13 @@
     "improved_end:shining_grass",
     "improved_end:serene_grass",
     "improved_end:scab_grass",
-    "improved_end:indigo_grass"
+    "improved_end:indigo_grass",
+
+    "improved_end:polished_end_stone",
+    "improved_end:end_stone_tiles",
+    "improved_end:cracked_end_stone_bricks",
+    "improved_end:chiseled_end_stone_bricks",
+    "improved_end:end_stone_pillar",
+    "improved_end:cracked_purpur"
   ]
 }

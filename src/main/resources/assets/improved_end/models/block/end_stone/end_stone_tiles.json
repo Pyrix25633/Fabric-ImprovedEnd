@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "improved_end:block/end_stone/end_stone_tiles"
+  }
+}
