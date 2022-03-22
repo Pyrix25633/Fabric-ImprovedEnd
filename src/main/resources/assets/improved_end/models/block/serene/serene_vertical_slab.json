@@ -1,0 +1,9 @@
+{
+	"parent" : "improved_end:block/vertical_slab",
+	"textures" : 
+	{
+		"bottom" : "improved_end:block/serene/serene_planks",
+		"side" : "improved_end:block/serene/serene_planks",
+		"top" : "improved_end:block/serene/serene_planks"
+	}
+}

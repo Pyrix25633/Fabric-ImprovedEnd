@@ -14,6 +14,7 @@ import net.pyriken.improved_end.ImprovedEnd;
 import net.pyriken.improved_end.block.custom.EndGrassBlock;
 import net.pyriken.improved_end.block.custom.HollowLogBlock;
 import net.pyriken.improved_end.block.custom.ModLogBlock;
+import net.pyriken.improved_end.block.custom.VerticalSlabBlock;
 import net.pyriken.improved_end.item.ModItemGroup;
 import net.pyriken.improved_end.util.MinecraftBlocks;
 
@@ -150,7 +151,27 @@ public class ModBlocks {
             new Block(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_PLANKS = registerBiomesBlock("indigo_planks",
             new Block(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
-    
+
+    //Vertical Slabs
+    public static final Block DARK_VERTICAL_SLAB = registerBiomesBlock("dark_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_VERTICAL_SLAB = registerBiomesBlock("infusorial_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_VERTICAL_SLAB = registerBiomesBlock("budding_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_VERTICAL_SLAB = registerBiomesBlock("redleaf_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_VERTICAL_SLAB = registerBiomesBlock("fire_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_VERTICAL_SLAB = registerBiomesBlock("shining_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_VERTICAL_SLAB = registerBiomesBlock("serene_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_VERTICAL_SLAB = registerBiomesBlock("scab_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_VERTICAL_SLAB = registerBiomesBlock("indigo_vertical_slab",
+            new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
     //Hollow Logs
     public static final Block HOLLOW_DARK_LOG = registerBiomesBlock("hollow_dark_log",
             new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK).nonOpaque()));
@@ -226,7 +247,7 @@ public class ModBlocks {
             new Block(stoneSettings.mapColor(MapColor.MAGENTA).strength(1.5f, 6.0f)));
 
     private static Block registerBiomesBlock(String name, Block block) {
-        registerBiomesBlockItem(name, block, ModItemGroup.IMPROVED_END_BIOMES);
+        registerBiomesBlockItem(name, block, ModItemGroup.IMPROVED_END_BIOMES_BLOCKS);
         return Registry.register(Registry.BLOCK, new Identifier(ImprovedEnd.MOD_ID, name), block);
     }
 
