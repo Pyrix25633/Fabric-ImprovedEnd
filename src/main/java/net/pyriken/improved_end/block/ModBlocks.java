@@ -152,6 +152,26 @@ public class ModBlocks {
     public static final Block INDIGO_PLANKS = registerBiomesBlock("indigo_planks",
             new Block(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
+    //Slabs
+    public static final Block DARK_SLAB = registerBiomesBlock("dark_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_SLAB = registerBiomesBlock("infusorial_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_SLAB = registerBiomesBlock("budding_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_SLAB = registerBiomesBlock("redleaf_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_SLAB = registerBiomesBlock("fire_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_SLAB = registerBiomesBlock("shining_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_SLAB = registerBiomesBlock("serene_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_SLAB = registerBiomesBlock("scab_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_SLAB = registerBiomesBlock("indigo_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
     //Vertical Slabs
     public static final Block DARK_VERTICAL_SLAB = registerBiomesBlock("dark_vertical_slab",
             new VerticalSlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));

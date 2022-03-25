@@ -1,0 +1,17 @@
+{
+	"variants" : 
+	{
+		"type=bottom" : 
+		{
+			"model" : "improved_end:block/budding/budding_slab"
+		},
+		"type=double" : 
+		{
+			"model" : "improved_end:block/budding/budding_planks"
+		},
+		"type=top" : 
+		{
+			"model" : "improved_end:block/budding/budding_slab_top"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"variants" : 
+	{
+		"type=bottom" : 
+		{
+			"model" : "improved_end:block/dark/dark_slab"
+		},
+		"type=double" : 
+		{
+			"model" : "improved_end:block/dark/dark_planks"
+		},
+		"type=top" : 
+		{
+			"model" : "improved_end:block/dark/dark_slab_top"
+		}
+	}
+}

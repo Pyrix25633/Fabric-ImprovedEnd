@@ -1,0 +1,9 @@
+{
+	"parent" : "minecraft:block/slab_top",
+	"textures" : 
+	{
+		"bottom" : "improved_end:block/scab/scab_planks",
+		"side" : "improved_end:block/scab/scab_planks",
+		"top" : "improved_end:block/scab/scab_planks"
+	}
+}

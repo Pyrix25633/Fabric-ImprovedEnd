@@ -1,0 +1,19 @@
+{
+	"key" : 
+	{
+		"#" : 
+		{
+			"item" : "improved_end:budding_planks"
+		}
+	},
+	"pattern" : 
+	[
+		"###"
+	],
+	"result" : 
+	{
+		"count" : 4,
+		"item" : "improved_end:budding_slab"
+	},
+	"type" : "minecraft:crafting_shaped"
+}

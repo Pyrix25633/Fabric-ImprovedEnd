@@ -1,0 +1,17 @@
+{
+	"variants" : 
+	{
+		"type=bottom" : 
+		{
+			"model" : "improved_end:block/indigo/indigo_slab"
+		},
+		"type=double" : 
+		{
+			"model" : "improved_end:block/indigo/indigo_planks"
+		},
+		"type=top" : 
+		{
+			"model" : "improved_end:block/indigo/indigo_slab_top"
+		}
+	}
+}

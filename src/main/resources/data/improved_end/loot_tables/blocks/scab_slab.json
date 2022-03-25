@@ -1,0 +1,37 @@
+{
+	"pools" : 
+	[
+		{
+			"entries" : 
+			[
+				{
+					"functions" : 
+					[
+						{
+							"conditions" : 
+							[
+								{
+									"block" : "improved_end:scab_slab",
+									"condition" : "minecraft:block_state_property",
+									"properties" : 
+									{
+										"type" : "double"
+									}
+								}
+							],
+							"count" : 2,
+							"function" : "minecraft:set_count"
+						},
+						{
+							"function" : "minecraft:explosion_decay"
+						}
+					],
+					"name" : "improved_end:scab_slab",
+					"type" : "minecraft:item"
+				}
+			],
+			"rolls" : 1
+		}
+	],
+	"type" : "minecraft:block"
+}

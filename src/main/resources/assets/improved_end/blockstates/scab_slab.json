@@ -1,0 +1,17 @@
+{
+	"variants" : 
+	{
+		"type=bottom" : 
+		{
+			"model" : "improved_end:block/scab/scab_slab"
+		},
+		"type=double" : 
+		{
+			"model" : "improved_end:block/scab/scab_planks"
+		},
+		"type=top" : 
+		{
+			"model" : "improved_end:block/scab/scab_slab_top"
+		}
+	}
+}
