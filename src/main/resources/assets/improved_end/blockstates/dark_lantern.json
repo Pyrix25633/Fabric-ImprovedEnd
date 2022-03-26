@@ -1,0 +1,13 @@
+{
+	"variants" : 
+	{
+		"hanging=false" : 
+		{
+			"model" : "improved_end:block/dark/dark_lantern"
+		},
+		"hanging=true" : 
+		{
+			"model" : "improved_end:block/dark/dark_lantern_hanging"
+		}
+	}
+}

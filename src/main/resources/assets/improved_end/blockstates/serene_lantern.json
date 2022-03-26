@@ -1,0 +1,13 @@
+{
+	"variants" : 
+	{
+		"hanging=false" : 
+		{
+			"model" : "improved_end:block/serene/serene_lantern"
+		},
+		"hanging=true" : 
+		{
+			"model" : "improved_end:block/serene/serene_lantern_hanging"
+		}
+	}
+}

@@ -19,9 +19,7 @@ import net.pyriken.improved_end.item.ModItemGroup;
 import net.pyriken.improved_end.util.MinecraftBlocks;
 
 public class ModBlocks {
-    AbstractBlock.TypedContextPredicate<EntityType<?>> allowsSpawningPredicate;
-    AbstractBlock.ContextPredicate blockVisionPredicate;
-    //Variables to better control block hardness and resistance
+    //Variables keep control of block hardness and resistance
     static final float woodHardness = 2f, woodResistance = 3f, stoneHardness = 2f, stoneResistance = 6f,
             leavesStrength = 0.2f;
     static final FabricBlockSettings stoneSettings = FabricBlockSettings.of(Material.STONE)
@@ -31,6 +29,9 @@ public class ModBlocks {
     static final FabricBlockSettings leavesSettings = FabricBlockSettings.of(Material.LEAVES).strength(leavesStrength)
             .sounds(BlockSoundGroup.GRASS).nonOpaque().ticksRandomly().allowsSpawning(MinecraftBlocks::canSpawnOnLeaves)
             .suffocates(MinecraftBlocks::never).blockVision(MinecraftBlocks::never);
+    static final FabricBlockSettings lanternSettings = FabricBlockSettings.of(Material.METAL)
+            .strength(3.5f).sounds(BlockSoundGroup.LANTERN).luminance(15)
+            .requiresTool().nonOpaque();
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -231,6 +232,26 @@ public class ModBlocks {
             new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).nonOpaque()));
     public static final Block STRIPPED_HOLLOW_INDIGO_LOG = registerBiomesBlock("stripped_hollow_indigo_log",
             new HollowLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE).nonOpaque()));
+
+    //Lanterns
+    public static final Block DARK_LANTERN = registerBiomesBlock("dark_lantern",
+            new LanternBlock(lanternSettings));
+    public static final Block INFUSORIAL_LANTERN = registerBiomesBlock("infusorial_lantern",
+            new LanternBlock(lanternSettings));
+    public static final Block BUDDING_LANTERN = registerBiomesBlock("budding_lantern",
+            new LanternBlock(lanternSettings));
+    public static final Block REDLEAF_LANTERN = registerBiomesBlock("redleaf_lantern",
+            new LanternBlock(lanternSettings));
+    public static final Block FIRE_LANTERN = registerBiomesBlock("fire_lantern",
+            new LanternBlock(lanternSettings));
+    public static final Block SHINING_LANTERN = registerBiomesBlock("shining_lantern",
+            new LanternBlock(lanternSettings));
+    public static final Block SERENE_LANTERN = registerBiomesBlock("serene_lantern",
+            new LanternBlock(lanternSettings));
+    public static final Block SCAB_LANTERN = registerBiomesBlock("scab_lantern",
+            new LanternBlock(lanternSettings));
+    public static final Block INDIGO_LANTERN = registerBiomesBlock("indigo_lantern",
+            new LanternBlock(lanternSettings));
 
     //Leaves
     public static final Block DARK_LEAVES = registerBiomesBlock("dark_leaves",

@@ -1,0 +1,13 @@
+{
+	"variants" : 
+	{
+		"hanging=false" : 
+		{
+			"model" : "improved_end:block/fire/fire_lantern"
+		},
+		"hanging=true" : 
+		{
+			"model" : "improved_end:block/fire/fire_lantern_hanging"
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:item/generated",
+	"textures" : 
+	{
+		"layer0" : "improved_end:item/infusorial/infusorial_lantern"
+	}
+}

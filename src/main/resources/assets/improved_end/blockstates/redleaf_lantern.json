@@ -1,0 +1,13 @@
+{
+	"variants" : 
+	{
+		"hanging=false" : 
+		{
+			"model" : "improved_end:block/redleaf/redleaf_lantern"
+		},
+		"hanging=true" : 
+		{
+			"model" : "improved_end:block/redleaf/redleaf_lantern_hanging"
+		}
+	}
+}
