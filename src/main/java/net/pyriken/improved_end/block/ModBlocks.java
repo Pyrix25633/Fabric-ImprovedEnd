@@ -3,7 +3,6 @@ package net.pyriken.improved_end.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -32,6 +31,8 @@ public class ModBlocks {
     static final FabricBlockSettings lanternSettings = FabricBlockSettings.of(Material.METAL)
             .strength(3.5f).sounds(BlockSoundGroup.LANTERN).luminance(15)
             .requiresTool().nonOpaque();
+    static final FabricBlockSettings bookshelfSettings = FabricBlockSettings.of(Material.WOOD)
+            .strength(1.5F).sounds(BlockSoundGroup.WOOD);
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -252,6 +253,26 @@ public class ModBlocks {
             new LanternBlock(lanternSettings));
     public static final Block INDIGO_LANTERN = registerBiomesBlock("indigo_lantern",
             new LanternBlock(lanternSettings));
+
+    //Bookshelves
+    public static final Block DARK_BOOKSHELF = registerBiomesBlock("dark_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_BOOKSHELF = registerBiomesBlock("infusorial_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_BOOKSHELF = registerBiomesBlock("budding_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_BOOKSHELF = registerBiomesBlock("redleaf_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_BOOKSHELF = registerBiomesBlock("fire_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_BOOKSHELF = registerBiomesBlock("shining_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_BOOKSHELF = registerBiomesBlock("serene_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_BOOKSHELF = registerBiomesBlock("scab_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_BOOKSHELF = registerBiomesBlock("indigo_bookshelf",
+            new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Leaves
     public static final Block DARK_LEAVES = registerBiomesBlock("dark_leaves",
