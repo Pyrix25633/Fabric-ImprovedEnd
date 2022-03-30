@@ -1,0 +1,9 @@
+{
+	"parent" : "minecraft:block/inner_stairs",
+	"textures" : 
+	{
+		"bottom" : "improved_end:block/shining/shining_planks",
+		"side" : "improved_end:block/shining/shining_planks",
+		"top" : "improved_end:block/shining/shining_planks"
+	}
+}

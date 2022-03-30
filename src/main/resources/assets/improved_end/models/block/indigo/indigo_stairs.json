@@ -1,0 +1,9 @@
+{
+	"parent" : "minecraft:block/stairs",
+	"textures" : 
+	{
+		"bottom" : "improved_end:block/indigo/indigo_planks",
+		"side" : "improved_end:block/indigo/indigo_planks",
+		"top" : "improved_end:block/indigo/indigo_planks"
+	}
+}

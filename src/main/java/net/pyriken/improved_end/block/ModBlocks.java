@@ -10,10 +10,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.pyriken.improved_end.ImprovedEnd;
-import net.pyriken.improved_end.block.custom.EndGrassBlock;
-import net.pyriken.improved_end.block.custom.HollowLogBlock;
-import net.pyriken.improved_end.block.custom.ModLogBlock;
-import net.pyriken.improved_end.block.custom.VerticalSlabBlock;
+import net.pyriken.improved_end.block.custom.*;
 import net.pyriken.improved_end.item.ModItemGroup;
 import net.pyriken.improved_end.util.MinecraftBlocks;
 
@@ -173,6 +170,26 @@ public class ModBlocks {
             new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_SLAB = registerBiomesBlock("indigo_slab",
             new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
+    //Stairs
+    public static final Block DARK_STAIRS = registerBiomesBlock("dark_stairs",
+            new ModStairsBlock(ModBlocks.DARK_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_STAIRS = registerBiomesBlock("infusorial_stairs",
+            new ModStairsBlock(ModBlocks.INFUSORIAL_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_STAIRS = registerBiomesBlock("budding_stairs",
+            new ModStairsBlock(ModBlocks.BUDDING_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_STAIRS = registerBiomesBlock("redleaf_stairs",
+            new ModStairsBlock(ModBlocks.REDLEAF_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_STAIRS = registerBiomesBlock("fire_stairs",
+            new ModStairsBlock(ModBlocks.FIRE_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_STAIRS = registerBiomesBlock("shining_stairs",
+            new ModStairsBlock(ModBlocks.SHINING_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_STAIRS = registerBiomesBlock("serene_stairs",
+            new ModStairsBlock(ModBlocks.SERENE_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_STAIRS = registerBiomesBlock("scab_stairs",
+            new ModStairsBlock(ModBlocks.SCAB_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_STAIRS = registerBiomesBlock("indigo_stairs",
+            new ModStairsBlock(ModBlocks.INDIGO_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Vertical Slabs
     public static final Block DARK_VERTICAL_SLAB = registerBiomesBlock("dark_vertical_slab",

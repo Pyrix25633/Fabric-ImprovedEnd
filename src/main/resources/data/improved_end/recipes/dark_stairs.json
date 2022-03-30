@@ -1,0 +1,21 @@
+{
+	"key" : 
+	{
+		"#" : 
+		{
+			"item" : "improved_end:dark_planks"
+		}
+	},
+	"pattern" : 
+	[
+		"#  ",
+		"## ",
+		"###"
+	],
+	"result" : 
+	{
+		"count" : 4,
+		"item" : "improved_end:dark_stairs"
+	},
+	"type" : "minecraft:crafting_shaped"
+}

@@ -69,6 +69,16 @@
   "block.improved_end.scab_slab": "Scab Slab",
   "block.improved_end.indigo_slab": "Indigo Slab",
 
+  "block.improved_end.dark_stairs": "Dark Stairs",
+  "block.improved_end.infusorial_stairs": "Infusorial Stairs",
+  "block.improved_end.budding_stairs": "Budding Stairs",
+  "block.improved_end.redleaf_stairs": "Redleaf Stairs",
+  "block.improved_end.fire_stairs": "Fire Stairs",
+  "block.improved_end.shining_stairs": "Shining Stairs",
+  "block.improved_end.serene_stairs": "Serene Stairs",
+  "block.improved_end.scab_stairs": "Scab Stairs",
+  "block.improved_end.indigo_stairs": "Indigo Stairs",
+
   "block.improved_end.dark_vertical_slab": "Dark Vertical Slab",
   "block.improved_end.infusorial_vertical_slab": "Infusorial Vertical Slab",
   "block.improved_end.budding_vertical_slab": "Budding Vertical Slab",
