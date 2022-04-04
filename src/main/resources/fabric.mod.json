@@ -20,10 +20,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.pyriken.improved_end.ImprovedEnd"
+      "net.rupyber_studios.improved_end.ImprovedEnd"
     ],
     "client": [
-      "net.pyriken.improved_end.ImprovedEndClient"
+      "net.rupyber_studios.improved_end.ImprovedEndClient"
     ]
   },
   "mixins": [

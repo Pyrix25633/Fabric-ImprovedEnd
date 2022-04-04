@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:block/button_pressed",
+	"textures" : 
+	{
+		"texture" : "improved_end:block/redleaf/redleaf_planks"
+	}
+}

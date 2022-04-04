@@ -79,6 +79,16 @@
   "block.improved_end.scab_stairs": "Scab Stairs",
   "block.improved_end.indigo_stairs": "Indigo Stairs",
 
+  "block.improved_end.dark_button": "Dark Button",
+  "block.improved_end.infusorial_button": "Infusorial Button",
+  "block.improved_end.budding_button": "Budding Button",
+  "block.improved_end.redleaf_button": "Redleaf Button",
+  "block.improved_end.fire_button": "Fire Button",
+  "block.improved_end.shining_button": "Shining Button",
+  "block.improved_end.serene_button": "Serene Button",
+  "block.improved_end.scab_button": "Scab Button",
+  "block.improved_end.indigo_button": "Indigo Button",
+
   "block.improved_end.dark_vertical_slab": "Dark Vertical Slab",
   "block.improved_end.infusorial_vertical_slab": "Infusorial Vertical Slab",
   "block.improved_end.budding_vertical_slab": "Budding Vertical Slab",

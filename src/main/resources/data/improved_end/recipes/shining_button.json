@@ -1,0 +1,14 @@
+{
+	"group" : "wooden_button",
+	"ingredients" : 
+	[
+		{
+			"item" : "improved_end:shining_planks"
+		}
+	],
+	"result" : 
+	{
+		"item" : "improved_end:shining_button"
+	},
+	"type" : "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,14 @@
+{
+	"group" : "wooden_button",
+	"ingredients" : 
+	[
+		{
+			"item" : "improved_end:indigo_planks"
+		}
+	],
+	"result" : 
+	{
+		"item" : "improved_end:indigo_button"
+	},
+	"type" : "minecraft:crafting_shapeless"
+}

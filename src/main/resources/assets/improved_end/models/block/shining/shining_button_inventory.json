@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:block/button_inventory",
+	"textures" : 
+	{
+		"texture" : "improved_end:block/shining/shining_planks"
+	}
+}

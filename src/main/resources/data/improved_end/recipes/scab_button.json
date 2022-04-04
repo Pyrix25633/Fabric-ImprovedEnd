@@ -1,0 +1,14 @@
+{
+	"group" : "wooden_button",
+	"ingredients" : 
+	[
+		{
+			"item" : "improved_end:scab_planks"
+		}
+	],
+	"result" : 
+	{
+		"item" : "improved_end:scab_button"
+	},
+	"type" : "minecraft:crafting_shapeless"
+}
