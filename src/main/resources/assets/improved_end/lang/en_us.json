@@ -89,6 +89,16 @@
   "block.improved_end.scab_button": "Scab Button",
   "block.improved_end.indigo_button": "Indigo Button",
 
+  "block.improved_end.dark_pressure_plate": "Dark Pressure Plate",
+  "block.improved_end.infusorial_pressure_plate": "Infusorial Pressure Plate",
+  "block.improved_end.budding_pressure_plate": "Budding Pressure Plate",
+  "block.improved_end.redleaf_pressure_plate": "Redleaf Pressure Plate",
+  "block.improved_end.fire_pressure_plate": "Fire Pressure Plate",
+  "block.improved_end.shining_pressure_plate": "Shining Pressure Plate",
+  "block.improved_end.serene_pressure_plate": "Serene Pressure Plate",
+  "block.improved_end.scab_pressure_plate": "Scab Pressure Plate",
+  "block.improved_end.indigo_pressure_plate": "Indigo Pressure Plate",
+
   "block.improved_end.dark_vertical_slab": "Dark Vertical Slab",
   "block.improved_end.infusorial_vertical_slab": "Infusorial Vertical Slab",
   "block.improved_end.budding_vertical_slab": "Budding Vertical Slab",

@@ -32,6 +32,8 @@ public class ModBlocks {
             .strength(1.5F).sounds(BlockSoundGroup.WOOD);
     static final FabricBlockSettings buttonSettings = FabricBlockSettings.of(Material.DECORATION)
             .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
+    static final FabricBlockSettings pressurePlateSettings = FabricBlockSettings.of(Material.WOOD)
+            .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -232,6 +234,35 @@ public class ModBlocks {
             new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_BUTTON = registerBiomesBlock("indigo_button",
             new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
+    //Pressure Plates
+    public static final Block DARK_PRESSURE_PLATE = registerBiomesBlock("dark_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_PRESSURE_PLATE = registerBiomesBlock("infusorial_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_PRESSURE_PLATE = registerBiomesBlock("budding_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_PRESSURE_PLATE = registerBiomesBlock("redleaf_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_PRESSURE_PLATE = registerBiomesBlock("fire_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_PRESSURE_PLATE = registerBiomesBlock("shining_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_PRESSURE_PLATE = registerBiomesBlock("serene_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_PRESSURE_PLATE = registerBiomesBlock("scab_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_PRESSURE_PLATE = registerBiomesBlock("indigo_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    pressurePlateSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Hollow Logs
     public static final Block HOLLOW_DARK_LOG = registerBiomesBlock("hollow_dark_log",
