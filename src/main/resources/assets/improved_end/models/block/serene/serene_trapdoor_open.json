@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:block/template_trapdoor_open",
+	"textures" : 
+	{
+		"texture" : "improved_end:block/serene/serene_trapdoor"
+	}
+}

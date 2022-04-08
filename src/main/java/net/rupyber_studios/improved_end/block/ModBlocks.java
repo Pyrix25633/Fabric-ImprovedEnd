@@ -34,6 +34,8 @@ public class ModBlocks {
             .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
     static final FabricBlockSettings pressurePlateSettings = FabricBlockSettings.of(Material.WOOD)
             .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
+    static final FabricBlockSettings trapdoorSettings = FabricBlockSettings.of(Material.WOOD)
+            .strength(3.0F).sounds(BlockSoundGroup.WOOD).nonOpaque().allowsSpawning(MinecraftBlocks::never);
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -263,6 +265,26 @@ public class ModBlocks {
     public static final Block INDIGO_PRESSURE_PLATE = registerBiomesBlock("indigo_pressure_plate",
             new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
                     pressurePlateSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
+    //Trapdoors
+    public static final Block DARK_TRAPDOOR = registerBiomesBlock("dark_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_TRAPDOOR = registerBiomesBlock("infusorial_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_TRAPDOOR = registerBiomesBlock("budding_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_TRAPDOOR = registerBiomesBlock("redleaf_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_TRAPDOOR = registerBiomesBlock("fire_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_TRAPDOOR = registerBiomesBlock("shining_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_TRAPDOOR = registerBiomesBlock("serene_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_TRAPDOOR = registerBiomesBlock("scab_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_TRAPDOOR = registerBiomesBlock("indigo_trapdoor",
+            new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Hollow Logs
     public static final Block HOLLOW_DARK_LOG = registerBiomesBlock("hollow_dark_log",

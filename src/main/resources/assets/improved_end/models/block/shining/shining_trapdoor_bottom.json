@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:block/template_trapdoor_bottom",
+	"textures" : 
+	{
+		"texture" : "improved_end:block/shining/shining_trapdoor"
+	}
+}
