@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "improved_end:dark_door",
+    "improved_end:infusorial_door",
+    "improved_end:budding_door",
+    "improved_end:redleaf_door",
+    "improved_end:fire_door",
+    "improved_end:shining_door",
+    "improved_end:serene_door",
+    "improved_end:scab_door",
+    "improved_end:indigo_door"
+  ]
+}

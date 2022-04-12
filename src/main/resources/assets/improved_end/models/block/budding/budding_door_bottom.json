@@ -1,0 +1,8 @@
+{
+	"parent" : "minecraft:block/door_bottom",
+	"textures" : 
+	{
+		"bottom" : "improved_end:block/budding/budding_door_bottom",
+		"top" : "improved_end:block/budding/budding_door_top"
+	}
+}

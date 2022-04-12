@@ -3,6 +3,7 @@ package net.rupyber_studios.improved_end;
 import net.fabricmc.api.ClientModInitializer;
 
 import net.rupyber_studios.improved_end.block.ModBlocks;
+import net.rupyber_studios.improved_end.item.ModItems;
 import net.rupyber_studios.improved_end.util.ModRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,6 +18,8 @@ public class ImprovedEndClient implements ClientModInitializer {
         ModBlocks.registerModBlocks();
 
         ModRegistries.cutoutBlocks();
+
+        ModItems.registerModItems();
 
         LOGGER.info("Hello Fabric world!");
     }
