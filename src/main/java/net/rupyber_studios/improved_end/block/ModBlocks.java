@@ -42,6 +42,8 @@ public class ModBlocks {
             .noCollision().strength(1.0F).sounds(BlockSoundGroup.WOOD);
     static final FabricBlockSettings doorSettings = FabricBlockSettings.of(Material.WOOD)
             .strength(3.0F).sounds(BlockSoundGroup.WOOD).nonOpaque();
+    static final FabricBlockSettings fenceSettings = FabricBlockSettings.of(Material.WOOD)
+            .strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD);
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -311,6 +313,26 @@ public class ModBlocks {
             new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_DOOR = registerBiomesBlock("indigo_door",
             new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
+    //Fences
+    public static final Block DARK_FENCE = registerBiomesBlock("dark_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_FENCE = registerBiomesBlock("infusorial_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_FENCE = registerBiomesBlock("budding_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_FENCE = registerBiomesBlock("redleaf_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_FENCE = registerBiomesBlock("fire_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_FENCE = registerBiomesBlock("shining_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_FENCE = registerBiomesBlock("serene_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_FENCE = registerBiomesBlock("scab_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_FENCE = registerBiomesBlock("indigo_fence",
+            new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Signs
 /*    public static final Block DARK_SIGN = registerBiomesBlockOnly("dark_sign",

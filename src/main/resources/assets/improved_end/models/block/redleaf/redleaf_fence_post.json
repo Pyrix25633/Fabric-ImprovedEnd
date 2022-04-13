@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:block/fence_post",
+	"textures" : 
+	{
+		"texture" : "improved_end:block/redleaf/redleaf_planks"
+	}
+}

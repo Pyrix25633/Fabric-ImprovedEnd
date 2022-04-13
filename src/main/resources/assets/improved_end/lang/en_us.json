@@ -129,6 +129,16 @@
   "block.improved_end.scab_door": "Scab Door",
   "block.improved_end.indigo_door": "Indigo Door",
 
+  "block.improved_end.dark_fence": "Dark Fence",
+  "block.improved_end.infusorial_fence": "Infusorial Fence",
+  "block.improved_end.budding_fence": "Budding Fence",
+  "block.improved_end.redleaf_fence": "Redleaf Fence",
+  "block.improved_end.fire_fence": "Fire Fence",
+  "block.improved_end.shining_fence": "Shining Fence",
+  "block.improved_end.serene_fence": "Serene Fence",
+  "block.improved_end.scab_fence": "Scab Fence",
+  "block.improved_end.indigo_fence": "Indigo Fence",
+
   "block.improved_end.dark_sign": "Dark Sign",
   "block.improved_end.infusorial_sign": "Infusorial Sign",
   "block.improved_end.budding_sign": "Budding Sign",
