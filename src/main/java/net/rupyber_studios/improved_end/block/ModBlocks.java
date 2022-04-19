@@ -334,6 +334,26 @@ public class ModBlocks {
     public static final Block INDIGO_FENCE = registerBiomesBlock("indigo_fence",
             new FenceBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
+    //Fence Gates
+    public static final Block DARK_FENCE_GATE = registerBiomesBlock("dark_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_FENCE_GATE = registerBiomesBlock("infusorial_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_FENCE_GATE = registerBiomesBlock("budding_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_FENCE_GATE = registerBiomesBlock("redleaf_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_FENCE_GATE = registerBiomesBlock("fire_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_FENCE_GATE = registerBiomesBlock("shining_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_FENCE_GATE = registerBiomesBlock("serene_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_FENCE_GATE = registerBiomesBlock("scab_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_FENCE_GATE = registerBiomesBlock("indigo_fence_gate",
+            new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
     //Signs
 /*    public static final Block DARK_SIGN = registerBiomesBlockOnly("dark_sign",
             new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_BLACK), new ModSignType("dark")));

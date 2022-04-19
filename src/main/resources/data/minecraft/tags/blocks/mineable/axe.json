@@ -118,6 +118,16 @@
     "improved_end:scab_fence",
     "improved_end:indigo_fence",
 
+    "improved_end:dark_fence_gate",
+    "improved_end:infusorial_fence_gate",
+    "improved_end:budding_fence_gate",
+    "improved_end:redleaf_fence_gate",
+    "improved_end:fire_fence_gate",
+    "improved_end:shining_fence_gate",
+    "improved_end:serene_fence_gate",
+    "improved_end:scab_fence_gate",
+    "improved_end:indigo_fence_gate",
+
     "improved_end:dark_vertical_slab",
     "improved_end:infusorial_vertical_slab",
     "improved_end:budding_vertical_slab",
