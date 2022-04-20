@@ -158,6 +158,16 @@
     "improved_end:stripped_hollow_scab_log",
     "improved_end:stripped_hollow_indigo_log",
 
+    "improved_end:dark_waylamp",
+    "improved_end:infusorial_waylamp",
+    "improved_end:budding_waylamp",
+    "improved_end:redleaf_waylamp",
+    "improved_end:fire_waylamp",
+    "improved_end:shining_waylamp",
+    "improved_end:serene_waylamp",
+    "improved_end:scab_waylamp",
+    "improved_end:indigo_waylamp",
+
     "improved_end:dark_bookshelf",
     "improved_end:infusorial_bookshelf",
     "improved_end:budding_bookshelf",
@@ -166,6 +176,8 @@
     "improved_end:shining_bookshelf",
     "improved_end:serene_bookshelf",
     "improved_end:scab_bookshelf",
-    "improved_end:indigo_bookshelf"
+    "improved_end:indigo_bookshelf",
+
+    "improved_end:waylamp"
   ]
 }

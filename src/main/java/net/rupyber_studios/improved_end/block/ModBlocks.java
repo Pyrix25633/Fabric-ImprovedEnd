@@ -44,6 +44,8 @@ public class ModBlocks {
             .strength(3.0F).sounds(BlockSoundGroup.WOOD).nonOpaque();
     static final FabricBlockSettings fenceSettings = FabricBlockSettings.of(Material.WOOD)
             .strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD);
+    static final FabricBlockSettings waylampSettings = FabricBlockSettings.of(Material.WOOD)
+            .strength(0.3F).sounds(BlockSoundGroup.WOOD).luminance((state) -> 15);
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -463,6 +465,26 @@ public class ModBlocks {
     public static final Block INDIGO_LANTERN = registerBiomesBlock("indigo_lantern",
             new LanternBlock(lanternSettings));
 
+    //Waylamps
+    public static final Block DARK_WAYLAMP = registerBiomesBlock("dark_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_WAYLAMP = registerBiomesBlock("infusorial_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_WAYLAMP = registerBiomesBlock("budding_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_WAYLAMP = registerBiomesBlock("redleaf_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_WAYLAMP = registerBiomesBlock("fire_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_WAYLAMP = registerBiomesBlock("shining_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_WAYLAMP = registerBiomesBlock("serene_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_WAYLAMP = registerBiomesBlock("scab_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_WAYLAMP = registerBiomesBlock("indigo_waylamp",
+            new Block(waylampSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
     //Bookshelves
     public static final Block DARK_BOOKSHELF = registerBiomesBlock("dark_bookshelf",
             new Block(bookshelfSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
@@ -504,21 +526,29 @@ public class ModBlocks {
             new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //End Stone and Purpur
-    public static final Block POLISHED_END_STONE = registerBiomesBlock("polished_end_stone",
+    public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",
             new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
-    public static final Block END_STONE_TILES = registerBiomesBlock("end_stone_tiles",
+    public static final Block END_STONE_TILES = registerBlock("end_stone_tiles",
             new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
-    public static final Block CRACKED_END_STONE_BRICKS = registerBiomesBlock("cracked_end_stone_bricks",
+    public static final Block CRACKED_END_STONE_BRICKS = registerBlock("cracked_end_stone_bricks",
             new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
-    public static final Block CHISELED_END_STONE_BRICKS = registerBiomesBlock("chiseled_end_stone_bricks",
+    public static final Block CHISELED_END_STONE_BRICKS = registerBlock("chiseled_end_stone_bricks",
             new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
-    public static final Block END_STONE_PILLAR = registerBiomesBlock("end_stone_pillar",
+    public static final Block END_STONE_PILLAR = registerBlock("end_stone_pillar",
             new PillarBlock(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
-    public static final Block CRACKED_PURPUR = registerBiomesBlock("cracked_purpur",
+    public static final Block CRACKED_PURPUR = registerBlock("cracked_purpur",
             new Block(stoneSettings.mapColor(MapColor.MAGENTA).strength(1.5f, 6.0f)));
+    //Waylamp
+    public static final Block WAYLAMP = registerBlock("waylamp",
+            new Block(waylampSettings.mapColor(MapColor.YELLOW)));
 
     private static Block registerBiomesBlock(String name, Block block) {
-        registerBiomesBlockItem(name, block, ModItemGroup.IMPROVED_END_BIOMES_BLOCKS);
+        registerBlockItem(name, block, ModItemGroup.IMPROVED_END_BIOMES_BLOCKS);
+        return Registry.register(Registry.BLOCK, new Identifier(ImprovedEnd.MOD_ID, name), block);
+    }
+
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block, ModItemGroup.IMPROVED_END_BLOCKS);
         return Registry.register(Registry.BLOCK, new Identifier(ImprovedEnd.MOD_ID, name), block);
     }
 
@@ -526,7 +556,7 @@ public class ModBlocks {
         return Registry.register(Registry.BLOCK, new Identifier(ImprovedEnd.MOD_ID, name), block);
     }
 
-    private static Item registerBiomesBlockItem(String name, Block block, ItemGroup group) {
+    private static Item registerBlockItem(String name, Block block, ItemGroup group) {
         return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
     }

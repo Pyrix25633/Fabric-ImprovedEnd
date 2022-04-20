@@ -189,6 +189,16 @@
   "block.improved_end.scab_lantern": "Scab Lantern",
   "block.improved_end.indigo_lantern": "Indigo Lantern",
 
+  "block.improved_end.dark_waylamp": "Dark Waylamp",
+  "block.improved_end.infusorial_waylamp": "Infusorial Waylamp",
+  "block.improved_end.budding_waylamp": "Budding Waylamp",
+  "block.improved_end.redleaf_waylamp": "Redleaf Waylamp",
+  "block.improved_end.fire_waylamp": "Fire Waylamp",
+  "block.improved_end.shining_waylamp": "Shining Waylamp",
+  "block.improved_end.serene_waylamp": "Serene Waylamp",
+  "block.improved_end.scab_waylamp": "Scab Waylamp",
+  "block.improved_end.indigo_waylamp": "Indigo Waylamp",
+
   "block.improved_end.dark_bookshelf": "Dark Bookshelf",
   "block.improved_end.infusorial_bookshelf": "Infusorial Bookshelf",
   "block.improved_end.budding_bookshelf": "Budding Bookshelf",
@@ -215,6 +225,8 @@
   "block.improved_end.chiseled_end_stone_bricks": "Chiseled End Stone Bricks",
   "block.improved_end.end_stone_pillar": "End Stone Pillar",
   "block.improved_end.cracked_purpur": "Cracked Purpur",
+  "block.improved_end.waylamp": "Waylamp",
 
-  "itemGroup.improved_end.improved_end_biomes_blocks": "Improved End Biomes Blocks"
+  "itemGroup.improved_end.improved_end_biomes_blocks": "Improved End Biomes Blocks",
+  "itemGroup.improved_end.improved_end_blocks": "Improved End Blocks"
 }

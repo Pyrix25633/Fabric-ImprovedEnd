@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:block/cube_all",
+	"textures" : 
+	{
+		"all" : "improved_end:block/serene/serene_waylamp"
+	}
+}

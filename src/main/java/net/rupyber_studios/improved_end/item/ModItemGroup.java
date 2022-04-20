@@ -10,6 +10,6 @@ import net.rupyber_studios.improved_end.block.ModBlocks;
 public class ModItemGroup {
     public static final ItemGroup IMPROVED_END_BIOMES_BLOCKS = FabricItemGroupBuilder.build(new Identifier(ImprovedEnd.MOD_ID,
             "improved_end_biomes_blocks"), () -> new ItemStack(ModBlocks.DARK_GRASS));
-    //public static final ItemGroup IMPROVED_END_ = FabricItemGroupBuilder.build(new Identifier(ImprovedEnd.MOD_ID,
-    //        "improved_end"), () -> new ItemStack(ModBlocks.DARK_GRASS));
+    public static final ItemGroup IMPROVED_END_BLOCKS = FabricItemGroupBuilder.build(new Identifier(ImprovedEnd.MOD_ID,
+            "improved_end_blocks"), () -> new ItemStack(ModBlocks.POLISHED_END_STONE));
 }
