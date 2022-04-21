@@ -1,0 +1,24 @@
+{
+	"key" : 
+	{
+		"#" : 
+		{
+			"item" : "improved_end:redleaf_planks"
+		},
+		"X" : 
+		{
+			"item" : "improved_end:redleaf_lantern"
+		}
+	},
+	"pattern" : 
+	[
+		"###",
+		"#X#",
+		"###"
+	],
+	"result" : 
+	{
+		"item" : "improved_end:redleaf_waylamp"
+	},
+	"type" : "minecraft:crafting_shaped"
+}
