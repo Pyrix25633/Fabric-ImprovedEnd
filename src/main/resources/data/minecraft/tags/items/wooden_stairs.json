@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "improved_end:dark_stairs",
+    "improved_end:infusorial_stairs",
+    "improved_end:budding_stairs",
+    "improved_end:redleaf_stairs",
+    "improved_end:fire_stairs",
+    "improved_end:shining_stairs",
+    "improved_end:serene_stairs",
+    "improved_end:scab_stairs",
+    "improved_end:indigo_stairs"
+  ]
+}

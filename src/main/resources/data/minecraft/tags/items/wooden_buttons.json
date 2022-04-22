@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "improved_end:dark_button",
+    "improved_end:infusorial_button",
+    "improved_end:budding_button",
+    "improved_end:redleaf_button",
+    "improved_end:fire_button",
+    "improved_end:shining_button",
+    "improved_end:serene_button",
+    "improved_end:scab_button",
+    "improved_end:indigo_button"
+  ]
+}

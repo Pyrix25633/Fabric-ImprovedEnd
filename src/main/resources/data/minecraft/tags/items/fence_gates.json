@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "improved_end:dark_fence_gate",
+    "improved_end:infusorial_fence_gate",
+    "improved_end:budding_fence_gate",
+    "improved_end:redleaf_fence_gate",
+    "improved_end:fire_fence_gate",
+    "improved_end:shining_fence_gate",
+    "improved_end:serene_fence_gate",
+    "improved_end:scab_fence_gate",
+    "improved_end:indigo_fence_gate"
+  ]
+}
