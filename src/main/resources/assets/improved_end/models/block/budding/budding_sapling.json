@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:block/cross",
+	"textures" : 
+	{
+		"cross" : "improved_end:block/budding/budding_sapling"
+	}
+}

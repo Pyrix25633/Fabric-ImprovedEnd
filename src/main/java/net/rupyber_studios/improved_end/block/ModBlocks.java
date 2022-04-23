@@ -3,6 +3,7 @@ package net.rupyber_studios.improved_end.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.sapling.OakSaplingGenerator;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -46,6 +47,10 @@ public class ModBlocks {
             .strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD);
     static final FabricBlockSettings waylampSettings = FabricBlockSettings.of(Material.WOOD)
             .strength(0.3F).sounds(BlockSoundGroup.WOOD).luminance((state) -> 15);
+    static final FabricBlockSettings saplingSettings = FabricBlockSettings.of(Material.PLANT)
+            .noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS);
+    static final FabricBlockSettings pottedSaplingSettings = FabricBlockSettings.of(Material.DECORATION)
+            .breakInstantly().nonOpaque();
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -525,6 +530,45 @@ public class ModBlocks {
     public static final Block INDIGO_LEAVES = registerBiomesBlock("indigo_leaves",
             new LeavesBlock(leavesSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
+    //Saplings
+    public static final Block DARK_SAPLING = registerBiomesBlock("dark_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block INFUSORIAL_SAPLING = registerBiomesBlock("infusorial_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block BUDDING_SAPLING = registerBiomesBlock("budding_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block REDLEAF_SAPLING = registerBiomesBlock("redleaf_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block FIRE_SAPLING = registerBiomesBlock("fire_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block SHINING_SAPLING = registerBiomesBlock("shining_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block SERENE_SAPLING = registerBiomesBlock("serene_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block SCAB_SAPLING = registerBiomesBlock("scab_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block INDIGO_SAPLING = registerBiomesBlock("indigo_sapling",
+            new ModSaplingBlock(new OakSaplingGenerator(), saplingSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    //Potted Saplings
+    public static final Block POTTED_DARK_SAPLING = registerBlockOnly("potted_dark_sapling",
+            new FlowerPotBlock(DARK_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block POTTED_INFUSORIAL_SAPLING = registerBlockOnly("potted_infusorial_sapling",
+            new FlowerPotBlock(INFUSORIAL_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block POTTED_BUDDING_SAPLING = registerBlockOnly("potted_budding_sapling",
+            new FlowerPotBlock(BUDDING_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+    public static final Block POTTED_REDLEAF_SAPLING = registerBlockOnly("potted_redleaf_sapling",
+            new FlowerPotBlock(REDLEAF_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block POTTED_FIRE_SAPLING = registerBlockOnly("potted_fire_sapling",
+            new FlowerPotBlock(FIRE_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block POTTED_SHINING_SAPLING = registerBlockOnly("potted_shining_sapling",
+            new FlowerPotBlock(SHINING_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+    public static final Block POTTED_SERENE_SAPLING = registerBlockOnly("potted_serene_sapling",
+            new FlowerPotBlock(SERENE_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+    public static final Block POTTED_SCAB_SAPLING = registerBlockOnly("potted_scab_sapling",
+            new FlowerPotBlock(SCAB_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block POTTED_INDIGO_SAPLING = registerBlockOnly("potted_indigo_sapling",
+            new FlowerPotBlock(INDIGO_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
     //End Stone and Purpur
     public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",
             new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
@@ -552,7 +596,7 @@ public class ModBlocks {
         return Registry.register(Registry.BLOCK, new Identifier(ImprovedEnd.MOD_ID, name), block);
     }
 
-    private static Block registerBiomesBlockOnly(String name, Block block) {
+    private static Block registerBlockOnly(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(ImprovedEnd.MOD_ID, name), block);
     }
 
