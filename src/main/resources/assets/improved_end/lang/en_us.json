@@ -247,6 +247,10 @@
   "block.improved_end.cracked_purpur": "Cracked Purpur",
   "block.improved_end.waylamp": "Waylamp",
 
+  "item.improved_end.pondu_berries": "Pondu Berries",
+  "block.improved_end.pondu": "Pondu",
+  "block.improved_end.budding_pondu": "Budding Pondu",
+
   "itemGroup.improved_end.improved_end_biomes_blocks": "Improved End Biomes Blocks",
   "itemGroup.improved_end.improved_end_blocks": "Improved End Blocks"
 }

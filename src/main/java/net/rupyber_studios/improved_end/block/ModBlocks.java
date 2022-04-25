@@ -51,6 +51,9 @@ public class ModBlocks {
             .noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.GRASS);
     static final FabricBlockSettings pottedSaplingSettings = FabricBlockSettings.of(Material.DECORATION)
             .breakInstantly().nonOpaque();
+    static final FabricBlockSettings caveVineSettings = FabricBlockSettings.of(Material.PLANT)
+            .noCollision().luminance(CaveVines.getLuminanceSupplier(14)).breakInstantly()
+            .sounds(BlockSoundGroup.CAVE_VINES);
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -568,6 +571,12 @@ public class ModBlocks {
             new FlowerPotBlock(SCAB_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block POTTED_INDIGO_SAPLING = registerBlockOnly("potted_indigo_sapling",
             new FlowerPotBlock(INDIGO_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
+    //Pondu
+    public static final Block PONDU = registerBlockOnly("pondu",
+            new PonduHeadBlock(caveVineSettings.ticksRandomly()));
+    public static final Block PONDU_PLANT = registerBlockOnly("pondu_plant",
+            new PonduBodyBlock(caveVineSettings));
 
     //End Stone and Purpur
     public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",

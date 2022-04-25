@@ -9,6 +9,7 @@ import net.rupyber_studios.improved_end.ImprovedEnd;
 
 public class ModTags {
     public static class Blocks {
+        //Logs
         public static final TagKey<Block> DARK_LOGS = createTag("dark_logs");
         public static final TagKey<Block> DARK_LOGS_COMMON = createCommonTag("dark_logs");
         public static final TagKey<Block> INFUSORIAL_LOGS = createTag("infusorial_logs");
@@ -27,6 +28,10 @@ public class ModTags {
         public static final TagKey<Block> SCAB_LOGS_COMMON = createCommonTag("scab_logs");
         public static final TagKey<Block> INDIGO_LOGS = createTag("indigo_logs");
         public static final TagKey<Block> INDIGO_LOGS_COMMON = createCommonTag("indigo_logs");
+
+        //Pondu
+        public static final TagKey<Block> PONDU = createTag("pondu");
+        public static final TagKey<Block> PONDU_COMMON = createCommonTag("pondu");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(ImprovedEnd.MOD_ID, name));

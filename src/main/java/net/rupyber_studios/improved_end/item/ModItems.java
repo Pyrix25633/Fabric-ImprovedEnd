@@ -1,8 +1,11 @@
 package net.rupyber_studios.improved_end.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
-import net.minecraft.item.SignItem;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.improved_end.ImprovedEnd;
@@ -37,6 +40,11 @@ public class ModItems {
     public static final Item INDIGO_SIGN = registerItem("indigo_sign",
             new SignItem(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(16),
                     ModBlocks.INDIGO_SIGN, ModBlocks.INDIGO_WALL_SIGN));*/
+
+    //Pondu
+    public static final Item PONDU_BERRIES = registerItem("pondu_berries",
+            new AliasedBlockItem(ModBlocks.PONDU, (new Item.Settings()).food(ModFoodComponents.PONDU_BERRIES)
+                    .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
     private static Item registerItem(String name, Item item ) {
         return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name), item);

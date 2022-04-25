@@ -69,5 +69,9 @@ public class ModRegistries {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_SERENE_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_SCAB_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_INDIGO_SAPLING, RenderLayer.getCutout());
+
+        //Pondu
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PONDU, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PONDU_PLANT, RenderLayer.getCutout());
     }
 }

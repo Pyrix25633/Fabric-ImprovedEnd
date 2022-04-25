@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "improved_end:block/dark/pondu"
+    },
+    "berries=true": {
+      "model": "improved_end:block/dark/budding_pondu"
+    }
+  }
+}
