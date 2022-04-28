@@ -249,7 +249,10 @@
 
   "item.improved_end.pondu_berries": "Pondu Berries",
   "block.improved_end.pondu": "Pondu",
-  "block.improved_end.budding_pondu": "Budding Pondu",
+  "block.improved_end.pondu_plant": "Pondu Plant",
+  "item.improved_end.branius_berries": "Branius Berries",
+  "block.improved_end.branius": "Branius",
+  "block.improved_end.branius_plant": "Branius Plant",
 
   "itemGroup.improved_end.improved_end_biomes_blocks": "Improved End Biomes Blocks",
   "itemGroup.improved_end.improved_end_blocks": "Improved End Blocks"

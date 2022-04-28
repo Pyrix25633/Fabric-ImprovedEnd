@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "improved_end:block/fire/branius_plant"
+    },
+    "berries=true": {
+      "model": "improved_end:block/fire/branius_plant_lit"
+    }
+  }
+}

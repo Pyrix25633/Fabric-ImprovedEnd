@@ -9,11 +9,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.SignType;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.improved_end.ImprovedEnd;
 import net.rupyber_studios.improved_end.block.custom.*;
-import net.rupyber_studios.improved_end.block.type.ModSignType;
+import net.rupyber_studios.improved_end.block.entity.ModSignTypes;
 import net.rupyber_studios.improved_end.item.ModItemGroup;
 import net.rupyber_studios.improved_end.util.MinecraftBlocks;
 
@@ -365,53 +364,52 @@ public class ModBlocks {
             new FenceGateBlock(fenceSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Signs
-/*    public static final Block DARK_SIGN = registerBiomesBlockOnly("dark_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_BLACK), new ModSignType("dark")));
-    public static final Block INFUSORIAL_SIGN = registerBiomesBlockOnly("infusorial_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_PURPLE), new ModSignType("infusorial")));
-    public static final Block BUDDING_SIGN = registerBiomesBlockOnly("budding_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_PINK), new ModSignType("budding")));
-    public static final Block REDLEAF_SIGN = registerBiomesBlockOnly("redleaf_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_RED), new ModSignType("redleaf")));
-    public static final Block FIRE_SIGN = registerBiomesBlockOnly("fire_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_ORANGE), new ModSignType("fire")));
-    public static final Block SHINING_SIGN = registerBiomesBlockOnly("shining_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_YELLOW), new ModSignType("shining")));
-    public static final Block SERENE_SIGN = registerBiomesBlockOnly("serene_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_LIME), new ModSignType("serene")));
-    public static final Block SCAB_SIGN = registerBiomesBlockOnly("scab_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE), new ModSignType("scab")));
-    public static final Block INDIGO_SIGN = registerBiomesBlockOnly("indigo_sign",
-            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_BLUE), new ModSignType("indigo"))); */
+    public static final Block DARK_SIGN = registerBlockOnly("dark_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_BLACK), ModSignTypes.DARK));
+    public static final Block INFUSORIAL_SIGN = registerBlockOnly("infusorial_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_PURPLE), ModSignTypes.INFUSORIAL));
+    public static final Block BUDDING_SIGN = registerBlockOnly("budding_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_PINK), ModSignTypes.BUDDING));
+    public static final Block REDLEAF_SIGN = registerBlockOnly("redleaf_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_RED), ModSignTypes.REDLEAF));
+    public static final Block FIRE_SIGN = registerBlockOnly("fire_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_ORANGE), ModSignTypes.FIRE));
+    public static final Block SHINING_SIGN = registerBlockOnly("shining_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_YELLOW), ModSignTypes.SHINING));
+    public static final Block SERENE_SIGN = registerBlockOnly("serene_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_LIME), ModSignTypes.SERENE));
+    public static final Block SCAB_SIGN = registerBlockOnly("scab_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE), ModSignTypes.SCAB));
+    public static final Block INDIGO_SIGN = registerBlockOnly("indigo_sign",
+            new SignBlock(signSettings.mapColor(MapColor.TERRACOTTA_BLUE), ModSignTypes.INDIGO));
     //Wall Signs
-/*    public static final Block DARK_WALL_SIGN = registerBiomesBlockOnly("dark_wall_sign",
+    public static final Block DARK_WALL_SIGN = registerBlockOnly("dark_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_BLACK).dropsLike(ModBlocks.DARK_SIGN),
-                    new ModSignType("dark")));
-    public static final Block INFUSORIAL_WALL_SIGN = registerBiomesBlockOnly("infusorial_wall_sign",
+                    ModSignTypes.DARK));
+    public static final Block INFUSORIAL_WALL_SIGN = registerBlockOnly("infusorial_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_PURPLE).dropsLike(ModBlocks.INFUSORIAL_SIGN),
-                    new ModSignType("infusorial")));
-    public static final Block BUDDING_WALL_SIGN = registerBiomesBlockOnly("budding_wall_sign",
+                    ModSignTypes.INFUSORIAL));
+    public static final Block BUDDING_WALL_SIGN = registerBlockOnly("budding_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_PINK).dropsLike(ModBlocks.BUDDING_SIGN),
-                    new ModSignType("budding")));
-    public static final Block REDLEAF_WALL_SIGN = registerBiomesBlockOnly("redleaf_wall_sign",
+                    ModSignTypes.BUDDING));
+    public static final Block REDLEAF_WALL_SIGN = registerBlockOnly("redleaf_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_RED).dropsLike(ModBlocks.REDLEAF_SIGN),
-                    new ModSignType("redleaf")));
-    public static final Block FIRE_WALL_SIGN = registerBiomesBlockOnly("fire_wall_sign",
+                    ModSignTypes.REDLEAF));
+    public static final Block FIRE_WALL_SIGN = registerBlockOnly("fire_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_ORANGE).dropsLike(ModBlocks.FIRE_SIGN),
-                    new ModSignType("fire")));
-    public static final Block SHINING_WALL_SIGN = registerBiomesBlockOnly("shining_wall_sign",
+                    ModSignTypes.FIRE));
+    public static final Block SHINING_WALL_SIGN = registerBlockOnly("shining_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_YELLOW).dropsLike(ModBlocks.SHINING_SIGN),
-                    new ModSignType("shining")));
-    public static final Block SERENE_WALL_SIGN = registerBiomesBlockOnly("serene_wall_sign",
+                    ModSignTypes.SHINING));
+    public static final Block SERENE_WALL_SIGN = registerBlockOnly("serene_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_LIME).dropsLike(ModBlocks.SERENE_SIGN),
-                    new ModSignType("serene")));
-    public static final Block SCAB_WALL_SIGN = registerBiomesBlockOnly("scab_wall_sign",
+                    ModSignTypes.SERENE));
+    public static final Block SCAB_WALL_SIGN = registerBlockOnly("scab_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).dropsLike(ModBlocks.SCAB_SIGN),
-                    new ModSignType("scab")));
-    public static final Block INDIGO_WALL_SIGN = registerBiomesBlockOnly("indigo_wall_sign",
+                    ModSignTypes.SCAB));
+    public static final Block INDIGO_WALL_SIGN = registerBlockOnly("indigo_wall_sign",
             new WallSignBlock(signSettings.mapColor(MapColor.TERRACOTTA_BLUE).dropsLike(ModBlocks.INDIGO_SIGN),
-                    new ModSignType("indigo")));
- */
+                    ModSignTypes.INDIGO));
 
     //Hollow Logs
     public static final Block HOLLOW_DARK_LOG = registerBiomesBlock("hollow_dark_log",
@@ -577,6 +575,11 @@ public class ModBlocks {
             new PonduHeadBlock(caveVineSettings.ticksRandomly()));
     public static final Block PONDU_PLANT = registerBlockOnly("pondu_plant",
             new PonduBodyBlock(caveVineSettings));
+    //Branius
+    public static final Block BRANIUS = registerBlockOnly("branius",
+            new BraniusHeadBlock(caveVineSettings.ticksRandomly()));
+    public static final Block BRANIUS_PLANT = registerBlockOnly("branius_plant",
+            new BraniusBodyBlock(caveVineSettings));
 
     //End Stone and Purpur
     public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",

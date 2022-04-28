@@ -73,5 +73,8 @@ public class ModRegistries {
         //Pondu
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PONDU, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PONDU_PLANT, RenderLayer.getCutout());
+        //Branius
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRANIUS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRANIUS_PLANT, RenderLayer.getCutout());
     }
 }

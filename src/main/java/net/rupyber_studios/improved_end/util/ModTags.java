@@ -32,6 +32,9 @@ public class ModTags {
         //Pondu
         public static final TagKey<Block> PONDU = createTag("pondu");
         public static final TagKey<Block> PONDU_COMMON = createCommonTag("pondu");
+        //Branius
+        public static final TagKey<Block> BRANIUS = createTag("branius");
+        public static final TagKey<Block> BRANIUS_COMMON = createCommonTag("branius");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(ImprovedEnd.MOD_ID, name));

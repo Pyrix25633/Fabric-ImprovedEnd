@@ -1,11 +1,7 @@
 package net.rupyber_studios.improved_end.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.FoodComponents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.improved_end.ImprovedEnd;
@@ -13,7 +9,7 @@ import net.rupyber_studios.improved_end.block.ModBlocks;
 
 public class ModItems {
     //Signs
-/*    public static final Item DARK_SIGN = registerItem("dark_sign",
+    public static final Item DARK_SIGN = registerItem("dark_sign",
             new SignItem(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(16),
                     ModBlocks.DARK_SIGN, ModBlocks.DARK_WALL_SIGN));
     public static final Item INFUSORIAL_SIGN = registerItem("infusorial_sign",
@@ -39,11 +35,15 @@ public class ModItems {
                     ModBlocks.SCAB_SIGN, ModBlocks.SCAB_WALL_SIGN));
     public static final Item INDIGO_SIGN = registerItem("indigo_sign",
             new SignItem(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(16),
-                    ModBlocks.INDIGO_SIGN, ModBlocks.INDIGO_WALL_SIGN));*/
+                    ModBlocks.INDIGO_SIGN, ModBlocks.INDIGO_WALL_SIGN));
 
     //Pondu
     public static final Item PONDU_BERRIES = registerItem("pondu_berries",
             new AliasedBlockItem(ModBlocks.PONDU, (new Item.Settings()).food(ModFoodComponents.PONDU_BERRIES)
+                    .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+    //Pondu
+    public static final Item BRANIUS_BERRIES = registerItem("branius_berries",
+            new AliasedBlockItem(ModBlocks.BRANIUS, (new Item.Settings()).food(ModFoodComponents.BRANIUS_BERRIES)
                     .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
     private static Item registerItem(String name, Item item ) {
