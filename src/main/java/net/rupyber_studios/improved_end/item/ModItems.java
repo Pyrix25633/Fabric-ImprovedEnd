@@ -46,6 +46,10 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.BRANIUS, (new Item.Settings()).food(ModFoodComponents.BRANIUS_BERRIES)
                     .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
+    //Lily Pads
+    public static final Item LILY_PAD = registerItem("indigo_lily_pad",
+            new LilyPadItem(ModBlocks.INDIGO_LILY_PAD, (new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+
     private static Item registerItem(String name, Item item ) {
         return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name), item);
     }

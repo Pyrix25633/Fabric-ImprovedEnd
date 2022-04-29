@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "improved_end:block/indigo/indigo_lily_pad"
+      },
+      {
+        "model": "improved_end:block/indigo/indigo_lily_pad",
+        "y": 90
+      },
+      {
+        "model": "improved_end:block/indigo/indigo_lily_pad",
+        "y": 180
+      },
+      {
+        "model": "improved_end:block/indigo/indigo_lily_pad",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -76,5 +76,8 @@ public class ModRegistries {
         //Branius
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRANIUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRANIUS_PLANT, RenderLayer.getCutout());
+
+        //Lily Pads
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.INDIGO_LILY_PAD, RenderLayer.getCutout());
     }
 }
