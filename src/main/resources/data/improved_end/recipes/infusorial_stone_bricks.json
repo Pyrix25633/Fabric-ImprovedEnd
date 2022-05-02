@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SS",
+		"SS"
+	],
+	"key": {
+		"S": {
+			"item": "improved_end:polished_infusorial_stone"
+		}
+	},
+	"result": {
+		"item": "improved_end:infusorial_stone_bricks",
+		"count": 4
+	}
+}

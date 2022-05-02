@@ -241,6 +241,16 @@
 
   "block.improved_end.indigo_lily_pad": "Indigo Lily Pad",
 
+  "block.improved_end.infusorial_stone": "Infusorial Stone",
+  "block.improved_end.smooth_infusorial_stone": "Smooth Infusorial Stone",
+  "block.improved_end.infusorial_stone_bricks": "Infusorial Stone Bricks",
+  "block.improved_end.scab_stone": "Scab Stone",
+  "block.improved_end.polished_scab_stone": "Polished Scab Stone",
+  "block.improved_end.indigo_soil": "Indigo Soil",
+  "block.improved_end.indigo_soil_bricks": "Indigo Soil Bricks",
+  "block.improved_end.chiseled_indigo_soil_bricks": "Chiseled Indigo Soil Bricks",
+  "item.improved_end.indigo_soil_brick": "Indigo Soil Brick",
+
   "block.improved_end.polished_end_stone": "Polished End Stone",
   "block.improved_end.end_stone_tiles": "End Stone Tiles",
   "block.improved_end.cracked_end_stone_bricks": "Cracked End Stone Bricks",
@@ -248,13 +258,6 @@
   "block.improved_end.end_stone_pillar": "End Stone Pillar",
   "block.improved_end.cracked_purpur": "Cracked Purpur",
   "block.improved_end.waylamp": "Waylamp",
-
-  "item.improved_end.pondu_berries": "Pondu Berries",
-  "block.improved_end.pondu": "Pondu",
-  "block.improved_end.pondu_plant": "Pondu Plant",
-  "item.improved_end.branius_berries": "Branius Berries",
-  "block.improved_end.branius": "Branius",
-  "block.improved_end.branius_plant": "Branius Plant",
 
   "itemGroup.improved_end.improved_end_biomes_blocks": "Improved End Biomes Blocks",
   "itemGroup.improved_end.improved_end_blocks": "Improved End Blocks"

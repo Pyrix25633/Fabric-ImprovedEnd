@@ -572,7 +572,7 @@ public class ModBlocks {
     public static final Block POTTED_INDIGO_SAPLING = registerBlockOnly("potted_indigo_sapling",
             new FlowerPotBlock(INDIGO_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
-    //Lily Pads
+    //Indigo Lily Pad
     public static final Block INDIGO_LILY_PAD = registerBlockOnly("indigo_lily_pad",
             new ModLilyPadBlock(lilyPadSettings));
 
@@ -586,6 +586,24 @@ public class ModBlocks {
             new BraniusHeadBlock(caveVineSettings.ticksRandomly()));
     public static final Block BRANIUS_PLANT = registerBlockOnly("branius_plant",
             new BraniusBodyBlock(caveVineSettings));
+
+    //Stones
+    public static final Block INFUSORIAL_STONE = registerBiomesBlock("infusorial_stone",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block SMOOTH_INFUSORIAL_STONE = registerBiomesBlock("smooth_infusorial_stone",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block INFUSORIAL_STONE_BRICKS = registerBiomesBlock("infusorial_stone_bricks",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block SCAB_STONE = registerBiomesBlock("scab_stone",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block POLISHED_SCAB_STONE = registerBiomesBlock("polished_scab_stone",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block INDIGO_SOIL = registerBiomesBlock("indigo_soil",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE).sounds(BlockSoundGroup.SOUL_SOIL)));
+    public static final Block INDIGO_SOIL_BRICKS = registerBiomesBlock("indigo_soil_bricks",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block CHISELED_INDIGO_SOIL_BRICKS = registerBiomesBlock("chiseled_indigo_soil_bricks",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //End Stone and Purpur
     public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",

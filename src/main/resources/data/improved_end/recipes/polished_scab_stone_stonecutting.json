@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "improved_end:scab_stone"
+  },
+  "result": "improved_end:polished_scab_stone",
+  "count": 1
+}

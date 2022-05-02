@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "improved_end:infusorial_stone"
+  },
+  "result": "improved_end:infusorial_stone_bricks",
+  "count": 1
+}

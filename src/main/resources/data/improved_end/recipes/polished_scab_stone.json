@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SS",
+		"SS"
+	],
+	"key": {
+		"S": {
+			"item": "improved_end:scab_stone"
+		}
+	},
+	"result": {
+		"item": "improved_end:polished_scab_stone",
+		"count": 4
+	}
+}

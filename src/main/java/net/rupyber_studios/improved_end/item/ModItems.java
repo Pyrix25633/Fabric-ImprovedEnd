@@ -37,6 +37,10 @@ public class ModItems {
             new SignItem(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(16),
                     ModBlocks.INDIGO_SIGN, ModBlocks.INDIGO_WALL_SIGN));
 
+    //Indigo Lily Pad
+    public static final Item LILY_PAD = registerItem("indigo_lily_pad",
+            new LilyPadItem(ModBlocks.INDIGO_LILY_PAD, (new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+
     //Pondu
     public static final Item PONDU_BERRIES = registerItem("pondu_berries",
             new AliasedBlockItem(ModBlocks.PONDU, (new Item.Settings()).food(ModFoodComponents.PONDU_BERRIES)
@@ -46,9 +50,9 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.BRANIUS, (new Item.Settings()).food(ModFoodComponents.BRANIUS_BERRIES)
                     .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
-    //Lily Pads
-    public static final Item LILY_PAD = registerItem("indigo_lily_pad",
-            new LilyPadItem(ModBlocks.INDIGO_LILY_PAD, (new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+    //Indigo Soil Brick
+    public static final Item INDIGO_SOIL_BRICK = registerItem("indigo_soil_brick",
+            new Item((new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
     private static Item registerItem(String name, Item item ) {
         return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name), item);

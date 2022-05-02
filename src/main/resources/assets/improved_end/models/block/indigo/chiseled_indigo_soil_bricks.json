@@ -1,0 +1,7 @@
+{
+	"parent" : "minecraft:block/cube_all",
+	"textures" : 
+	{
+		"all" : "improved_end:block/indigo/chiseled_indigo_soil_bricks"
+	}
+}

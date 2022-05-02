@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "improved_end:indigo_soil"
+  },
+  "result": "improved_end:indigo_soil_brick",
+  "experience": 0.3,
+  "cookingtime": 200
+}
