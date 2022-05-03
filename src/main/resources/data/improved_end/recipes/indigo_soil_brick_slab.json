@@ -1,0 +1,19 @@
+{
+	"key" : 
+	{
+		"#" : 
+		{
+			"item" : "improved_end:indigo_soil_bricks"
+		}
+	},
+	"pattern" : 
+	[
+		"###"
+	],
+	"result" : 
+	{
+		"count" : 4,
+		"item" : "improved_end:indigo_soil_brick_slab"
+	},
+	"type" : "minecraft:crafting_shaped"
+}

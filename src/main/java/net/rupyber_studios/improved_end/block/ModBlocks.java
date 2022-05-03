@@ -55,6 +55,8 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.CAVE_VINES);
     static final FabricBlockSettings lilyPadSettings = FabricBlockSettings.of(Material.PLANT)
             .breakInstantly().sounds(BlockSoundGroup.LILY_PAD).nonOpaque();
+    static final FabricBlockSettings mossSettings = FabricBlockSettings.of(Material.MOSS_BLOCK)
+            .strength(0.1F).sounds(BlockSoundGroup.MOSS_BLOCK);
 
     //Grass
     public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
@@ -587,21 +589,45 @@ public class ModBlocks {
     public static final Block BRANIUS_PLANT = registerBlockOnly("branius_plant",
             new BraniusBodyBlock(caveVineSettings));
 
+    //Xibien
+    public static final Block XIBIEN = registerBiomesBlock("xibien",
+            new EndGrassBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_CYAN)));
+
+    //Wasp Moss
+    public static final Block WASP_MOSS_BLOCK = registerBiomesBlock("wasp_moss_block",
+            new MossBlock(mossSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block WASP_MOSS_CARPET = registerBiomesBlock("wasp_moss_carpet",
+            new CarpetBlock(mossSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+
     //Stones
     public static final Block INFUSORIAL_STONE = registerBiomesBlock("infusorial_stone",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block INFUSORIAL_STONE_SLAB = registerBiomesBlock("infusorial_stone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block SMOOTH_INFUSORIAL_STONE = registerBiomesBlock("smooth_infusorial_stone",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block SMOOTH_INFUSORIAL_STONE_SLAB = registerBiomesBlock("smooth_infusorial_stone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_BRICKS = registerBiomesBlock("infusorial_stone_bricks",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block INFUSORIAL_STONE_BRICK_SLAB = registerBiomesBlock("infusorial_stone_brick_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+
     public static final Block SCAB_STONE = registerBiomesBlock("scab_stone",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block SCAB_STONE_SLAB = registerBiomesBlock("scab_stone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block POLISHED_SCAB_STONE = registerBiomesBlock("polished_scab_stone",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block POLISHED_SCAB_STONE_SLAB = registerBiomesBlock("polished_scab_stone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+
     public static final Block INDIGO_SOIL = registerBiomesBlock("indigo_soil",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE).sounds(BlockSoundGroup.SOUL_SOIL)));
     public static final Block INDIGO_SOIL_BRICKS = registerBiomesBlock("indigo_soil_bricks",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block INDIGO_SOIL_BRICK_SLAB = registerBiomesBlock("indigo_soil_brick_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block CHISELED_INDIGO_SOIL_BRICKS = registerBiomesBlock("chiseled_indigo_soil_bricks",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 

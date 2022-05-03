@@ -1,5 +1,6 @@
 package net.rupyber_studios.improved_end.block.custom;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SaplingBlock;
@@ -7,6 +8,7 @@ import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
+import net.rupyber_studios.improved_end.block.ModBlocks;
 
 import java.util.Random;
 
@@ -24,6 +26,10 @@ public class ModSaplingBlock extends SaplingBlock {
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.getBlock() == Blocks.END_STONE;
+        Block block = floor.getBlock();
+        return block == Blocks.END_STONE || block == ModBlocks.DARK_GRASS || block == ModBlocks.INFUSORIAL_GRASS
+                || block == ModBlocks.BUDDING_GRASS || block == ModBlocks.REDLEAF_GRASS || block == ModBlocks.FIRE_GRASS
+                || block == ModBlocks.SHINING_GRASS || block == ModBlocks.SERENE_GRASS || block == ModBlocks.SCAB_GRASS
+                || block == ModBlocks.INDIGO_GRASS || block == ModBlocks.XIBIEN;
     }
 }

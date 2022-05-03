@@ -1,0 +1,9 @@
+{
+	"parent" : "minecraft:block/slab",
+	"textures" : 
+	{
+		"bottom" : "improved_end:block/infusorial/infusorial_stone",
+		"side" : "improved_end:block/infusorial/infusorial_stone",
+		"top" : "improved_end:block/infusorial/infusorial_stone"
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "improved_end:block/xibien/xibien"
+      },
+      {
+        "model": "improved_end:block/xibien/xibien",
+        "y": 90
+      },
+      {
+        "model": "improved_end:block/xibien/xibien",
+        "y": 180
+      },
+      {
+        "model": "improved_end:block/xibien/xibien",
+        "y": 270
+      }
+    ]
+  }
+}

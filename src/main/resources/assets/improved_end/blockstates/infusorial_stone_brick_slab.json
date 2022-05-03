@@ -1,0 +1,17 @@
+{
+	"variants" : 
+	{
+		"type=bottom" : 
+		{
+			"model" : "improved_end:block/infusorial/infusorial_stone_brick_slab"
+		},
+		"type=double" : 
+		{
+			"model" : "improved_end:block/infusorial/infusorial_stone_bricks"
+		},
+		"type=top" : 
+		{
+			"model" : "improved_end:block/infusorial/infusorial_stone_brick_slab_top"
+		}
+	}
+}

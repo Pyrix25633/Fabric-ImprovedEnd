@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "improved_end:block/shining/wasp_moss_block"
+  }
+}

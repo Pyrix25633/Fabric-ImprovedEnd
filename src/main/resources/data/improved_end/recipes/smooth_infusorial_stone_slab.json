@@ -1,0 +1,19 @@
+{
+	"key" : 
+	{
+		"#" : 
+		{
+			"item" : "improved_end:smooth_infusorial_stone"
+		}
+	},
+	"pattern" : 
+	[
+		"###"
+	],
+	"result" : 
+	{
+		"count" : 4,
+		"item" : "improved_end:smooth_infusorial_stone_slab"
+	},
+	"type" : "minecraft:crafting_shaped"
+}

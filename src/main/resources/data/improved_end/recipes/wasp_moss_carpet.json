@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "carpet",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "improved_end:wasp_moss_block"
+    }
+  },
+  "result": {
+    "item": "improved_end:wasp_moss_carpet",
+    "count": 3
+  }
+}
