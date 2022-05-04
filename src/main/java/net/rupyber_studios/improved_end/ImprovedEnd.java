@@ -3,6 +3,7 @@ package net.rupyber_studios.improved_end;
 import net.fabricmc.api.ModInitializer;
 import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.item.ModItems;
+import net.rupyber_studios.improved_end.sounds.ModSounds;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -19,6 +20,8 @@ public class ImprovedEnd implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
+		ModSounds.registerSounds();
 
 		ModBlocks.registerModBlocks();
 

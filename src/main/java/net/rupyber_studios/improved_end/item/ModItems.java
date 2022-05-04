@@ -6,6 +6,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.improved_end.ImprovedEnd;
 import net.rupyber_studios.improved_end.block.ModBlocks;
+import net.rupyber_studios.improved_end.item.custom.ModMusicDiscItem;
+import net.rupyber_studios.improved_end.sounds.ModSounds;
 
 public class ModItems {
     //Signs
@@ -53,6 +55,14 @@ public class ModItems {
     //Indigo Soil Brick
     public static final Item INDIGO_SOIL_BRICK = registerItem("indigo_soil_brick",
             new Item((new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+
+    //Discs
+    public static final Item MUSIC_DISC_TWO_WORLDS_COLLIDE = registerItem("music_disc_two_worlds_collide",
+            new ModMusicDiscItem(4, ModSounds.TWO_WORLDS_COLLIDE, new FabricItemSettings()
+                    .group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+    public static final Item MUSIC_DISC_NEVER_FORGIVE = registerItem("music_disc_never_forgive",
+            new ModMusicDiscItem(4, ModSounds.NEVER_FORGIVE, new FabricItemSettings()
+                    .group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
 
     private static Item registerItem(String name, Item item ) {
         return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name), item);

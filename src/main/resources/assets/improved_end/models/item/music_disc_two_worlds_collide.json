@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "improved_end:item/music_discs/music_disc_two_worlds_collide"
+  }
+}

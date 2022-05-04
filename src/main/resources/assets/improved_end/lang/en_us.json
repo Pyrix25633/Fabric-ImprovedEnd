@@ -277,6 +277,13 @@
   "block.improved_end.cracked_purpur": "Cracked Purpur",
   "block.improved_end.waylamp": "Waylamp",
 
+  "item.improved_end.music_disc_two_worlds_collide": "Music Disc",
+  "item.improved_end.music_disc_two_worlds_collide.desc": "Rupyber Studios - Two Worlds Collide",
+  "subtitles.improved_end.two_worlds_collide": "Rupyber Studios - Two Worlds Collide",
+  "item.improved_end.music_disc_never_forgive": "Music Disc",
+  "item.improved_end.music_disc_never_forgive.desc": "Rupyber Studios - Never Forgive",
+  "subtitles.improved_end.never_forgive": "Rupyber Studios - Never Forgive",
+
   "itemGroup.improved_end.improved_end_biomes_blocks": "Improved End Biomes Blocks",
   "itemGroup.improved_end.improved_end_blocks": "Improved End Blocks"
 }

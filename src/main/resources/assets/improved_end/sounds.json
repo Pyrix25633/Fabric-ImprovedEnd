@@ -1,0 +1,16 @@
+{
+  "two_worlds_collide": {
+    "category": "record",
+    "subtitle": "subtitles.improved_end.two_worlds_collide",
+    "sounds": [
+      "improved_end:two_worlds_collide"
+    ]
+  },
+  "never_forgive": {
+    "category": "record",
+    "subtitle": "subtitles.improved_end.never_forgive",
+    "sounds": [
+      "improved_end:never_forgive"
+    ]
+  }
+}
