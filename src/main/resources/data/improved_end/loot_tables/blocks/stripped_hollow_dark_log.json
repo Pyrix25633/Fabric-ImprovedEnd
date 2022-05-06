@@ -18,27 +18,54 @@
 			"rolls" : 1
 		},
 		{
-			"conditions" : 
+			"conditions" :
 			[
 				{
 					"condition" : "minecraft:survives_explosion"
 				}
 			],
-			"entries" : 
+			"entries" :
 			[
 				{
-					"conditions" : 
+					"conditions" :
 					[
 						{
 							"block" : "improved_end:stripped_hollow_dark_log",
 							"condition" : "minecraft:block_state_property",
-							"properties" : 
+							"properties" :
 							{
-								"mossy" : "true"
+								"mossy" : "moss"
 							}
 						}
 					],
 					"name" : "minecraft:moss_carpet",
+					"type" : "minecraft:item"
+				}
+			],
+			"rolls" : 1
+		},
+		{
+			"conditions" :
+			[
+				{
+					"condition" : "minecraft:survives_explosion"
+				}
+			],
+			"entries" :
+			[
+				{
+					"conditions" :
+					[
+						{
+							"block" : "improved_end:stripped_hollow_dark_log",
+							"condition" : "minecraft:block_state_property",
+							"properties" :
+							{
+								"mossy" : "wasp_moss"
+							}
+						}
+					],
+					"name" : "improved_end:wasp_moss_carpet",
 					"type" : "minecraft:item"
 				}
 			],

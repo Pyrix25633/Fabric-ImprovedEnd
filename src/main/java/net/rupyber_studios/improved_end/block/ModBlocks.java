@@ -593,12 +593,6 @@ public class ModBlocks {
     public static final Block XIBIEN = registerBiomesBlock("xibien",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_CYAN)));
 
-    //Wasp Moss
-    public static final Block WASP_MOSS_BLOCK = registerBiomesBlock("wasp_moss_block",
-            new MossBlock(mossSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
-    public static final Block WASP_MOSS_CARPET = registerBiomesBlock("wasp_moss_carpet",
-            new CarpetBlock(mossSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
-
     //Stones
     public static final Block INFUSORIAL_STONE = registerBiomesBlock("infusorial_stone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
@@ -630,6 +624,12 @@ public class ModBlocks {
             new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block CHISELED_INDIGO_SOIL_BRICKS = registerBiomesBlock("chiseled_indigo_soil_bricks",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
+    //Wasp Moss
+    public static final Block WASP_MOSS_BLOCK = registerBiomesBlock("wasp_moss_block",
+            new MossBlock(mossSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final Block WASP_MOSS_CARPET = registerBlockOnly("wasp_moss_carpet",
+            new CarpetBlock(mossSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
 
     //End Stone and Purpur
     public static final Block POLISHED_END_STONE = registerBlock("polished_end_stone",

@@ -5,6 +5,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -25,15 +26,17 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.rupyber_studios.improved_end.block.ModBlocks;
+import net.rupyber_studios.improved_end.block.type.MossType;
+import net.rupyber_studios.improved_end.item.ModItems;
 
 public class HollowLogBlock extends Block implements Waterloggable{
     public static final EnumProperty<Direction.Axis> AXIS;
-    public static final BooleanProperty MOSSY;
+    public static final EnumProperty<MossType> MOSSY;
     public static final BooleanProperty WATERLOGGED;
 
     public HollowLogBlock(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState(this.getDefaultState().with(AXIS, Direction.Axis.Y).with(MOSSY, false)
+        this.setDefaultState(this.getDefaultState().with(AXIS, Direction.Axis.Y).with(MOSSY, MossType.VOID)
                 .with(WATERLOGGED, false));
     }
 
@@ -47,7 +50,7 @@ public class HollowLogBlock extends Block implements Waterloggable{
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         FluidState fluidState = ctx.getWorld().getFluidState(ctx.getBlockPos());
         boolean bl = fluidState.getFluid() == Fluids.WATER;
-        return this.getDefaultState().with(AXIS, ctx.getSide().getAxis()).with(MOSSY, false).with(WATERLOGGED, bl);
+        return this.getDefaultState().with(AXIS, ctx.getSide().getAxis()).with(MOSSY, MossType.VOID).with(WATERLOGGED, bl);
     }
 
     @Override
@@ -120,18 +123,18 @@ public class HollowLogBlock extends Block implements Waterloggable{
     public VoxelShape getShape(BlockState state) {
         VoxelShape toReturn;
         if(state.get(AXIS) == Direction.Axis.X) {
-            if(state.get(MOSSY)) {
+            if(state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
                 return X_MOSSY;
             }
             return X;
         }
         if(state.get(AXIS) == Direction.Axis.Z) {
-            if(state.get(MOSSY)) {
+            if(state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
                 return Z_MOSSY;
             }
             return Z;
         }
-        if(state.get(MOSSY)) {
+        if(state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
             return Y_MOSSY;
         }
         return Y;
@@ -145,9 +148,22 @@ public class HollowLogBlock extends Block implements Waterloggable{
         Block toPlace = Blocks.AIR;
         if(state.isOf(this)) {
             if(playerItem.getItem() == Items.MOSS_CARPET) {
-                if(!state.get(MOSSY)) {
+                if(state.get(MOSSY) == MossType.VOID) {
                     //All
-                    world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, true)
+                    world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, MossType.MOSS)
+                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    world.playSound(player, player.getX(), player.getY(), player.getZ(),
+                            SoundEvents.BLOCK_MOSS_CARPET_PLACE, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+                    if(!player.isCreative()) {
+                        playerItem.decrement(1);
+                    }
+                    finished = true;
+                }
+            }
+            if(playerItem.getItem() == ModItems.WASP_MOSS_CARPET) {
+                if(state.get(MOSSY) == MossType.VOID) {
+                    //All
+                    world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, MossType.WASP_MOSS)
                             .with(WATERLOGGED, state.get(WATERLOGGED)));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
                             SoundEvents.BLOCK_MOSS_CARPET_PLACE, SoundCategory.NEUTRAL, 1.0f, 1.0f);
@@ -158,14 +174,25 @@ public class HollowLogBlock extends Block implements Waterloggable{
                 }
             }
             else if(playerItem.getItem() == Items.SHEARS) {
-                if(state.get(MOSSY)) {
+                if(state.get(MOSSY) == MossType.MOSS) {
                     //All
-                    world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, false)
+                    world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, MossType.VOID)
                             .with(WATERLOGGED, state.get(WATERLOGGED)));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
                             SoundEvents.BLOCK_MOSS_CARPET_BREAK, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                     world.addBlockBreakParticles(pos, Blocks.MOSS_CARPET.getDefaultState());
                     dropStack(world, pos, new ItemStack(Items.MOSS_CARPET));
+                    playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
+                    finished = true;
+                }
+                else if(state.get(MOSSY) == MossType.WASP_MOSS) {
+                    //All
+                    world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, MossType.VOID)
+                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                    world.playSound(player, player.getX(), player.getY(), player.getZ(),
+                            SoundEvents.BLOCK_MOSS_CARPET_BREAK, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+                    world.addBlockBreakParticles(pos, ModBlocks.WASP_MOSS_CARPET.getDefaultState());
+                    dropStack(world, pos, new ItemStack(ModItems.WASP_MOSS_CARPET));
                     playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     finished = true;
                 }
@@ -227,7 +254,7 @@ public class HollowLogBlock extends Block implements Waterloggable{
 
     static {
         AXIS = Properties.AXIS;
-        MOSSY = BooleanProperty.of("mossy");
+        MOSSY = EnumProperty.of("mossy", MossType.class);
         WATERLOGGED = Properties.WATERLOGGED;
     }
 }

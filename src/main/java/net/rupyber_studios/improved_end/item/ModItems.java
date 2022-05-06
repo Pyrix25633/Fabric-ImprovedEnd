@@ -10,6 +10,10 @@ import net.rupyber_studios.improved_end.item.custom.ModMusicDiscItem;
 import net.rupyber_studios.improved_end.sounds.ModSounds;
 
 public class ModItems {
+    //Wasp Moss Carpet
+    public static final Item WASP_MOSS_CARPET = registerItem("wasp_moss_carpet",
+            new BlockItem(ModBlocks.WASP_MOSS_CARPET, (new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+
     //Signs
     public static final Item DARK_SIGN = registerItem("dark_sign",
             new SignItem(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(16),
