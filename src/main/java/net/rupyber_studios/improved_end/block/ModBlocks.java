@@ -57,25 +57,27 @@ public class ModBlocks {
             .breakInstantly().sounds(BlockSoundGroup.LILY_PAD).nonOpaque();
     static final FabricBlockSettings mossSettings = FabricBlockSettings.of(Material.MOSS_BLOCK)
             .strength(0.1F).sounds(BlockSoundGroup.MOSS_BLOCK);
+    static final FabricBlockSettings grassSettings = FabricBlockSettings.of(Material.REPLACEABLE_PLANT)
+            .noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS);
 
     //Grass
-    public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
+    public static final Block DARK_GRASS_BLOCK = registerBiomesBlock("dark_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.BLACK)));
-    public static final Block INFUSORIAL_GRASS = registerBiomesBlock("infusorial_grass",
+    public static final Block INFUSORIAL_GRASS_BLOCK = registerBiomesBlock("infusorial_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.PURPLE)));
-    public static final Block BUDDING_GRASS = registerBiomesBlock("budding_grass",
+    public static final Block BUDDING_GRASS_BLOCK = registerBiomesBlock("budding_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.PINK)));
-    public static final Block REDLEAF_GRASS = registerBiomesBlock("redleaf_grass",
+    public static final Block REDLEAF_GRASS_BLOCK = registerBiomesBlock("redleaf_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.RED)));
-    public static final Block FIRE_GRASS = registerBiomesBlock("fire_grass",
+    public static final Block FIRE_GRASS_BLOCK = registerBiomesBlock("fire_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.ORANGE)));
-    public static final Block SHINING_GRASS = registerBiomesBlock("shining_grass",
+    public static final Block SHINING_GRASS_BLOCK = registerBiomesBlock("shining_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.YELLOW)));
-    public static final Block SERENE_GRASS = registerBiomesBlock("serene_grass",
+    public static final Block SERENE_GRASS_BLOCK = registerBiomesBlock("serene_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.LIME)));
-    public static final Block SCAB_GRASS = registerBiomesBlock("scab_grass",
+    public static final Block SCAB_GRASS_BLOCK = registerBiomesBlock("scab_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.LIGHT_BLUE)));
-    public static final Block INDIGO_GRASS = registerBiomesBlock("indigo_grass",
+    public static final Block INDIGO_GRASS_BLOCK = registerBiomesBlock("indigo_grass_block",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.BLUE)));
 
     //Logs
@@ -573,6 +575,26 @@ public class ModBlocks {
             new FlowerPotBlock(SCAB_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block POTTED_INDIGO_SAPLING = registerBlockOnly("potted_indigo_sapling",
             new FlowerPotBlock(INDIGO_SAPLING, pottedSaplingSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+
+    //1 block tall Grass
+    public static final Block DARK_GRASS = registerBiomesBlock("dark_grass",
+            new ModFernBlock(grassSettings));
+    public static final Block INFUSORIAL_GRASS = registerBiomesBlock("infusorial_grass",
+            new ModFernBlock(grassSettings));
+    public static final Block BUDDING_GRASS = registerBiomesBlock("budding_grass",
+            new ModFernBlock(grassSettings));
+    public static final Block REDLEAF_GRASS = registerBiomesBlock("redleaf_grass",
+            new ModFernBlock(grassSettings));
+    public static final Block FIRE_GRASS = registerBiomesBlock("fire_grass",
+            new ModFernBlock(grassSettings));
+    public static final Block SHINING_GRASS = registerBiomesBlock("shining_grass",
+            new ModFernBlock(grassSettings));
+    public static final Block SERENE_GRASS = registerBiomesBlock("serene_grass",
+            new ModFernBlock(grassSettings));
+    public static final Block SCAB_GRASS = registerBiomesBlock("scab_grass",
+            new ModFernBlock(grassSettings));
+    public static final Block INDIGO_GRASS = registerBiomesBlock("indigo_grass",
+            new ModFernBlock(grassSettings));
 
     //Indigo Lily Pad
     public static final Block INDIGO_LILY_PAD = registerBlockOnly("indigo_lily_pad",

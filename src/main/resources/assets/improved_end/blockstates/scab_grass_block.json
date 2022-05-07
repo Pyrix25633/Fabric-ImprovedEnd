@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "improved_end:block/scab/scab_grass_block"
+      },
+      {
+        "model": "improved_end:block/scab/scab_grass_block",
+        "y": 90
+      },
+      {
+        "model": "improved_end:block/scab/scab_grass_block",
+        "y": 180
+      },
+      {
+        "model": "improved_end:block/scab/scab_grass_block",
+        "y": 270
+      }
+    ]
+  }
+}

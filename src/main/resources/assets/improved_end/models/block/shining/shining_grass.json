@@ -1,8 +1,7 @@
 {
-  "parent": "improved_end:block/generic_end_grass",
-  "textures": {
-    "top": "improved_end:block/shining/shining_grass_top",
-    "side": "improved_end:block/shining/shining_grass_side",
-    "bottom": "minecraft:block/end_stone"
-  }
+	"parent" : "minecraft:block/cross",
+	"textures" : 
+	{
+		"cross" : "improved_end:block/shining/shining_grass"
+	}
 }

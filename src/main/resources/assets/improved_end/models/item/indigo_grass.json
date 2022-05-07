@@ -1,3 +1,7 @@
 {
-  "parent": "improved_end:block/indigo/indigo_grass"
+	"parent" : "minecraft:item/generated",
+	"textures" : 
+	{
+		"layer0" : "improved_end:block/indigo/indigo_grass"
+	}
 }

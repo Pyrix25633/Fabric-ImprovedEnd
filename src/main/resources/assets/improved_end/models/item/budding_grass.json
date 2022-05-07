@@ -1,3 +1,7 @@
 {
-  "parent": "improved_end:block/budding/budding_grass"
+	"parent" : "minecraft:item/generated",
+	"textures" : 
+	{
+		"layer0" : "improved_end:block/budding/budding_grass"
+	}
 }

@@ -70,6 +70,17 @@ public class ModRegistries {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_SCAB_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_INDIGO_SAPLING, RenderLayer.getCutout());
 
+        //1 block tall Grass
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DARK_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.INFUSORIAL_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BUDDING_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REDLEAF_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FIRE_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SHINING_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SERENE_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SCAB_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.INDIGO_GRASS, RenderLayer.getCutout());
+
         //Lily Pads
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.INDIGO_LILY_PAD, RenderLayer.getCutout());
 
