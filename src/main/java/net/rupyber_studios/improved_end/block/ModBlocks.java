@@ -615,6 +615,20 @@ public class ModBlocks {
     public static final Block XIBIEN = registerBiomesBlock("xibien",
             new EndGrassBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_CYAN)));
 
+    //Wave End Stones
+    public static final Block DARK_WAVE_END_STONE = registerBiomesBlock("dark_wave_end_stone",
+            new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
+    public static final Block INFUSORIAL_WAVE_END_STONE = registerBiomesBlock("infusorial_wave_end_stone",
+            new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
+    public static final Block REDLEAF_WAVE_END_STONE = registerBiomesBlock("redleaf_wave_end_stone",
+            new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
+    public static final Block SHINING_WAVE_END_STONE = registerBiomesBlock("shining_wave_end_stone",
+            new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
+    public static final Block SCAB_WAVE_END_STONE = registerBiomesBlock("scab_wave_end_stone",
+            new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
+    public static final Block INDIGO_WAVE_END_STONE = registerBiomesBlock("indigo_wave_end_stone",
+            new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
+
     //Stones
     public static final Block INFUSORIAL_STONE = registerBiomesBlock("infusorial_stone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
