@@ -630,17 +630,6 @@ public class ModBlocks {
             new Block(stoneSettings.mapColor(MapColor.PALE_YELLOW)));
 
     //Stones
-    public static final Block DARK_SAND = registerBiomesBlock("dark_sand",
-            new SandBlock(MapColor.TERRACOTTA_BLACK.color, stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final Block DARK_SANDSTONE = registerBiomesBlock("dark_sandstone",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final Block SMOOTH_DARK_SANDSTONE = registerBiomesBlock("smooth_dark_sandstone",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final Block CUT_DARK_SANDSTONE = registerBiomesBlock("cut_dark_sandstone",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
-    public static final Block CHISELED_DARK_SANDSTONE = registerBiomesBlock("chiseled_dark_sandstone",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
-
     public static final Block INFUSORIAL_STONE = registerBiomesBlock("infusorial_stone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_SLAB = registerBiomesBlock("infusorial_stone_slab",

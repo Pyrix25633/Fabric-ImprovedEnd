@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "improved_end:indigo_soil"
+    "improved_end:indigo_soil",
+
+    "improved_end:dark_sand"
   ]
 }

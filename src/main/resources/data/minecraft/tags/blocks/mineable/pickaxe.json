@@ -30,6 +30,11 @@
     "improved_end:scab_wave_end_stone",
     "improved_end:indigo_wave_end_stone",
 
+    "improved_end:dark_sandstone",
+    "improved_end:smooth_dark_sandstone",
+    "improved_end:cut_dark_sandstone",
+    "improved_end:chiseled_dark_sandstone",
+
     "improved_end:infusorial_stone",
     "improved_end:infusorial_stone_slab",
     "improved_end:smooth_infusorial_stone",
