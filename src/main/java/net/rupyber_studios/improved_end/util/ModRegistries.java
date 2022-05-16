@@ -1,8 +1,11 @@
 package net.rupyber_studios.improved_end.util;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.improved_end.block.ModBlocks;
+import net.rupyber_studios.improved_end.entity.ModEntities;
+import net.rupyber_studios.improved_end.entity.custom.IndigoSquidEntity;
 
 public class ModRegistries {
     public static void cutoutBlocks() {
@@ -90,5 +93,9 @@ public class ModRegistries {
         //Branius
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRANIUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRANIUS_PLANT, RenderLayer.getCutout());
+    }
+
+    public static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.INDIGO_SQUID, IndigoSquidEntity.setAttributes());
     }
 }

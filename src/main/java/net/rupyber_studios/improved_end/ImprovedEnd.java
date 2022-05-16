@@ -6,6 +6,7 @@ import net.rupyber_studios.improved_end.item.ModItems;
 import net.rupyber_studios.improved_end.sounds.ModSounds;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 public class ImprovedEnd implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -26,6 +27,8 @@ public class ImprovedEnd implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModItems.registerModItems();
+
+		GeckoLib.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 	}
