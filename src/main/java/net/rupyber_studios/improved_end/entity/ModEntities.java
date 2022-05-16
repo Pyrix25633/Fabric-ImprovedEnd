@@ -13,5 +13,5 @@ public class ModEntities {
     public static final EntityType<IndigoSquidEntity> INDIGO_SQUID = Registry.register(Registry.ENTITY_TYPE,
             new Identifier(ImprovedEnd.MOD_ID, "indigo_squid"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, IndigoSquidEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.5f, 1.0f)).build());
+                    .dimensions(EntityDimensions.fixed(0.8f, 0.8f)).build());
 }

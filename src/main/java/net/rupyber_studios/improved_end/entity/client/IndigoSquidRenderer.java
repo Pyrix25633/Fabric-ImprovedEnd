@@ -1,8 +1,6 @@
 package net.rupyber_studios.improved_end.entity.client;
 
 import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.client.render.entity.SquidEntityRenderer;
-import net.minecraft.client.render.entity.model.SquidEntityModel;
 import net.minecraft.util.Identifier;
 import net.rupyber_studios.improved_end.ImprovedEnd;
 import net.rupyber_studios.improved_end.entity.custom.IndigoSquidEntity;

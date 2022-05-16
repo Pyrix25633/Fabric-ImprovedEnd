@@ -21,7 +21,7 @@ public class IndigoSquidModel extends AnimatedGeoModel<IndigoSquidEntity> {
 
     @Override
     public Identifier getAnimationFileLocation(IndigoSquidEntity animatable) {
-        return new Identifier(ImprovedEnd.MOD_ID, "animations/indigo_squid.animation.json");
+        return new Identifier(ImprovedEnd.MOD_ID, "animations/indigo_squid.animations.json");
     }
 
     @SuppressWarnings({ "unchecked", "rawtypes" })
