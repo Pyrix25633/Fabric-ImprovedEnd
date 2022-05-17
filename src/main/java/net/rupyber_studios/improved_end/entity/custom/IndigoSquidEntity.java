@@ -7,9 +7,8 @@ import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.mob.WaterCreatureEntity;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.particle.ParticleEffect;
@@ -49,11 +48,14 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
 
     public IndigoSquidEntity(EntityType<? extends WaterCreatureEntity> entityType, World world) {
         super(entityType, world);
+        this.random.setSeed((long)this.getId());
+        this.thrustTimerSpeed = 1.0F / (this.random.nextFloat() + 1.0F) * 0.2F;
         setAttributes();
+        initGoals();
     }
 
     public static DefaultAttributeContainer.Builder setAttributes() {
-        return WaterCreatureEntity.createMobAttributes()
+        return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0);
     }
 
@@ -188,7 +190,6 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
             if (!this.world.isClient) {
                 this.squirt();
             }
-
             return true;
         } else {
             return false;
