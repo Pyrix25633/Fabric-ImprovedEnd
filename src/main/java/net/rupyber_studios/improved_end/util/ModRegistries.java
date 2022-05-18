@@ -1,10 +1,14 @@
 package net.rupyber_studios.improved_end.util;
 
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.entity.ModEntities;
+import net.rupyber_studios.improved_end.entity.client.BlastlingRenderer;
+import net.rupyber_studios.improved_end.entity.client.IndigoSquidRenderer;
+import net.rupyber_studios.improved_end.entity.custom.BlastlingEntity;
 import net.rupyber_studios.improved_end.entity.custom.IndigoSquidEntity;
 
 public class ModRegistries {
@@ -97,5 +101,11 @@ public class ModRegistries {
 
     public static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.INDIGO_SQUID, IndigoSquidEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.INDIGO_SQUID, BlastlingEntity.setAttributes());
+    }
+
+    public static void registerRenderers() {
+        EntityRendererRegistry.register(ModEntities.INDIGO_SQUID, IndigoSquidRenderer::new);
+        EntityRendererRegistry.register(ModEntities.BLASTLING, BlastlingRenderer::new);
     }
 }

@@ -32,7 +32,7 @@ public class ImprovedEndClient implements ClientModInitializer {
 
         GeckoLib.initialize();
 
-        EntityRendererRegistry.register(ModEntities.INDIGO_SQUID, IndigoSquidRenderer::new);
+        ModRegistries.registerRenderers();
 
         LOGGER.info("Hello Fabric world!");
     }

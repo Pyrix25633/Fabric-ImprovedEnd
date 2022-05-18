@@ -6,12 +6,11 @@
   "name": "Improved End",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Pyrix25633",
-    "Ruken"
+    "Rupyber Studios"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://rupyberstudios.github.io/website/",
+    "sources": "https://github.com/Pyrix25633/Fabric-ImprovedEnd-1.18.2"
   },
 
   "license": "CC0-1.0",

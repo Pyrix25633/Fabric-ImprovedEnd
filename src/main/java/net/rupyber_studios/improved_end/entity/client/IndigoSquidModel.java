@@ -6,7 +6,6 @@ import net.rupyber_studios.improved_end.entity.custom.IndigoSquidEntity;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.processor.IBone;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
-import software.bernie.geckolib3.model.provider.data.EntityModelData;
 
 public class IndigoSquidModel extends AnimatedGeoModel<IndigoSquidEntity> {
     @Override

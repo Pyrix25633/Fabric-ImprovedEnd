@@ -77,6 +77,9 @@ public class ModItems {
     public static final Item INDIGO_SQUID_SPAWN_EGG = registerItem("indigo_squid_spawn_egg",
             new SpawnEggItem(ModEntities.INDIGO_SQUID, 0x43546F, 0x94FFE7,
             new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(1)));
+    public static final Item BLASTLING_SPAWN_EGG = registerItem("blastling_spawn_egg",
+            new SpawnEggItem(ModEntities.BLASTLING, 0x1B1224, 0xF08FFF,
+                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(1)));
 
     public static void registerModItems() {
         System.out.println("Registering Mod Items for " + ImprovedEnd.MOD_ID);

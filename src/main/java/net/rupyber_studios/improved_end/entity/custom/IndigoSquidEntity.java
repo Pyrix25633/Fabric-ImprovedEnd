@@ -66,12 +66,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.indigo_squid.swim", true));
-            return PlayState.CONTINUE;
-        }
-
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.indigo_squid.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.indigo_squid.swim", true));
         return PlayState.CONTINUE;
     }
 
