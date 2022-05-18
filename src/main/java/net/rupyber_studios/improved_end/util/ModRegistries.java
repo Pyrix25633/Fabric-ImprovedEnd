@@ -101,7 +101,7 @@ public class ModRegistries {
 
     public static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.INDIGO_SQUID, IndigoSquidEntity.setAttributes());
-        FabricDefaultAttributeRegistry.register(ModEntities.INDIGO_SQUID, BlastlingEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.BLASTLING, BlastlingEntity.setAttributes());
     }
 
     public static void registerRenderers() {

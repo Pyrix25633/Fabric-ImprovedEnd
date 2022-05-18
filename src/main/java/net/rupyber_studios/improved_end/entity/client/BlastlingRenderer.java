@@ -13,6 +13,6 @@ public class BlastlingRenderer extends GeoEntityRenderer<BlastlingEntity> {
 
     @Override
     public Identifier getTextureLocation(BlastlingEntity instance) {
-        return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/squid/indigo_squid.png");
+        return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/enderman/blastling.png");
     }
 }

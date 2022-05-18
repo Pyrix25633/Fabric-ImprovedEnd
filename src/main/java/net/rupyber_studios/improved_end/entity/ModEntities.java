@@ -18,5 +18,5 @@ public class ModEntities {
     public static final EntityType<BlastlingEntity> BLASTLING = Registry.register(Registry.ENTITY_TYPE,
             new Identifier(ImprovedEnd.MOD_ID, "blastling"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, BlastlingEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.8f, 0.8f)).build());
+                    .dimensions(EntityDimensions.fixed(0.8f, 2.45f)).build());
 }

@@ -1,6 +1,5 @@
 package net.rupyber_studios.improved_end.entity.custom;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.*;
@@ -33,9 +32,7 @@ import net.minecraft.tag.FluidTags;
 import net.minecraft.util.TimeHelper;
 import net.minecraft.util.math.*;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
-import net.minecraft.world.GameRules;
 import net.minecraft.world.World;
-import net.minecraft.world.event.GameEvent;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -52,7 +49,6 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     private final AnimationFactory factory = new AnimationFactory(this);
     private static final UUID ATTACKING_SPEED_BOOST_ID = UUID.fromString("020E0DFB-87AE-4653-9556-831010E291A0");
     private static final EntityAttributeModifier ATTACKING_SPEED_BOOST;
-    private static final TrackedData<Optional<BlockState>> CARRIED_BLOCK;
     private static final TrackedData<Boolean> ANGRY;
     private static final TrackedData<Boolean> PROVOKED;
     private int lastAngrySoundAge = Integer.MIN_VALUE;
@@ -69,8 +65,10 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     }
 
     public static DefaultAttributeContainer.Builder setAttributes() {
-        return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0);
+        return HostileEntity.createHostileAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 40.0)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.30000001192092896)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 7.0)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 64.0);
     }
 
     @Override
@@ -81,7 +79,6 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         this.goalSelector.add(7, new WanderAroundFarGoal(this, 1.0, 0.0F));
         this.goalSelector.add(8, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
         this.goalSelector.add(8, new LookAroundGoal(this));
-        this.goalSelector.add(10, new PlaceBlockGoal(this));
         this.targetSelector.add(1, new TeleportTowardsPlayerGoal(this, this::shouldAngerAt));
         this.targetSelector.add(2, new RevengeGoal(this, new Class[0]));
         this.targetSelector.add(3, new ActiveTargetGoal(this, EndermiteEntity.class, true, false));
@@ -89,6 +86,10 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
+        if(event.isMoving()) {
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.walk", true));
+            return PlayState.CONTINUE;
+        }
         event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.idle", true));
         return PlayState.CONTINUE;
     }
@@ -108,6 +109,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         return HostileEntity.createHostileAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 40.0).add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.30000001192092896).add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 7.0).add(EntityAttributes.GENERIC_FOLLOW_RANGE, 64.0);
     }
 
+    @Override
     public void setTarget(@Nullable LivingEntity target) {
         super.setTarget(target);
         EntityAttributeInstance entityAttributeInstance = this.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED);
@@ -126,30 +128,35 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
 
     }
 
+    @Override
     protected void initDataTracker() {
         super.initDataTracker();
-        this.dataTracker.startTracking(CARRIED_BLOCK, Optional.empty());
         this.dataTracker.startTracking(ANGRY, false);
         this.dataTracker.startTracking(PROVOKED, false);
     }
 
+    @Override
     public void chooseRandomAngerTime() {
         this.setAngerTime(ANGER_TIME_RANGE.get(this.random));
     }
 
+    @Override
     public void setAngerTime(int angerTime) {
         this.angerTime = angerTime;
     }
 
+    @Override
     public int getAngerTime() {
         return this.angerTime;
     }
 
+    @Override
     public void setAngryAt(@Nullable UUID angryAt) {
         this.angryAt = angryAt;
     }
 
     @Nullable
+    @Override
     public UUID getAngryAt() {
         return this.angryAt;
     }
@@ -161,27 +168,23 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
                 this.world.playSound(this.getX(), this.getEyeY(), this.getZ(), SoundEvents.ENTITY_ENDERMAN_STARE, this.getSoundCategory(), 2.5F, 1.0F, false);
             }
         }
-
     }
 
+    @Override
     public void onTrackedDataSet(TrackedData<?> data) {
         if (ANGRY.equals(data) && this.isProvoked() && this.world.isClient) {
             this.playAngrySound();
         }
-
         super.onTrackedDataSet(data);
     }
 
+    @Override
     public void writeCustomDataToNbt(NbtCompound nbt) {
         super.writeCustomDataToNbt(nbt);
-        BlockState blockState = this.getCarriedBlock();
-        if (blockState != null) {
-            nbt.put("carriedBlockState", NbtHelper.fromBlockState(blockState));
-        }
-
         this.writeAngerToNbt(nbt);
     }
 
+    @Override
     public void readCustomDataFromNbt(NbtCompound nbt) {
         super.readCustomDataFromNbt(nbt);
         BlockState blockState = null;
@@ -191,13 +194,11 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
                 blockState = null;
             }
         }
-
-        this.setCarriedBlock(blockState);
         this.readAngerFromNbt(this.world, nbt);
     }
 
     boolean isPlayerStaring(PlayerEntity player) {
-        ItemStack itemStack = (ItemStack)player.getInventory().armor.get(3);
+        ItemStack itemStack = player.getInventory().armor.get(3);
         if (itemStack.isOf(Blocks.CARVED_PUMPKIN.asItem())) {
             return false;
         } else {
@@ -206,14 +207,16 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
             double d = vec3d2.length();
             vec3d2 = vec3d2.normalize();
             double e = vec3d.dotProduct(vec3d2);
-            return e > 1.0 - 0.025 / d ? player.canSee(this) : false;
+            return e > 1.0 - 0.025 / d && player.canSee(this);
         }
     }
 
+    @Override
     protected float getActiveEyeHeight(EntityPose pose, EntityDimensions dimensions) {
-        return 2.55F;
+        return 2.35F;
     }
 
+    @Override
     public void tickMovement() {
         if (this.world.isClient) {
             for(int i = 0; i < 2; ++i) {
@@ -229,10 +232,12 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         super.tickMovement();
     }
 
+    @Override
     public boolean hurtByWater() {
         return true;
     }
 
+    @Override
     protected void mobTick() {
         if (this.world.isDay() && this.age >= this.ageWhenTargetSet + 600) {
             float f = this.getBrightnessAtEyes();
@@ -289,36 +294,27 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         }
     }
 
+    @Override
     protected SoundEvent getAmbientSound() {
         return this.isAngry() ? SoundEvents.ENTITY_ENDERMAN_SCREAM : SoundEvents.ENTITY_ENDERMAN_AMBIENT;
     }
 
+    @Override
     protected SoundEvent getHurtSound(DamageSource source) {
         return SoundEvents.ENTITY_ENDERMAN_HURT;
     }
 
+    @Override
     protected SoundEvent getDeathSound() {
         return SoundEvents.ENTITY_ENDERMAN_DEATH;
     }
 
+    @Override
     protected void dropEquipment(DamageSource source, int lootingMultiplier, boolean allowDrops) {
         super.dropEquipment(source, lootingMultiplier, allowDrops);
-        BlockState blockState = this.getCarriedBlock();
-        if (blockState != null) {
-            this.dropItem(blockState.getBlock());
-        }
-
     }
 
-    public void setCarriedBlock(@Nullable BlockState state) {
-        this.dataTracker.set(CARRIED_BLOCK, Optional.ofNullable(state));
-    }
-
-    @Nullable
-    public BlockState getCarriedBlock() {
-        return (BlockState)((Optional)this.dataTracker.get(CARRIED_BLOCK)).orElse((Object)null);
-    }
-
+    @Override
     public boolean damage(DamageSource source, float amount) {
         if (this.isInvulnerableTo(source)) {
             return false;
@@ -368,13 +364,13 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         this.dataTracker.set(PROVOKED, true);
     }
 
+    @Override
     public boolean cannotDespawn() {
-        return super.cannotDespawn() || this.getCarriedBlock() != null;
+        return super.cannotDespawn();
     }
 
     static {
         ATTACKING_SPEED_BOOST = new EntityAttributeModifier(ATTACKING_SPEED_BOOST_ID, "Attacking speed boost", 0.15000000596046448, EntityAttributeModifier.Operation.ADDITION);
-        CARRIED_BLOCK = DataTracker.registerData(BlastlingEntity.class, TrackedDataHandlerRegistry.OPTIONAL_BLOCK_STATE);
         ANGRY = DataTracker.registerData(BlastlingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
         PROVOKED = DataTracker.registerData(BlastlingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
         ANGER_TIME_RANGE = TimeHelper.betweenSeconds(20, 39);
@@ -390,6 +386,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
             this.setControls(EnumSet.of(Control.JUMP, Control.MOVE));
         }
 
+        @Override
         public boolean canStart() {
             this.target = this.enderman.getTarget();
             if (!(this.target instanceof PlayerEntity)) {
@@ -400,56 +397,14 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
             }
         }
 
+        @Override
         public void start() {
             this.enderman.getNavigation().stop();
         }
 
+        @Override
         public void tick() {
             this.enderman.getLookControl().lookAt(this.target.getX(), this.target.getEyeY(), this.target.getZ());
-        }
-    }
-
-    static class PlaceBlockGoal extends Goal {
-        private final BlastlingEntity enderman;
-
-        public PlaceBlockGoal(BlastlingEntity enderman) {
-            this.enderman = enderman;
-        }
-
-        public boolean canStart() {
-            if (this.enderman.getCarriedBlock() == null) {
-                return false;
-            } else if (!this.enderman.world.getGameRules().getBoolean(GameRules.DO_MOB_GRIEFING)) {
-                return false;
-            } else {
-                return this.enderman.getRandom().nextInt(toGoalTicks(2000)) == 0;
-            }
-        }
-
-        public void tick() {
-            Random random = this.enderman.getRandom();
-            World world = this.enderman.world;
-            int i = MathHelper.floor(this.enderman.getX() - 1.0 + random.nextDouble() * 2.0);
-            int j = MathHelper.floor(this.enderman.getY() + random.nextDouble() * 2.0);
-            int k = MathHelper.floor(this.enderman.getZ() - 1.0 + random.nextDouble() * 2.0);
-            BlockPos blockPos = new BlockPos(i, j, k);
-            BlockState blockState = world.getBlockState(blockPos);
-            BlockPos blockPos2 = blockPos.down();
-            BlockState blockState2 = world.getBlockState(blockPos2);
-            BlockState blockState3 = this.enderman.getCarriedBlock();
-            if (blockState3 != null) {
-                blockState3 = Block.postProcessState(blockState3, this.enderman.world, blockPos);
-                if (this.canPlaceOn(world, blockPos, blockState3, blockState, blockState2, blockPos2)) {
-                    world.setBlockState(blockPos, blockState3, 3);
-                    world.emitGameEvent(this.enderman, GameEvent.BLOCK_PLACE, blockPos);
-                    this.enderman.setCarriedBlock((BlockState)null);
-                }
-
-            }
-        }
-
-        private boolean canPlaceOn(World world, BlockPos posAbove, BlockState carriedState, BlockState stateAbove, BlockState state, BlockPos pos) {
-            return stateAbove.isAir() && !state.isAir() && !state.isOf(Blocks.BEDROCK) && state.isFullCube(world, pos) && carriedState.canPlaceAt(world, posAbove) && world.getOtherEntities(this.enderman, Box.from(Vec3d.of(posAbove))).isEmpty();
         }
     }
 
@@ -470,22 +425,26 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
             });
         }
 
+        @Override
         public boolean canStart() {
             this.targetPlayer = this.enderman.world.getClosestPlayer(this.staringPlayerPredicate, this.enderman);
             return this.targetPlayer != null;
         }
 
+        @Override
         public void start() {
             this.lookAtPlayerWarmup = this.getTickCount(5);
             this.ticksSinceUnseenTeleport = 0;
             this.enderman.setProvoked();
         }
 
+        @Override
         public void stop() {
             this.targetPlayer = null;
             super.stop();
         }
 
+        @Override
         public boolean shouldContinue() {
             if (this.targetPlayer != null) {
                 if (!this.enderman.isPlayerStaring(this.targetPlayer)) {
@@ -499,9 +458,10 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
             }
         }
 
+        @Override
         public void tick() {
             if (this.enderman.getTarget() == null) {
-                super.setTargetEntity((LivingEntity)null);
+                super.setTargetEntity(null);
             }
             if (this.targetPlayer != null) {
                 if (--this.lookAtPlayerWarmup <= 0) {
