@@ -86,6 +86,15 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
+        if(this.isAttacking()) {
+            Random random = new Random();
+            if(random.nextInt(2) == 0) {
+                event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.attack_1", true));
+                return PlayState.CONTINUE;
+            }
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.attack_2", true));
+            return PlayState.CONTINUE;
+        }
         if(event.isMoving()) {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.walk", true));
             return PlayState.CONTINUE;
@@ -187,13 +196,6 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     @Override
     public void readCustomDataFromNbt(NbtCompound nbt) {
         super.readCustomDataFromNbt(nbt);
-        BlockState blockState = null;
-        if (nbt.contains("carriedBlockState", 10)) {
-            blockState = NbtHelper.toBlockState(nbt.getCompound("carriedBlockState"));
-            if (blockState.isAir()) {
-                blockState = null;
-            }
-        }
         this.readAngerFromNbt(this.world, nbt);
     }
 
@@ -213,7 +215,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
 
     @Override
     protected float getActiveEyeHeight(EntityPose pose, EntityDimensions dimensions) {
-        return 2.35F;
+        return 2.20F;
     }
 
     @Override
@@ -242,7 +244,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         if (this.world.isDay() && this.age >= this.ageWhenTargetSet + 600) {
             float f = this.getBrightnessAtEyes();
             if (f > 0.5F && this.world.isSkyVisible(this.getBlockPos()) && this.random.nextFloat() * 30.0F < (f - 0.4F) * 2.0F) {
-                this.setTarget((LivingEntity)null);
+                this.setTarget(null);
                 this.teleportRandomly();
             }
         }
@@ -264,7 +266,6 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     boolean teleportTo(Entity entity) {
         Vec3d vec3d = new Vec3d(this.getX() - entity.getX(), this.getBodyY(0.5) - entity.getEyeY(), this.getZ() - entity.getZ());
         vec3d = vec3d.normalize();
-        double d = 16.0;
         double e = this.getX() + (this.random.nextDouble() - 0.5) * 8.0 - vec3d.x * 16.0;
         double f = this.getY() + (double)(this.random.nextInt(16) - 8) - vec3d.y * 16.0;
         double g = this.getZ() + (this.random.nextDouble() - 0.5) * 8.0 - vec3d.z * 16.0;
@@ -284,7 +285,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         if (bl && !bl2) {
             boolean bl3 = this.teleport(x, y, z, true);
             if (bl3 && !this.isSilent()) {
-                this.world.playSound((PlayerEntity)null, this.prevX, this.prevY, this.prevZ, SoundEvents.ENTITY_ENDERMAN_TELEPORT, this.getSoundCategory(), 1.0F, 1.0F);
+                this.world.playSound(null, this.prevX, this.prevY, this.prevZ, SoundEvents.ENTITY_ENDERMAN_TELEPORT, this.getSoundCategory(), 1.0F, 1.0F);
                 this.playSound(SoundEvents.ENTITY_ENDERMAN_TELEPORT, 1.0F, 1.0F);
             }
 
@@ -349,15 +350,15 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         Potion potion2 = PotionUtil.getPotion(itemStack);
         List<StatusEffectInstance> list = PotionUtil.getPotionEffects(itemStack);
         boolean bl = potion2 == Potions.WATER && list.isEmpty();
-        return bl ? super.damage(source, amount) : false;
+        return bl && super.damage(source, amount);
     }
 
     public boolean isAngry() {
-        return (Boolean)this.dataTracker.get(ANGRY);
+        return this.dataTracker.get(ANGRY);
     }
 
     public boolean isProvoked() {
-        return (Boolean)this.dataTracker.get(PROVOKED);
+        return this.dataTracker.get(PROVOKED);
     }
 
     public void setProvoked() {
@@ -393,7 +394,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
                 return false;
             } else {
                 double d = this.target.squaredDistanceTo(this.enderman);
-                return d > 256.0 ? false : this.enderman.isPlayerStaring((PlayerEntity)this.target);
+                return !(d > 256.0) && this.enderman.isPlayerStaring((PlayerEntity) this.target);
             }
         }
 
@@ -404,6 +405,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
 
         @Override
         public void tick() {
+            assert this.target != null;
             this.enderman.getLookControl().lookAt(this.target.getX(), this.target.getEyeY(), this.target.getZ());
         }
     }
@@ -420,9 +422,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         public TeleportTowardsPlayerGoal(BlastlingEntity enderman, @Nullable Predicate<LivingEntity> targetPredicate) {
             super(enderman, PlayerEntity.class, 10, false, false, targetPredicate);
             this.enderman = enderman;
-            this.staringPlayerPredicate = TargetPredicate.createAttackable().setBaseMaxDistance(this.getFollowRange()).setPredicate((playerEntity) -> {
-                return enderman.isPlayerStaring((PlayerEntity)playerEntity);
-            });
+            this.staringPlayerPredicate = TargetPredicate.createAttackable().setBaseMaxDistance(this.getFollowRange()).setPredicate((playerEntity) -> enderman.isPlayerStaring((PlayerEntity)playerEntity));
         }
 
         @Override
@@ -454,7 +454,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
                     return true;
                 }
             } else {
-                return this.targetEntity != null && this.validTargetPredicate.test(this.enderman, this.targetEntity) ? true : super.shouldContinue();
+                return this.targetEntity != null && this.validTargetPredicate.test(this.enderman, this.targetEntity) || super.shouldContinue();
             }
         }
 
