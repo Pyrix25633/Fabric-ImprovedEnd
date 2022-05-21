@@ -80,6 +80,9 @@ public class ModItems {
     public static final Item BLASTLING_SPAWN_EGG = registerItem("blastling_spawn_egg",
             new SpawnEggItem(ModEntities.BLASTLING, 0x1B1224, 0xF08FFF,
                     new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(1)));
+    public static final Item SNARELING_SPAWN_EGG = registerItem("snareling_spawn_egg",
+            new SpawnEggItem(ModEntities.SNARELING, 0x1B1224, 0xA4CC1F,
+                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS).maxCount(1)));
 
     public static void registerModItems() {
         System.out.println("Registering Mod Items for " + ImprovedEnd.MOD_ID);

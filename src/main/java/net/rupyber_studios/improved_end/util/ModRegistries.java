@@ -8,8 +8,10 @@ import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.entity.ModEntities;
 import net.rupyber_studios.improved_end.entity.client.BlastlingRenderer;
 import net.rupyber_studios.improved_end.entity.client.IndigoSquidRenderer;
+import net.rupyber_studios.improved_end.entity.client.SnarelingRenderer;
 import net.rupyber_studios.improved_end.entity.custom.BlastlingEntity;
 import net.rupyber_studios.improved_end.entity.custom.IndigoSquidEntity;
+import net.rupyber_studios.improved_end.entity.custom.SnarelingEntity;
 
 public class ModRegistries {
     public static void cutoutBlocks() {
@@ -102,10 +104,12 @@ public class ModRegistries {
     public static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.INDIGO_SQUID, IndigoSquidEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.BLASTLING, BlastlingEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.SNARELING, SnarelingEntity.setAttributes());
     }
 
     public static void registerRenderers() {
         EntityRendererRegistry.register(ModEntities.INDIGO_SQUID, IndigoSquidRenderer::new);
         EntityRendererRegistry.register(ModEntities.BLASTLING, BlastlingRenderer::new);
+        EntityRendererRegistry.register(ModEntities.SNARELING, SnarelingRenderer::new);
     }
 }

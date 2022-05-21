@@ -44,7 +44,7 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 import java.util.*;
 import java.util.function.Predicate;
 
-public class BlastlingEntity extends HostileEntity implements IAnimatable, Angerable {
+public class SnarelingEntity extends HostileEntity implements IAnimatable, Angerable {
     private final AnimationFactory factory = new AnimationFactory(this);
     private static final UUID ATTACKING_SPEED_BOOST_ID = UUID.fromString("020E0DFB-87AE-4653-9556-831010E291A0");
     private static final EntityAttributeModifier ATTACKING_SPEED_BOOST;
@@ -57,7 +57,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     @Nullable
     private UUID angryAt;
 
-    public BlastlingEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public SnarelingEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
         setAttributes();
         initGoals();
@@ -86,14 +86,14 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if(this.isAttacking()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.attack", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.attack", true));
             return PlayState.CONTINUE;
         }
         if(event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.walk", true));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.idle", true));
         return PlayState.CONTINUE;
     }
 
@@ -366,17 +366,17 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
 
     static {
         ATTACKING_SPEED_BOOST = new EntityAttributeModifier(ATTACKING_SPEED_BOOST_ID, "Attacking speed boost", 0.15000000596046448, EntityAttributeModifier.Operation.ADDITION);
-        ANGRY = DataTracker.registerData(BlastlingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
-        PROVOKED = DataTracker.registerData(BlastlingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+        ANGRY = DataTracker.registerData(SnarelingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+        PROVOKED = DataTracker.registerData(SnarelingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
         ANGER_TIME_RANGE = TimeHelper.betweenSeconds(20, 39);
     }
 
     static class ChasePlayerGoal extends Goal {
-        private final BlastlingEntity enderman;
+        private final SnarelingEntity enderman;
         @Nullable
         private LivingEntity target;
 
-        public ChasePlayerGoal(BlastlingEntity enderman) {
+        public ChasePlayerGoal(SnarelingEntity enderman) {
             this.enderman = enderman;
             this.setControls(EnumSet.of(Control.JUMP, Control.MOVE));
         }
@@ -405,7 +405,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     }
 
     static class TeleportTowardsPlayerGoal extends ActiveTargetGoal<PlayerEntity> {
-        private final BlastlingEntity enderman;
+        private final SnarelingEntity enderman;
         @Nullable
         private PlayerEntity targetPlayer;
         private int lookAtPlayerWarmup;
@@ -413,7 +413,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         private final TargetPredicate staringPlayerPredicate;
         private final TargetPredicate validTargetPredicate = TargetPredicate.createAttackable().ignoreVisibility();
 
-        public TeleportTowardsPlayerGoal(BlastlingEntity enderman, @Nullable Predicate<LivingEntity> targetPredicate) {
+        public TeleportTowardsPlayerGoal(SnarelingEntity enderman, @Nullable Predicate<LivingEntity> targetPredicate) {
             super(enderman, PlayerEntity.class, 10, false, false, targetPredicate);
             this.enderman = enderman;
             this.staringPlayerPredicate = TargetPredicate.createAttackable().setBaseMaxDistance(this.getFollowRange()).setPredicate((playerEntity) -> enderman.isPlayerStaring((PlayerEntity)playerEntity));
