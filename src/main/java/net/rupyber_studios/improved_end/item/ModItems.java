@@ -8,12 +8,13 @@ import net.rupyber_studios.improved_end.ImprovedEnd;
 import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.entity.ModEntities;
 import net.rupyber_studios.improved_end.item.custom.ModMusicDiscItem;
+import net.rupyber_studios.improved_end.item.custom.ModPickaxeItem;
 import net.rupyber_studios.improved_end.sounds.ModSounds;
 
 public class ModItems {
     //Wasp Moss Carpet
     public static final Item WASP_MOSS_CARPET = registerItem("wasp_moss_carpet",
-            new BlockItem(ModBlocks.WASP_MOSS_CARPET, (new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+            new BlockItem(ModBlocks.WASP_MOSS_CARPET, new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
     //Signs
     public static final Item DARK_SIGN = registerItem("dark_sign",
@@ -46,20 +47,32 @@ public class ModItems {
 
     //Indigo Lily Pad
     public static final Item LILY_PAD = registerItem("indigo_lily_pad",
-            new LilyPadItem(ModBlocks.INDIGO_LILY_PAD, (new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+            new LilyPadItem(ModBlocks.INDIGO_LILY_PAD, new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
     //Pondu
     public static final Item PONDU_BERRIES = registerItem("pondu_berries",
-            new AliasedBlockItem(ModBlocks.PONDU, (new Item.Settings()).food(ModFoodComponents.PONDU_BERRIES)
+            new AliasedBlockItem(ModBlocks.PONDU, new FabricItemSettings().food(ModFoodComponents.PONDU_BERRIES)
                     .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
     //Pondu
     public static final Item BRANIUS_BERRIES = registerItem("branius_berries",
-            new AliasedBlockItem(ModBlocks.BRANIUS, (new Item.Settings()).food(ModFoodComponents.BRANIUS_BERRIES)
+            new AliasedBlockItem(ModBlocks.BRANIUS, new FabricItemSettings().food(ModFoodComponents.BRANIUS_BERRIES)
                     .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
     //Indigo Soil Brick
     public static final Item INDIGO_SOIL_BRICK = registerItem("indigo_soil_brick",
-            new Item((new Item.Settings()).group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+            new Item(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+
+    //Xorum
+    public static final Item XORUM_ORE = registerItem("xorum_ore",
+            new BlockItem(ModBlocks.XORUM_ORE, new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(64)));
+    public static final Item XORUM_GEM = registerItem("xorum_gem",
+            new Item(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(64)));
+    public static final Item XORUM_PICKAXE = registerItem("xorum_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.XORUM, 1, -3.0F,
+                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+    public static final Item XORUM_SWORD = registerItem("xorum_sword",
+            new SwordItem(ModToolMaterials.XORUM, 3, -2.5F,
+                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
 
     //Discs
     public static final Item MUSIC_DISC_TWO_WORLDS_COLLIDE = registerItem("music_disc_two_worlds_collide",

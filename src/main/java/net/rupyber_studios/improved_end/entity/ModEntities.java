@@ -23,5 +23,5 @@ public class ModEntities {
     public static final EntityType<SnarelingEntity> SNARELING = Registry.register(Registry.ENTITY_TYPE,
             new Identifier(ImprovedEnd.MOD_ID, "snareling"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, SnarelingEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.8f, 2.45f)).build());
+                    .dimensions(EntityDimensions.fixed(0.6f, 2.45f)).build());
 }

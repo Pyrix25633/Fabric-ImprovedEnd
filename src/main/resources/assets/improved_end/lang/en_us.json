@@ -300,6 +300,11 @@
   "block.improved_end.cracked_purpur": "Cracked Purpur",
   "block.improved_end.waylamp": "Waylamp",
 
+  "block.improved_end.xorum_ore": "Xorum Ore",
+  "item.improved_end.xorum_gem": "Xorum Gem",
+  "item.improved_end.xorum_pickaxe": "Xorum Pickaxe",
+  "item.improved_end.xorum_sword": "Xorum Sword",
+
   "item.improved_end.music_disc_two_worlds_collide": "Music Disc",
   "item.improved_end.music_disc_two_worlds_collide.desc": "Rupyber Studios - Two Worlds Collide",
   "subtitles.improved_end.two_worlds_collide": "Rupyber Studios - Two Worlds Collide",
@@ -311,6 +316,8 @@
   "item.improved_end.indigo_squid_spawn_egg": "Indigo Squid Spawn Egg",
   "entity.improved_end.blastling": "Blastling",
   "item.improved_end.blastling_spawn_egg": "Blastling Spawn Egg",
+  "entity.improved_end.snareling": "Snareling",
+  "item.improved_end.snareling_spawn_egg": "Snareling Spawn Egg",
 
   "itemGroup.improved_end.improved_end_biomes_blocks": "Improved End Biomes Blocks",
   "itemGroup.improved_end.improved_end_blocks": "Improved End Blocks"

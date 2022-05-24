@@ -9,6 +9,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.improved_end.ImprovedEnd;
 import net.rupyber_studios.improved_end.block.custom.*;
@@ -694,6 +695,9 @@ public class ModBlocks {
     //Waylamp
     public static final Block WAYLAMP = registerBlock("waylamp",
             new Block(waylampSettings.mapColor(MapColor.YELLOW)));
+    //Xorum
+    public static final Block XORUM_ORE = registerBlockOnly("xorum_ore",
+            new OreBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_CYAN), UniformIntProvider.create(2, 6)));
 
     private static Block registerBiomesBlock(String name, Block block) {
         registerBlockItem(name, block, ModItemGroup.IMPROVED_END_BIOMES_BLOCKS);
