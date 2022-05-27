@@ -318,6 +318,8 @@
   "item.improved_end.blastling_spawn_egg": "Blastling Spawn Egg",
   "entity.improved_end.snareling": "Snareling",
   "item.improved_end.snareling_spawn_egg": "Snareling Spawn Egg",
+  "entity.improved_end.mawling": "Mawling",
+  "item.improved_end.mawling_spawn_egg": "Mawling Spawn Egg",
 
   "itemGroup.improved_end.improved_end_biomes_blocks": "Improved End Biomes Blocks",
   "itemGroup.improved_end.improved_end_blocks": "Improved End Blocks"
