@@ -215,7 +215,7 @@ public class MawlingEntity extends HostileEntity implements IAnimatable, Angerab
 
     @Override
     protected float getActiveEyeHeight(EntityPose pose, EntityDimensions dimensions) {
-        return 2.20F;
+        return 2.10F;
     }
 
     @Override

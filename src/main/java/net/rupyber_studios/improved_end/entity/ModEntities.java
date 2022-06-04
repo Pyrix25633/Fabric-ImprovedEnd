@@ -28,5 +28,5 @@ public class ModEntities {
     public static final EntityType<MawlingEntity> MAWLING = Registry.register(Registry.ENTITY_TYPE,
             new Identifier(ImprovedEnd.MOD_ID, "mawling"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, MawlingEntity::new)
-                    .dimensions(EntityDimensions.fixed(0.7f, 2.45f)).build());
+                    .dimensions(EntityDimensions.fixed(0.7f, 2.30f)).build());
 }
