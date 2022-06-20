@@ -2,6 +2,6 @@
 	"parent" : "minecraft:item/generated",
 	"textures" : 
 	{
-		"layer0" : "improved_end:item/xorum/xorum_gem"
+		"layer0" : "improved_end:item/xorum/raw_xorum_ore"
 	}
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "improved_end:xorum_ingot"
+    }
+  },
+  "result": {
+    "item": "improved_end:xorum_sword"
+  }
+}

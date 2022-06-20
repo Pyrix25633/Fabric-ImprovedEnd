@@ -301,9 +301,13 @@
   "block.improved_end.waylamp": "Waylamp",
 
   "block.improved_end.xorum_ore": "Xorum Ore",
-  "item.improved_end.xorum_gem": "Xorum Gem",
-  "item.improved_end.xorum_pickaxe": "Xorum Pickaxe",
+  "item.improved_end.raw_xorum_ore": "Raw Xorum Ore",
+  "item.improved_end.xorum_ingot": "Xorum Ingot",
   "item.improved_end.xorum_sword": "Xorum Sword",
+  "item.improved_end.xorum_shovel": "Xorum Shovel",
+  "item.improved_end.xorum_pickaxe": "Xorum Pickaxe",
+  "item.improved_end.xorum_axe": "Xorum Axe",
+  "item.improved_end.xorum_hoe": "Xorum Hoe",
 
   "item.improved_end.music_disc_two_worlds_collide": "Music Disc",
   "item.improved_end.music_disc_two_worlds_collide.desc": "Rupyber Studios - Two Worlds Collide",

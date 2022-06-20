@@ -7,6 +7,8 @@ import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.improved_end.ImprovedEnd;
 import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.entity.ModEntities;
+import net.rupyber_studios.improved_end.item.custom.ModAxeItem;
+import net.rupyber_studios.improved_end.item.custom.ModHoeItem;
 import net.rupyber_studios.improved_end.item.custom.ModMusicDiscItem;
 import net.rupyber_studios.improved_end.item.custom.ModPickaxeItem;
 import net.rupyber_studios.improved_end.sounds.ModSounds;
@@ -65,13 +67,24 @@ public class ModItems {
     //Xorum
     public static final Item XORUM_ORE = registerItem("xorum_ore",
             new BlockItem(ModBlocks.XORUM_ORE, new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(64)));
-    public static final Item XORUM_GEM = registerItem("xorum_gem",
+    public static final Item RAW_XORUM_ORE = registerItem("raw_xorum_ore",
             new Item(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(64)));
-    public static final Item XORUM_PICKAXE = registerItem("xorum_pickaxe",
-            new ModPickaxeItem(ModToolMaterials.XORUM, 1, -3.0F,
-                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+    public static final Item XORUM_INGOT = registerItem("xorum_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(64)));
     public static final Item XORUM_SWORD = registerItem("xorum_sword",
             new SwordItem(ModToolMaterials.XORUM, 3, -2.5F,
+                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+    public static final Item XORUM_SHOVEL = registerItem("xorum_shovel",
+            new ShovelItem(ModToolMaterials.XORUM, 1.5F, -3.0F,
+                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+    public static final Item XORUM_PICKAXE = registerItem("xorum_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.XORUM, 1, -2.8F,
+                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+    public static final Item XORUM_AXE = registerItem("xorum_axe",
+            new ModAxeItem(ModToolMaterials.XORUM, 6.0F, -3.1F,
+                    new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+    public static final Item XORUM_HOE = registerItem("xorum_hoe",
+            new ModHoeItem(ModToolMaterials.XORUM, -2, -3.1F,
                     new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
 
     //Discs

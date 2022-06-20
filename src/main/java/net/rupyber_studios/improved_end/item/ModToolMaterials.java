@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     XORUM(3, 1230, 7.0F, 2.5F, 9, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.XORUM_GEM});
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.RAW_XORUM_ORE});
     });
 
     private final int miningLevel;

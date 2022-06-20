@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "xorum_ingot",
+  "ingredient": {
+    "item": "improved_end:raw_xorum_ore"
+  },
+  "result": "improved_end:xorum_ingot",
+  "experience": 1.2,
+  "cookingtime": 200
+}
