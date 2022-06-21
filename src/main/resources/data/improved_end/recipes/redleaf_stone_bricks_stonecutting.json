@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "improved_end:polished_redleaf_stone"
+  },
+  "result": "improved_end:redleaf_stone_bricks",
+  "count": 1
+}

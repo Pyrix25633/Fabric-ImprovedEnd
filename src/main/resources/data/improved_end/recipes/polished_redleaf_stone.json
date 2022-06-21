@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SS",
+		"SS"
+	],
+	"key": {
+		"S": {
+			"item": "improved_end:redleaf_stone"
+		}
+	},
+	"result": {
+		"item": "improved_end:polished_redleaf_stone",
+		"count": 4
+	}
+}

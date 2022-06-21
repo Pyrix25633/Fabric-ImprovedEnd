@@ -270,8 +270,11 @@
 
   "block.improved_end.dark_sand": "Dark Sand",
   "block.improved_end.dark_sandstone": "Dark Sandstone",
+  "block.improved_end.dark_sandstone_slab": "Dark Sandstone Slab",
   "block.improved_end.smooth_dark_sandstone": "Smooth Dark Sandstone",
+  "block.improved_end.smooth_dark_sandstone_slab": "Smooth Dark Sandstone Slab",
   "block.improved_end.cut_dark_sandstone": "Cut Dark Sandstone",
+  "block.improved_end.cut_dark_sandstone_slab": "Cut Dark Sandstone Slab",
   "block.improved_end.chiseled_dark_sandstone": "Chiseled Dark Sandstone",
 
   "block.improved_end.infusorial_stone": "Infusorial Stone",
@@ -280,6 +283,13 @@
   "block.improved_end.smooth_infusorial_stone_slab": "Smooth Infusorial Stone Slab",
   "block.improved_end.infusorial_stone_bricks": "Infusorial Stone Bricks",
   "block.improved_end.infusorial_stone_brick_slab": "Infusorial Stone Brick Slab",
+
+  "block.improved_end.redleaf_stone": "Redleaf Stone",
+  "block.improved_end.redleaf_stone_slab": "Redleaf Stone Slab",
+  "block.improved_end.polished_redleaf_stone": "Polished Redleaf Stone",
+  "block.improved_end.polished_redleaf_stone_slab": "Polished Redleaf Stone Slab",
+  "block.improved_end.redleaf_stone_bricks": "Redleaf Stone Bricks",
+  "block.improved_end.redleaf_stone_brick_slab": "Redleaf Stone Brick Slab",
 
   "block.improved_end.scab_stone": "Scab Stone",
   "block.improved_end.scab_stone_slab": "Scab Stone Slab",

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "improved_end:dark_sandstone"
+    }
+  },
+  "result": {
+    "item": "improved_end:dark_sandstone_slab",
+    "count": 6
+  }
+}

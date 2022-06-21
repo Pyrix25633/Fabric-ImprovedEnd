@@ -635,10 +635,16 @@ public class ModBlocks {
             new SandBlock(MapColor.TERRACOTTA_BLACK.color, stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block DARK_SANDSTONE = registerBiomesBlock("dark_sandstone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block DARK_SANDSTONE_SLAB = registerBiomesBlock("dark_sandstone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block SMOOTH_DARK_SANDSTONE = registerBiomesBlock("smooth_dark_sandstone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block SMOOTH_DARK_SANDSTONE_SLAB = registerBiomesBlock("smooth_dark_sandstone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block CUT_DARK_SANDSTONE = registerBiomesBlock("cut_dark_sandstone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+    public static final Block CUT_DARK_SANDSTONE_SLAB = registerBiomesBlock("cut_dark_sandstone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block CHISELED_DARK_SANDSTONE = registerBiomesBlock("chiseled_dark_sandstone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
 
@@ -654,6 +660,19 @@ public class ModBlocks {
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_BRICK_SLAB = registerBiomesBlock("infusorial_stone_brick_slab",
             new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+
+    public static final Block REDLEAF_STONE = registerBiomesBlock("redleaf_stone",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block REDLEAF_STONE_SLAB = registerBiomesBlock("redleaf_stone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block POLISHED_REDLEAF_STONE = registerBiomesBlock("polished_redleaf_stone",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block POLISHED_REDLEAF_STONE_SLAB = registerBiomesBlock("polished_redleaf_stone_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block REDLEAF_STONE_BRICKS = registerBiomesBlock("redleaf_stone_bricks",
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block REDLEAF_STONE_BRICK_SLAB = registerBiomesBlock("redleaf_stone_brick_slab",
+            new SlabBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
 
     public static final Block SCAB_STONE = registerBiomesBlock("scab_stone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
