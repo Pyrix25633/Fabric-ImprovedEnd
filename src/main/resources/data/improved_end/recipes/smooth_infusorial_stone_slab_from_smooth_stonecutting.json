@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "improved_end:smooth_infusorial_stone"
+  },
+  "result": "improved_end:smooth_infusorial_stone_slab",
+  "count": 2
+}

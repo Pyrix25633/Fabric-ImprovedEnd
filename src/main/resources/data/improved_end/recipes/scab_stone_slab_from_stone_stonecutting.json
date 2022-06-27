@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "improved_end:scab_stone"
+  },
+  "result": "improved_end:scab_stone_slab",
+  "count": 2
+}

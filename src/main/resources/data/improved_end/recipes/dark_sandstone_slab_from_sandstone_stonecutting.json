@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "improved_end:dark_sandstone"
+  },
+  "result": "improved_end:dark_sandstone_slab",
+  "count": 2
+}
