@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "improved_end:block/redleaf/redleaf_stone_bricks"
+  }
+}

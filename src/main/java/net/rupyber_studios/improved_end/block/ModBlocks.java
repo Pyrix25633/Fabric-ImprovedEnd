@@ -678,6 +678,8 @@ public class ModBlocks {
             new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_BRICK_STAIRS = registerBiomesBlock("infusorial_stone_brick_stairs",
             new ModStairsBlock(ModBlocks.INFUSORIAL_STONE_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block INFUSORIAL_STONE_BRICK_WALL = registerBiomesBlock("infusorial_stone_brick_wall",
+            new WallBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
 
     //Redleaf Stone
     public static final Block REDLEAF_STONE = registerBiomesBlock("redleaf_stone",
@@ -700,6 +702,8 @@ public class ModBlocks {
             new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block REDLEAF_STONE_BRICK_STAIRS = registerBiomesBlock("redleaf_stone_brick_stairs",
             new ModStairsBlock(ModBlocks.REDLEAF_STONE_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block REDLEAF_STONE_BRICK_WALL = registerBiomesBlock("redleaf_stone_brick_wall",
+            new WallBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
 
     //Scab Stone
     public static final Block SCAB_STONE = registerBiomesBlock("scab_stone",
@@ -726,6 +730,8 @@ public class ModBlocks {
             new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block INDIGO_SOIL_BRICK_STAIRS = registerBiomesBlock("indigo_soil_brick_stairs",
             new ModStairsBlock(ModBlocks.INDIGO_SOIL_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+    public static final Block INDIGO_SOIL_BRICK_WALL = registerBiomesBlock("indigo_soil_brick_wall",
+            new WallBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     //Chiseled Indigo Soil Bricks
     public static final Block CHISELED_INDIGO_SOIL_BRICKS = registerBiomesBlock("chiseled_indigo_soil_bricks",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));

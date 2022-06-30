@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "improved_end:block/indigo/indigo_soil_bricks"
+  }
+}

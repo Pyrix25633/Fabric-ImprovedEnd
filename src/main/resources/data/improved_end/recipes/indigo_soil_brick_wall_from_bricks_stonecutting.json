@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "improved_end:indigo_soil_bricks"
+  },
+  "result": "improved_end:indigo_soil_brick_wall",
+  "count": 1
+}

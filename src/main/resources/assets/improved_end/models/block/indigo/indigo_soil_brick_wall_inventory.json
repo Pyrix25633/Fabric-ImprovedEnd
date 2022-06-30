@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "improved_end:block/indigo/indigo_soil_bricks"
+  }
+}

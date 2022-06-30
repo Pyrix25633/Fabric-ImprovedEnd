@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "improved_end:block/infusorial/infusorial_stone_bricks"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "improved_end:redleaf_stone_bricks"
+    }
+  },
+  "result": {
+    "item": "improved_end:redleaf_stone_brick_wall",
+    "count": 6
+  }
+}

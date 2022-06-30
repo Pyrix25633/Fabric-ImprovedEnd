@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "improved_end:dark_slab",
+    "improved_end:infusorial_slab",
+    "improved_end:budding_slab",
+    "improved_end:redleaf_slab",
+    "improved_end:fire_slab",
+    "improved_end:shining_slab",
+    "improved_end:serene_slab",
+    "improved_end:scab_slab",
+    "improved_end:indigo_slab",
+
+    "improved_end:dark_sandstone_slab",
+    "improved_end:smooth_dark_sandstone_slab",
+    "improved_end:cut_dark_sandstone_slab",
+
+    "improved_end:infusorial_stone_slab",
+    "improved_end:smooth_infusorial_stone_slab",
+    "improved_end:infusorial_stone_brick_slab",
+
+    "improved_end:redleaf_stone_slab",
+    "improved_end:polished_redleaf_stone_slab",
+    "improved_end:redleaf_stone_brick_slab",
+
+    "improved_end:scab_stone_slab",
+    "improved_end:polished_scab_stone_slab",
+
+    "improved_end:indigo_soil_brick_slab"
+  ]
+}
