@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "improved_end:infusorial_stone"
+    }
+  ],
+  "result": {
+    "item": "improved_end:infusorial_stone_button"
+  }
+}

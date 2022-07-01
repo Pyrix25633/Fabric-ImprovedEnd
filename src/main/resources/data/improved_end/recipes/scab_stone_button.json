@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "improved_end:scab_stone"
+    }
+  ],
+  "result": {
+    "item": "improved_end:scab_stone_button"
+  }
+}

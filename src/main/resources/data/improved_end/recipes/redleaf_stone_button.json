@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "improved_end:redleaf_stone"
+    }
+  ],
+  "result": {
+    "item": "improved_end:redleaf_stone_button"
+  }
+}

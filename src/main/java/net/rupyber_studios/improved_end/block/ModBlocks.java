@@ -35,8 +35,12 @@ public class ModBlocks {
             .strength(1.5F).sounds(BlockSoundGroup.WOOD);
     static final FabricBlockSettings buttonSettings = FabricBlockSettings.of(Material.DECORATION)
             .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
+    static final FabricBlockSettings stoneButtonSettings = FabricBlockSettings.of(Material.DECORATION)
+            .noCollision().strength(0.5F).sounds(BlockSoundGroup.STONE);
     static final FabricBlockSettings pressurePlateSettings = FabricBlockSettings.of(Material.WOOD)
             .noCollision().strength(0.5F).sounds(BlockSoundGroup.WOOD);
+    static final FabricBlockSettings stonePressurePlateSettings = FabricBlockSettings.of(Material.STONE)
+            .noCollision().strength(0.5F).sounds(BlockSoundGroup.STONE);
     static final FabricBlockSettings trapdoorSettings = FabricBlockSettings.of(Material.WOOD)
             .strength(3.0F).sounds(BlockSoundGroup.WOOD).nonOpaque().allowsSpawning(MinecraftBlocks::never);
     static final FabricBlockSettings signSettings = FabricBlockSettings.of(Material.WOOD)
@@ -666,6 +670,11 @@ public class ModBlocks {
             new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_STAIRS = registerBiomesBlock("infusorial_stone_stairs",
             new ModStairsBlock(ModBlocks.INFUSORIAL_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block INFUSORIAL_STONE_BUTTON = registerBiomesBlock("infusorial_stone_button",
+            new StoneButtonBlock(stoneButtonSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+    public static final Block INFUSORIAL_STONE_PRESSURE_PLATE = registerBiomesBlock("infusorial_stone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    stonePressurePlateSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     //Smooth Infusorial Stone
     public static final Block SMOOTH_INFUSORIAL_STONE = registerBiomesBlock("smooth_infusorial_stone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
@@ -688,6 +697,11 @@ public class ModBlocks {
             new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block REDLEAF_STONE_STAIRS = registerBiomesBlock("redleaf_stone_stairs",
             new ModStairsBlock(ModBlocks.REDLEAF_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block REDLEAF_STONE_BUTTON = registerBiomesBlock("redleaf_stone_button",
+            new StoneButtonBlock(stoneButtonSettings.mapColor(MapColor.TERRACOTTA_RED)));
+    public static final Block REDLEAF_STONE_PRESSURE_PLATE = registerBiomesBlock("redleaf_stone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    stonePressurePlateSettings.mapColor(MapColor.TERRACOTTA_RED)));
     //Polished Redleaf Stone
     public static final Block POLISHED_REDLEAF_STONE = registerBiomesBlock("polished_redleaf_stone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
@@ -712,6 +726,11 @@ public class ModBlocks {
             new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block SCAB_STONE_STAIRS = registerBiomesBlock("scab_stone_stairs",
             new ModStairsBlock(ModBlocks.SCAB_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block SCAB_STONE_BUTTON = registerBiomesBlock("scab_stone_button",
+            new StoneButtonBlock(stoneButtonSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+    public static final Block SCAB_STONE_PRESSURE_PLATE = registerBiomesBlock("scab_stone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    stonePressurePlateSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     //Polished Scab Stone
     public static final Block POLISHED_SCAB_STONE = registerBiomesBlock("polished_scab_stone",
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
