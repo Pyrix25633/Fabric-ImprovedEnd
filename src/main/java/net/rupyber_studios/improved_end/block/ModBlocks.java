@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.sapling.OakSaplingGenerator;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -64,6 +66,8 @@ public class ModBlocks {
             .strength(0.1F).sounds(BlockSoundGroup.MOSS_BLOCK);
     static final FabricBlockSettings grassSettings = FabricBlockSettings.of(Material.REPLACEABLE_PLANT)
             .noCollision().breakInstantly().sounds(BlockSoundGroup.GRASS);
+    static final FabricBlockSettings flowerSettings = FabricBlockSettings.copyOf(Blocks.DANDELION).breakInstantly()
+            .sounds(BlockSoundGroup.CROP).nonOpaque().noCollision();
 
     //Grass
     public static final Block DARK_GRASS_BLOCK = registerBiomesBlock("dark_grass_block",
@@ -600,6 +604,22 @@ public class ModBlocks {
             new ModFernBlock(grassSettings));
     public static final Block INDIGO_GRASS = registerBiomesBlock("indigo_grass",
             new ModFernBlock(grassSettings));
+
+    //Roots
+    public static final Block FIRE_ROOTS = registerBiomesBlock("fire_roots",
+            new ModFernBlock(grassSettings));
+    public static final Block SCAB_ROOTS = registerBiomesBlock("scab_roots",
+            new ModFernBlock(grassSettings));
+
+    //Flowers
+    public static final Block REDLEAF_FLOWER = registerBiomesBlock("redleaf_flower",
+            new ModFlowerBlock(StatusEffects.HEALTH_BOOST, 200, flowerSettings));
+    public static final Block POTTED_REDLEAF_FLOWER = registerBlockOnly("potted_redleaf_flower",
+            new FlowerPotBlock(ModBlocks.REDLEAF_FLOWER, flowerSettings));
+    public static final Block INDIGO_FLOWER = registerBiomesBlock("indigo_flower",
+            new ModFlowerBlock(StatusEffects.HASTE, 200, flowerSettings));
+    public static final Block POTTED_INDIGO_FLOWER = registerBlockOnly("potted_indigo_flower",
+            new FlowerPotBlock(ModBlocks.INDIGO_FLOWER, flowerSettings));
 
     //Indigo Lily Pad
     public static final Block INDIGO_LILY_PAD = registerBlockOnly("indigo_lily_pad",
