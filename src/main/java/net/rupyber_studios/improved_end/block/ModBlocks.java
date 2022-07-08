@@ -4,10 +4,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.sapling.OakSaplingGenerator;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
@@ -608,7 +606,15 @@ public class ModBlocks {
     //Roots
     public static final Block FIRE_ROOTS = registerBiomesBlock("fire_roots",
             new ModFernBlock(grassSettings));
+    public static final Block SERENE_ROOTS = registerBiomesBlock("serene_roots",
+            new ModFernBlock(grassSettings));
     public static final Block SCAB_ROOTS = registerBiomesBlock("scab_roots",
+            new ModFernBlock(grassSettings));
+
+    //Sprouts
+    public static final Block SERENE_SPROUTS = registerBiomesBlock("serene_sprouts",
+            new ModFernBlock(grassSettings));
+    public static final Block SCAB_SPROUTS = registerBiomesBlock("scab_sprouts",
             new ModFernBlock(grassSettings));
 
     //Flowers
@@ -815,8 +821,8 @@ public class ModBlocks {
         return Registry.register(Registry.BLOCK, new Identifier(ImprovedEnd.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block, ItemGroup group) {
-        return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name),
+    private static void registerBlockItem(String name, Block block, ItemGroup group) {
+        Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name),
                 new BlockItem(block, new FabricItemSettings().group(group)));
     }
 

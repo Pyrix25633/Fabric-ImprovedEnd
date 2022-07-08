@@ -94,7 +94,12 @@ public class ModRegistries {
 
         //Roots
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FIRE_ROOTS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SERENE_ROOTS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SCAB_ROOTS, RenderLayer.getCutout());
+
+        //Sprouts
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SERENE_SPROUTS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SCAB_SPROUTS, RenderLayer.getCutout());
 
         //Flowers
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REDLEAF_FLOWER, RenderLayer.getCutout());

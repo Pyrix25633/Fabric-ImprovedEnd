@@ -250,7 +250,11 @@
   "block.improved_end.indigo_grass": "Indigo Grass",
 
   "block.improved_end.fire_roots": "Fire Roots",
+  "block.improved_end.serene_roots": "Serene Roots",
   "block.improved_end.scab_roots": "Scab Roots",
+
+  "block.improved_end.serene_sprouts": "Serene Sprouts",
+  "block.improved_end.scab_sprouts": "Scab Sprouts",
 
   "block.improved_end.redleaf_flower": "Redleaf Flower",
   "block.improved_end.potted_redleaf_flower": "Potted Redleaf Flower",
