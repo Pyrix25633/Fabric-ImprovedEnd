@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "improved_end:block/redleaf/redleaf_tall_grass_bottom"
+    },
+    "half=upper": {
+      "model": "improved_end:block/redleaf/redleaf_tall_grass_top"
+    }
+  }
+}

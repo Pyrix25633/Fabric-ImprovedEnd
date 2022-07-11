@@ -603,6 +603,10 @@ public class ModBlocks {
     public static final Block INDIGO_GRASS = registerBiomesBlock("indigo_grass",
             new ModFernBlock(grassSettings));
 
+    //Tall Grass
+    public static final Block REDLEAF_TALL_GRASS = registerBiomesBlock("redleaf_tall_grass",
+            new ModTallPlantBlock(grassSettings));
+
     //Roots
     public static final Block FIRE_ROOTS = registerBiomesBlock("fire_roots",
             new ModFernBlock(grassSettings));
@@ -612,6 +616,8 @@ public class ModBlocks {
             new ModFernBlock(grassSettings));
 
     //Sprouts
+    public static final Block BUDDING_SPROUTS = registerBiomesBlock("budding_sprouts",
+            new ModFernBlock(grassSettings));
     public static final Block SERENE_SPROUTS = registerBiomesBlock("serene_sprouts",
             new ModFernBlock(grassSettings));
     public static final Block SCAB_SPROUTS = registerBiomesBlock("scab_sprouts",
