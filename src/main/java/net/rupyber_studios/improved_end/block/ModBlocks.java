@@ -595,7 +595,7 @@ public class ModBlocks {
     public static final Block FIRE_GRASS = registerBiomesBlock("fire_grass",
             new ModFernBlock(grassSettings));
     public static final Block SHINING_GRASS = registerBiomesBlock("shining_grass",
-            new ModFernBlock(grassSettings));
+            new ModShortFernBlock(grassSettings));
     public static final Block SERENE_GRASS = registerBiomesBlock("serene_grass",
             new ModFernBlock(grassSettings));
     public static final Block SCAB_GRASS = registerBiomesBlock("scab_grass",
