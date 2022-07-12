@@ -58,6 +58,8 @@ public class ModBlocks {
     static final FabricBlockSettings caveVineSettings = FabricBlockSettings.of(Material.PLANT)
             .noCollision().luminance(CaveVines.getLuminanceSupplier(14)).breakInstantly()
             .sounds(BlockSoundGroup.CAVE_VINES);
+    static final FabricBlockSettings vineSettings = FabricBlockSettings.of(Material.PLANT)
+            .ticksRandomly().noCollision().breakInstantly().sounds(BlockSoundGroup.WEEPING_VINES);
     static final FabricBlockSettings lilyPadSettings = FabricBlockSettings.of(Material.PLANT)
             .breakInstantly().sounds(BlockSoundGroup.LILY_PAD).nonOpaque();
     static final FabricBlockSettings mossSettings = FabricBlockSettings.of(Material.MOSS_BLOCK)
@@ -647,6 +649,16 @@ public class ModBlocks {
             new BraniusHeadBlock(caveVineSettings.ticksRandomly()));
     public static final Block BRANIUS_PLANT = registerBlockOnly("branius_plant",
             new BraniusBodyBlock(caveVineSettings));
+    //Budding Vines
+    public static final Block BUDDING_VINES = registerBiomesBlock("budding_vines",
+            new BuddingVinesBlock(vineSettings));
+    public static final Block BUDDING_VINES_PLANT = registerBlockOnly("budding_vines_plant",
+            new BuddingVinesPlantBlock(vineSettings));
+    //Indigo Vines
+    public static final Block INDIGO_VINES = registerBiomesBlock("indigo_vines",
+            new IndigoVinesBlock(vineSettings));
+    public static final Block INDIGO_VINES_PLANT = registerBlockOnly("indigo_vines_plant",
+            new IndigoVinesPlantBlock(vineSettings));
 
     //Xibien
     public static final Block XIBIEN = registerBiomesBlock("xibien",

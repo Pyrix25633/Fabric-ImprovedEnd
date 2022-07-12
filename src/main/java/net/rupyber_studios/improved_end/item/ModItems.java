@@ -55,7 +55,7 @@ public class ModItems {
     public static final Item PONDU_BERRIES = registerItem("pondu_berries",
             new AliasedBlockItem(ModBlocks.PONDU, new FabricItemSettings().food(ModFoodComponents.PONDU_BERRIES)
                     .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
-    //Pondu
+    //Branius
     public static final Item BRANIUS_BERRIES = registerItem("branius_berries",
             new AliasedBlockItem(ModBlocks.BRANIUS, new FabricItemSettings().food(ModFoodComponents.BRANIUS_BERRIES)
                     .group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));

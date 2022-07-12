@@ -120,6 +120,12 @@ public class ModRegistries {
         //Branius
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRANIUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BRANIUS_PLANT, RenderLayer.getCutout());
+        //Budding Vines
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BUDDING_VINES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BUDDING_VINES_PLANT, RenderLayer.getCutout());
+        //Indigo Vines
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.INDIGO_VINES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.INDIGO_VINES_PLANT, RenderLayer.getCutout());
     }
 
     public static void registerAttributes() {
