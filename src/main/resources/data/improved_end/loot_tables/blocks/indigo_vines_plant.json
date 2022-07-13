@@ -38,7 +38,7 @@
                   ]
                 }
               ],
-              "name": "minecraft:indigo_vines"
+              "name": "improved_end:indigo_vines"
             },
             {
               "type": "minecraft:item",
@@ -54,7 +54,7 @@
                   ]
                 }
               ],
-              "name": "minecraft:indigo_vines"
+              "name": "improved_end:indigo_vines"
             }
           ]
         }

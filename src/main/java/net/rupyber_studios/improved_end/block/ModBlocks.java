@@ -788,7 +788,7 @@ public class ModBlocks {
             new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE).sounds(BlockSoundGroup.SOUL_SOIL)));
     //Indigo Soil Bricks
     public static final Block INDIGO_SOIL_BRICKS = registerBiomesBlock("indigo_soil_bricks",
-            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+            new Block(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE).sounds(BlockSoundGroup.STONE)));
     public static final Block INDIGO_SOIL_BRICK_SLAB = registerBiomesBlock("indigo_soil_brick_slab",
             new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block INDIGO_SOIL_BRICK_STAIRS = registerBiomesBlock("indigo_soil_brick_stairs",

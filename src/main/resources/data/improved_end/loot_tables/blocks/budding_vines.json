@@ -38,7 +38,7 @@
                   ]
                 }
               ],
-              "name": "minecraft:budding_vines"
+              "name": "improved_end:budding_vines"
             },
             {
               "type": "minecraft:item",
@@ -54,7 +54,7 @@
                   ]
                 }
               ],
-              "name": "minecraft:budding_vines"
+              "name": "improved_end:budding_vines"
             }
           ]
         }
