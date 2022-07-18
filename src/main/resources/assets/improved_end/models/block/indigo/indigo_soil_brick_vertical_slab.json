@@ -1,0 +1,9 @@
+{
+	"parent" : "improved_end:block/vertical_slab",
+	"textures" : 
+	{
+		"bottom" : "improved_end:block/indigo/indigo_soil_bricks",
+		"side" : "improved_end:block/indigo/indigo_soil_bricks",
+		"top" : "improved_end:block/indigo/indigo_soil_bricks"
+	}
+}

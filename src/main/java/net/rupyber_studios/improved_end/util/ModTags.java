@@ -36,6 +36,10 @@ public class ModTags {
         public static final TagKey<Block> BRANIUS = createTag("branius");
         public static final TagKey<Block> BRANIUS_COMMON = createCommonTag("branius");
 
+        //Vertical Slabs
+        public static final TagKey<Block> VERTICAL_SLABS = createTag("vertical_slabs");
+        public static final TagKey<Block> VERTICAL_SLABS_COMMON = createCommonTag("vertical_slabs");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(ImprovedEnd.MOD_ID, name));
         }
@@ -64,6 +68,10 @@ public class ModTags {
         public static final TagKey<Item> SCAB_LOGS_COMMON = createCommonTag("scab_logs");
         public static final TagKey<Item> INDIGO_LOGS = createTag("indigo_logs");
         public static final TagKey<Item> INDIGO_LOGS_COMMON = createCommonTag("indigo_logs");
+
+        //Vertical Slabs
+        public static final TagKey<Item> VERTICAL_SLABS = createTag("vertical_slabs");
+        public static final TagKey<Item> VERTICAL_SLABS_COMMON = createCommonTag("vertical_slabs");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(ImprovedEnd.MOD_ID, name));

@@ -1,0 +1,9 @@
+{
+	"parent" : "improved_end:block/vertical_slab",
+	"textures" : 
+	{
+		"bottom" : "improved_end:block/scab/scab_stone",
+		"side" : "improved_end:block/scab/scab_stone",
+		"top" : "improved_end:block/scab/scab_stone"
+	}
+}

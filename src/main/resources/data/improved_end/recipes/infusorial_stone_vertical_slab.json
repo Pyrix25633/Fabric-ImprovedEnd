@@ -1,0 +1,21 @@
+{
+	"key" : 
+	{
+		"#" : 
+		{
+			"item" : "improved_end:infusorial_stone"
+		}
+	},
+	"pattern" : 
+	[
+		"#",
+		"#",
+		"#"
+	],
+	"result" : 
+	{
+		"count" : 6,
+		"item" : "improved_end:infusorial_stone_vertical_slab"
+	},
+	"type" : "minecraft:crafting_shaped"
+}
