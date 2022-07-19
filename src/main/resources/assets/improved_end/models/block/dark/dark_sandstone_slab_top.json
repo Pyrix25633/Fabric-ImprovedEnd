@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/slab",
+  "parent": "minecraft:block/slab_top",
   "textures": {
     "bottom": "improved_end:block/dark/dark_sandstone_top",
     "top": "improved_end:block/dark/dark_sandstone_top",
