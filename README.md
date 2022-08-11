@@ -15,3 +15,8 @@ This is a fabric mod to improve the end dimension, adding new blocks, biomes and
 - Open the mods/ folder;
 - Copy and paste the Fabric API file and the Mod .jar;
 - Launch the correct version from the Minecraft Launcher.
+## The team:
+<h3><img src="https://raw.githubusercontent.com/RupyberStudios/website/main/img/ruken.png" alt="Pyrix25633" width="50"/> Ruken, Creative Director</h3>
+<h3><img src="https://raw.githubusercontent.com/RupyberStudios/website/main/img/pyrix25633.png" alt="Pyrix25633" width="50"/> Pyrix25633, Developer</h3>
+<h3><img src="https://raw.githubusercontent.com/RupyberStudios/website/main/img/vityayoutuber.png" alt="Pyrix25633" width="50"/> vityayoutuber</h3>
+<h3><img src="https://raw.githubusercontent.com/RupyberStudios/website/main/img/tgwcreeper.png" alt="Pyrix25633" width="50"/> TgwCreeper</h3>
