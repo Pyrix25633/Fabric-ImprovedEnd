@@ -75,50 +75,50 @@ public class ModConfiguredFeatures {
     //Wave end stones
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> DARK_WAVE_STONE_ORE =
             ConfiguredFeatures.register("dark_wave_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_DARK_WAVE_STONE_ORE, 60));
+                    new OreFeatureConfig(END_DARK_WAVE_STONE_ORE, 46));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> INFUSORIAL_WAVE_STONE_ORE =
             ConfiguredFeatures.register("infusorial_wave_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_INFUSORIAL_WAVE_STONE_ORE, 60));
+                    new OreFeatureConfig(END_INFUSORIAL_WAVE_STONE_ORE, 46));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> REDLEAF_WAVE_STONE_ORE =
             ConfiguredFeatures.register("redleaf_wave_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_REDLEAF_WAVE_STONE_ORE, 60));
+                    new OreFeatureConfig(END_REDLEAF_WAVE_STONE_ORE, 46));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> SHINING_WAVE_STONE_ORE =
             ConfiguredFeatures.register("shining_wave_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_SHINING_WAVE_STONE_ORE, 60));
+                    new OreFeatureConfig(END_SHINING_WAVE_STONE_ORE, 46));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> SCAB_WAVE_STONE_ORE =
             ConfiguredFeatures.register("scab_wave_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_SCAB_WAVE_STONE_ORE, 60));
+                    new OreFeatureConfig(END_SCAB_WAVE_STONE_ORE, 46));
 
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> INDIGO_WAVE_STONE_ORE =
             ConfiguredFeatures.register("indigo_wave_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_INDIGO_WAVE_STONE_ORE, 60));
+                    new OreFeatureConfig(END_INDIGO_WAVE_STONE_ORE, 46));
 
     //Sand
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> DARK_SAND_ORE =
             ConfiguredFeatures.register("dark_sand_ore", Feature.ORE,
-                    new OreFeatureConfig(END_DARK_SAND_ORE, 60));
+                    new OreFeatureConfig(END_DARK_SAND_ORE, 46));
     //Stones
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> INFUSORIAL_STONE_ORE =
             ConfiguredFeatures.register("infusorial_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_INFUSORIAL_STONE_ORE, 60));
+                    new OreFeatureConfig(END_INFUSORIAL_STONE_ORE, 46));
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> REDLEAF_STONE_ORE =
             ConfiguredFeatures.register("redleaf_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_REDLEAF_STONE_ORE, 60));
+                    new OreFeatureConfig(END_REDLEAF_STONE_ORE, 46));
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> SCAB_STONE_ORE =
             ConfiguredFeatures.register("scab_stone_ore", Feature.ORE,
-                    new OreFeatureConfig(END_SCAB_STONE_ORE, 60));
+                    new OreFeatureConfig(END_SCAB_STONE_ORE, 46));
     //Soil
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> INDIGO_SOIL_ORE =
             ConfiguredFeatures.register("indigo_soil_ore", Feature.ORE,
-                    new OreFeatureConfig(END_INDIGO_SOIL_ORE, 60));
+                    new OreFeatureConfig(END_INDIGO_SOIL_ORE, 46));
     //Moss
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> WASP_MOSS_ORE =
             ConfiguredFeatures.register("wasp_moss_ore", Feature.ORE,
-                    new OreFeatureConfig(END_WASP_MOSS_ORE, 60));
+                    new OreFeatureConfig(END_WASP_MOSS_ORE, 46));
 
     public static void registerConfiguredFeatures() {
         System.out.println("Registering ModConfiguredFeatures for " + ImprovedEnd.MOD_ID);

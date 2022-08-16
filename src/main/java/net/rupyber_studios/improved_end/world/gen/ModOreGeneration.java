@@ -7,9 +7,6 @@ import net.rupyber_studios.improved_end.world.feature.ModPlacedFeatures;
 
 public class ModOreGeneration {
     public static void generateOres() {
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.XORUM_ORE_PLACED.getKey().get());
-
         //Wave end stones
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DARK_WAVE_STONE_ORE_PLACED.getKey().get());
@@ -40,5 +37,9 @@ public class ModOreGeneration {
         //Moss
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.WASP_MOSS_ORE_PLACED.getKey().get());
+
+        //Xorum generates last, eventually replacing some wave stone blocks
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
+                        GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.XORUM_ORE_PLACED.getKey().get());
     }
 }
