@@ -40,6 +40,10 @@ public class ModTags {
         public static final TagKey<Block> VERTICAL_SLABS = createTag("vertical_slabs");
         public static final TagKey<Block> VERTICAL_SLABS_COMMON = createCommonTag("vertical_slabs");
 
+        //Features
+        public static final TagKey<Block> END_STONE_ORE_REPLACEABLES = createTag("end_stone_ore_replaceables");
+        public static final TagKey<Block> END_STONE_ORE_REPLACEABLES_COMMON = createCommonTag("end_stone_ore_replaceables");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(ImprovedEnd.MOD_ID, name));
         }
