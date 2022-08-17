@@ -1,13 +1,160 @@
 package net.rupyber_studios.improved_end.world.feature;
 
+import net.minecraft.block.Blocks;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.rupyber_studios.improved_end.ImprovedEnd;
 import net.rupyber_studios.improved_end.block.ModBlocks;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
+    //Trees
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> DARK_TREE =
+            ConfiguredFeatures.register("dark_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.DARK_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.DARK_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> INFUSORIAL_TREE =
+            ConfiguredFeatures.register("infusorial_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.INFUSORIAL_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.INFUSORIAL_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BUDDING_TREE =
+            ConfiguredFeatures.register("budding_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.BUDDING_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.BUDDING_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> REDLEAF_TREE =
+            ConfiguredFeatures.register("redleaf_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.REDLEAF_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.REDLEAF_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> FIRE_TREE =
+            ConfiguredFeatures.register("fire_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.FIRE_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.FIRE_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SHINING_TREE =
+            ConfiguredFeatures.register("shining_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.SHINING_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.SHINING_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SERENE_TREE =
+            ConfiguredFeatures.register("serene_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.SERENE_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.SERENE_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SCAB_TREE =
+            ConfiguredFeatures.register("scab_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.SCAB_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.SCAB_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> INDIGO_TREE =
+            ConfiguredFeatures.register("indigo_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.INDIGO_LOG),
+                    new ForkingTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.INDIGO_LEAVES),
+                    new JungleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2))
+                    .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
+
+    public static final RegistryEntry<PlacedFeature> DARK_TREE_CHECKED =
+            PlacedFeatures.register("dark_tree_checked", DARK_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.DARK_SAPLING));
+    public static final RegistryEntry<PlacedFeature> INFUSORIAL_TREE_CHECKED =
+            PlacedFeatures.register("infusorial_tree_checked", INFUSORIAL_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.INFUSORIAL_SAPLING));
+    public static final RegistryEntry<PlacedFeature> BUDDING_TREE_CHECKED =
+            PlacedFeatures.register("budding_tree_checked", BUDDING_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.BUDDING_SAPLING));
+    public static final RegistryEntry<PlacedFeature> REDLEAF_TREE_CHECKED =
+            PlacedFeatures.register("redleaf_tree_checked", REDLEAF_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.REDLEAF_SAPLING));
+    public static final RegistryEntry<PlacedFeature> FIRE_TREE_CHECKED =
+            PlacedFeatures.register("fire_tree_checked", FIRE_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.FIRE_SAPLING));
+    public static final RegistryEntry<PlacedFeature> SHINING_TREE_CHECKED =
+            PlacedFeatures.register("shining_tree_checked", SHINING_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.SHINING_SAPLING));
+    public static final RegistryEntry<PlacedFeature> SERENE_TREE_CHECKED =
+            PlacedFeatures.register("serene_tree_checked", SERENE_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.SERENE_SAPLING));
+    public static final RegistryEntry<PlacedFeature> SCAB_TREE_CHECKED =
+            PlacedFeatures.register("scab_tree_checked", SCAB_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.SCAB_SAPLING));
+    public static final RegistryEntry<PlacedFeature> INDIGO_TREE_CHECKED =
+            PlacedFeatures.register("indigo_tree_checked", INDIGO_TREE,
+                    PlacedFeatures.wouldSurvive(ModBlocks.INDIGO_SAPLING));
+
+
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> DARK_TREE_SPAWN =
+            ConfiguredFeatures.register("dark_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(DARK_TREE_CHECKED, 0.5f)),
+                            DARK_TREE_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> INFUSORIAL_TREE_SPAWN =
+            ConfiguredFeatures.register("infusorial_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(INFUSORIAL_TREE_CHECKED, 0.5f)),
+                            INFUSORIAL_TREE_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> BUDDING_TREE_SPAWN =
+            ConfiguredFeatures.register("budding_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(BUDDING_TREE_CHECKED, 0.5f)),
+                            BUDDING_TREE_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> REDLEAF_TREE_SPAWN =
+            ConfiguredFeatures.register("redleaf_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(REDLEAF_TREE_CHECKED, 0.5f)),
+                            REDLEAF_TREE_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> FIRE_TREE_SPAWN =
+            ConfiguredFeatures.register("fire_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(FIRE_TREE_CHECKED, 0.5f)),
+                            FIRE_TREE_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> SHINING_TREE_SPAWN =
+            ConfiguredFeatures.register("shining_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(SHINING_TREE_CHECKED, 0.5f)),
+                            SHINING_TREE_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> SERENE_TREE_SPAWN =
+            ConfiguredFeatures.register("serene_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(SERENE_TREE_CHECKED, 0.5f)),
+                            SERENE_TREE_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> SCAB_TREE_SPAWN =
+            ConfiguredFeatures.register("scab_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(SCAB_TREE_CHECKED, 0.5f)),
+                            SCAB_TREE_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> INDIGO_TREE_SPAWN =
+            ConfiguredFeatures.register("indigo_tree_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(INDIGO_TREE_CHECKED, 0.5f)),
+                            INDIGO_TREE_CHECKED));
+
+    //Xorum
     public static final List<OreFeatureConfig.Target> END_XORUM_ORES = List.of(
         OreFeatureConfig.createTarget(ModOreConfiguredFeatures.END_STONE_ORE_REPLACEABLES,
                 ModBlocks.XORUM_ORE.getDefaultState())
@@ -68,6 +215,7 @@ public class ModConfiguredFeatures {
                     ModBlocks.WASP_MOSS_BLOCK.getDefaultState())
     );
 
+    //Xorum
     public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> XORUM_ORE =
             ConfiguredFeatures.register("xorum_ore", Feature.ORE,
                     new OreFeatureConfig(END_XORUM_ORES, 12));

@@ -4,9 +4,42 @@ import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.PlacedFeature;
 import net.minecraft.world.gen.feature.PlacedFeatures;
+import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 
 public class ModPlacedFeatures {
+    //Trees
+    private static final int count = 1, extraCount = 1;
+    private static final float extraChance = 0.2f;
+    public static final RegistryEntry<PlacedFeature> DARK_TREE_PLACED = PlacedFeatures.register("dark_tree_placed",
+            ModConfiguredFeatures.DARK_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+    public static final RegistryEntry<PlacedFeature> INFUSORIAL_TREE_PLACED = PlacedFeatures.register("infusorial_tree_placed",
+            ModConfiguredFeatures.INFUSORIAL_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+    public static final RegistryEntry<PlacedFeature> BUDDING_TREE_PLACED = PlacedFeatures.register("budding_tree_placed",
+            ModConfiguredFeatures.BUDDING_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+    public static final RegistryEntry<PlacedFeature> REDLEAF_TREE_PLACED = PlacedFeatures.register("redleaf_tree_placed",
+            ModConfiguredFeatures.REDLEAF_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+    public static final RegistryEntry<PlacedFeature> FIRE_TREE_PLACED = PlacedFeatures.register("fire_tree_placed",
+            ModConfiguredFeatures.FIRE_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+    public static final RegistryEntry<PlacedFeature> SHINING_TREE_PLACED = PlacedFeatures.register("shining_tree_placed",
+            ModConfiguredFeatures.SHINING_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+    public static final RegistryEntry<PlacedFeature> SERENE_TREE_PLACED = PlacedFeatures.register("serene_tree_placed",
+            ModConfiguredFeatures.SERENE_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+    public static final RegistryEntry<PlacedFeature> SCAB_TREE_PLACED = PlacedFeatures.register("scab_tree_placed",
+            ModConfiguredFeatures.SCAB_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+    public static final RegistryEntry<PlacedFeature> INDIGO_TREE_PLACED = PlacedFeatures.register("indigo_tree_placed",
+            ModConfiguredFeatures.INDIGO_TREE_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(count, extraChance, extraCount)));
+
+    //Xorum
     public static final RegistryEntry<PlacedFeature> XORUM_ORE_PLACED = PlacedFeatures.register("xorum_ore_placed",
             ModConfiguredFeatures.XORUM_ORE, ModOreFeatures.modifiersWithCount(3,
                     HeightRangePlacementModifier.uniform(YOffset.aboveBottom(0), YOffset.aboveBottom(46))));
