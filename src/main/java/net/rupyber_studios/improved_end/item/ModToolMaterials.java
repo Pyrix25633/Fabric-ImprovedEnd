@@ -1,6 +1,5 @@
 package net.rupyber_studios.improved_end.item;
 
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
@@ -8,9 +7,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    XORUM(3, 1230, 7.0F, 2.5F, 9, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.RAW_XORUM_ORE});
-    });
+    XORUM(3, 1230, 7.0F, 2.5F, 9, () -> Ingredient.ofItems(ModItems.XORUM_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
@@ -19,7 +16,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
-    private ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier repairIngredient) {
+    ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
@@ -49,6 +46,6 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 }
