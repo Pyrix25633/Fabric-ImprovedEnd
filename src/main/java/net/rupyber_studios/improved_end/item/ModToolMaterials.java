@@ -7,7 +7,8 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    XORUM(3, 1230, 7.0F, 2.5F, 9, () -> Ingredient.ofItems(ModItems.XORUM_INGOT));
+    XORUM(3, 1230, 7.0F, 2.5F, 9, () -> Ingredient.ofItems(ModItems.XORUM_INGOT)),
+    SHULKER(3, 1480, 7.0F, 2.5F, 9, () -> Ingredient.ofItems(ModItems.SHULKER_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

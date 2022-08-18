@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "improved_end:item/shulker/shulker_ingot"
+  }
+}

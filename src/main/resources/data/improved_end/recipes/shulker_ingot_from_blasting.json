@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "minecraft:shulker_shell"
+  },
+  "result": "improved_end:shulker_ingot",
+  "experience": 1.3,
+  "cookingtime": 100
+}
