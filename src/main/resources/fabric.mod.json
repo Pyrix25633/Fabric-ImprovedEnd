@@ -4,16 +4,23 @@
   "version": "${version}",
 
   "name": "Improved End",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "This is a fabric mod to improve the end dimension, adding new blocks, biomes and mobs!",
   "authors": [
-    "Rupyber Studios"
+    "Rupyber Studios",
+    "Pyrix25633",
+    "Ruken"
+  ],
+  "contributors": [
+    "vityayoutuber",
+    "TgwCreeper"
   ],
   "contact": {
     "homepage": "https://rupyberstudios.github.io/website/",
-    "sources": "https://github.com/Pyrix25633/Fabric-ImprovedEnd"
+    "sources": "https://github.com/Pyrix25633/Fabric-ImprovedEnd",
+    "issues": "https://github.com/Pyrix25633/Fabric-ImprovedEnd/issues"
   },
 
-  "license": "CC0-1.0",
+  "license": "GPL-3.0",
   "icon": "assets/improved_end/icon.png",
 
   "environment": "*",
@@ -24,6 +31,18 @@
     "client": [
       "net.rupyber_studios.improved_end.ImprovedEndClient"
     ]
+  },
+  "custom": {
+    "modupdater": {
+      "strategy": "curseforge",
+      "projectID": "644091",
+      "strict": false
+    },
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/AgPTkkQveF"
+      }
+    }
   },
   "mixins": [
     "improved_end.mixins.json"

@@ -156,7 +156,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
                 this.turningSpeed *= 0.99F;
             }
             if (!this.world.isClient) {
-                this.setVelocity((double)(this.swimX * this.swimVelocityScale), (double)(this.swimY * this.swimVelocityScale), (double)(this.swimZ * this.swimVelocityScale));
+                this.setVelocity((this.swimX * this.swimVelocityScale), (double)(this.swimY * this.swimVelocityScale), (this.swimZ * this.swimVelocityScale));
             }
             Vec3d vec3d = this.getVelocity();
             double d = vec3d.horizontalLength();

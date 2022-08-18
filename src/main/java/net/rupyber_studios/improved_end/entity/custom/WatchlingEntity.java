@@ -15,7 +15,9 @@ import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.mob.*;
+import net.minecraft.entity.mob.Angerable;
+import net.minecraft.entity.mob.EndermiteEntity;
+import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.thrown.PotionEntity;
 import net.minecraft.item.ItemStack;
@@ -29,7 +31,9 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.tag.FluidTags;
 import net.minecraft.util.TimeHelper;
-import net.minecraft.util.math.*;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -41,10 +45,12 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
-import java.util.*;
+import java.util.EnumSet;
+import java.util.List;
+import java.util.UUID;
 import java.util.function.Predicate;
 
-public class SnarelingEntity extends HostileEntity implements IAnimatable, Angerable {
+public class WatchlingEntity extends HostileEntity implements IAnimatable, Angerable {
     private final AnimationFactory factory = new AnimationFactory(this);
     private static final UUID ATTACKING_SPEED_BOOST_ID = UUID.fromString("020E0DFB-87AE-4653-9556-831010E291A0");
     private static final EntityAttributeModifier ATTACKING_SPEED_BOOST;
@@ -57,7 +63,7 @@ public class SnarelingEntity extends HostileEntity implements IAnimatable, Anger
     @Nullable
     private UUID angryAt;
 
-    public SnarelingEntity(EntityType<? extends HostileEntity> entityType, World world) {
+    public WatchlingEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
         setAttributes();
         initGoals();
@@ -86,14 +92,14 @@ public class SnarelingEntity extends HostileEntity implements IAnimatable, Anger
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if(this.isAttacking()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.attack", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.attack", true));
             return PlayState.CONTINUE;
         }
         if(event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.walk", true));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.idle", true));
         return PlayState.CONTINUE;
     }
 
@@ -362,17 +368,17 @@ public class SnarelingEntity extends HostileEntity implements IAnimatable, Anger
 
     static {
         ATTACKING_SPEED_BOOST = new EntityAttributeModifier(ATTACKING_SPEED_BOOST_ID, "Attacking speed boost", 0.15000000596046448, EntityAttributeModifier.Operation.ADDITION);
-        ANGRY = DataTracker.registerData(SnarelingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
-        PROVOKED = DataTracker.registerData(SnarelingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+        ANGRY = DataTracker.registerData(WatchlingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
+        PROVOKED = DataTracker.registerData(WatchlingEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
         ANGER_TIME_RANGE = TimeHelper.betweenSeconds(20, 39);
     }
 
     static class ChasePlayerGoal extends Goal {
-        private final SnarelingEntity enderman;
+        private final WatchlingEntity enderman;
         @Nullable
         private LivingEntity target;
 
-        public ChasePlayerGoal(SnarelingEntity enderman) {
+        public ChasePlayerGoal(WatchlingEntity enderman) {
             this.enderman = enderman;
             this.setControls(EnumSet.of(Control.JUMP, Control.MOVE));
         }
@@ -401,7 +407,7 @@ public class SnarelingEntity extends HostileEntity implements IAnimatable, Anger
     }
 
     static class TeleportTowardsPlayerGoal extends ActiveTargetGoal<PlayerEntity> {
-        private final SnarelingEntity enderman;
+        private final WatchlingEntity enderman;
         @Nullable
         private PlayerEntity targetPlayer;
         private int lookAtPlayerWarmup;
@@ -409,7 +415,7 @@ public class SnarelingEntity extends HostileEntity implements IAnimatable, Anger
         private final TargetPredicate staringPlayerPredicate;
         private final TargetPredicate validTargetPredicate = TargetPredicate.createAttackable().ignoreVisibility();
 
-        public TeleportTowardsPlayerGoal(SnarelingEntity enderman, @Nullable Predicate<LivingEntity> targetPredicate) {
+        public TeleportTowardsPlayerGoal(WatchlingEntity enderman, @Nullable Predicate<LivingEntity> targetPredicate) {
             super(enderman, PlayerEntity.class, 10, false, false, targetPredicate);
             this.enderman = enderman;
             this.staringPlayerPredicate = TargetPredicate.createAttackable().setBaseMaxDistance(this.getFollowRange()).setPredicate((playerEntity) -> enderman.isPlayerStaring((PlayerEntity)playerEntity));

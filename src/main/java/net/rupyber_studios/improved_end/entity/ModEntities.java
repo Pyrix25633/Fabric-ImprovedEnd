@@ -7,10 +7,7 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.improved_end.ImprovedEnd;
-import net.rupyber_studios.improved_end.entity.custom.BlastlingEntity;
-import net.rupyber_studios.improved_end.entity.custom.IndigoSquidEntity;
-import net.rupyber_studios.improved_end.entity.custom.MawlingEntity;
-import net.rupyber_studios.improved_end.entity.custom.SnarelingEntity;
+import net.rupyber_studios.improved_end.entity.custom.*;
 
 public class ModEntities {
     public static final EntityType<IndigoSquidEntity> INDIGO_SQUID = Registry.register(Registry.ENTITY_TYPE,
@@ -29,4 +26,8 @@ public class ModEntities {
             new Identifier(ImprovedEnd.MOD_ID, "mawling"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, MawlingEntity::new)
                     .dimensions(EntityDimensions.fixed(0.7f, 2.30f)).build());
+    public static final EntityType<WatchlingEntity> WATCHLING = Registry.register(Registry.ENTITY_TYPE,
+            new Identifier(ImprovedEnd.MOD_ID, "watchling"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, WatchlingEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.7f, 2.40f)).build());
 }

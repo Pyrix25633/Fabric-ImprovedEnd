@@ -6,14 +6,8 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.minecraft.client.render.RenderLayer;
 import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.entity.ModEntities;
-import net.rupyber_studios.improved_end.entity.client.BlastlingRenderer;
-import net.rupyber_studios.improved_end.entity.client.IndigoSquidRenderer;
-import net.rupyber_studios.improved_end.entity.client.MawlingRenderer;
-import net.rupyber_studios.improved_end.entity.client.SnarelingRenderer;
-import net.rupyber_studios.improved_end.entity.custom.BlastlingEntity;
-import net.rupyber_studios.improved_end.entity.custom.IndigoSquidEntity;
-import net.rupyber_studios.improved_end.entity.custom.MawlingEntity;
-import net.rupyber_studios.improved_end.entity.custom.SnarelingEntity;
+import net.rupyber_studios.improved_end.entity.client.*;
+import net.rupyber_studios.improved_end.entity.custom.*;
 
 public class ModRegistries {
     public static void cutoutBlocks() {
@@ -133,6 +127,7 @@ public class ModRegistries {
         FabricDefaultAttributeRegistry.register(ModEntities.BLASTLING, BlastlingEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.SNARELING, SnarelingEntity.setAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.MAWLING, MawlingEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.WATCHLING, WatchlingEntity.setAttributes());
     }
 
     public static void registerRenderers() {
@@ -140,5 +135,6 @@ public class ModRegistries {
         EntityRendererRegistry.register(ModEntities.BLASTLING, BlastlingRenderer::new);
         EntityRendererRegistry.register(ModEntities.SNARELING, SnarelingRenderer::new);
         EntityRendererRegistry.register(ModEntities.MAWLING, MawlingRenderer::new);
+        EntityRendererRegistry.register(ModEntities.WATCHLING, WatchlingRenderer::new);
     }
 }
