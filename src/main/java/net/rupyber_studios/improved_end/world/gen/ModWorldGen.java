@@ -5,5 +5,7 @@ public class ModWorldGen {
         ModOreGeneration.generateOres();
 
         ModTreeGeneration.generateTrees();
+
+        ModEntitySpawn.addEntitySpawn();
     }
 }
