@@ -1,9 +1,8 @@
 {
-	"parent" : "minecraft:block/slab",
-	"textures" : 
-	{
-		"bottom" : "improved_end:block/budding/budding_planks",
-		"side" : "improved_end:block/budding/budding_planks",
-		"top" : "improved_end:block/budding/budding_planks"
-	}
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "improved_end:block/budding/budding_planks",
+    "side": "improved_end:block/budding/budding_planks",
+    "top": "improved_end:block/budding/budding_planks"
+  }
 }

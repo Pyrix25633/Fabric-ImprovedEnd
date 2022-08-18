@@ -1,8 +1,7 @@
 {
-	"parent" : "minecraft:block/cube_column_horizontal",
-	"textures" : 
-	{
-		"end" : "improved_end:block/fire/fire_log",
-		"side" : "improved_end:block/fire/fire_log"
-	}
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "improved_end:block/fire/fire_log",
+    "side": "improved_end:block/fire/fire_log"
+  }
 }

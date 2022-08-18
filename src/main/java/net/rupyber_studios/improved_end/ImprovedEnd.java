@@ -10,29 +10,29 @@ import org.apache.logging.log4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
 public class ImprovedEnd implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LogManager.getLogger("improved_end");
+    // This logger is used to write text to the console and the log file.
+    // It is considered best practice to use your mod id as the logger's name.
+    // That way, it's clear which mod wrote info, warnings, and errors.
+    public static final Logger LOGGER = LogManager.getLogger("improved_end");
 
-	public static final String MOD_ID = "improved_end";
+    public static final String MOD_ID = "improved_end";
 
-	@Override
-	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+    @Override
+    public void onInitialize() {
+        // This code runs as soon as Minecraft is in a mod-load-ready state.
+        // However, some things (like resources) may still be uninitialized.
+        // Proceed with mild caution.
 
-		ModSounds.registerSounds();
+        ModSounds.registerSounds();
 
-		ModBlocks.registerModBlocks();
+        ModBlocks.registerModBlocks();
 
-		ModItems.registerModItems();
+        ModItems.registerModItems();
 
-		GeckoLib.initialize();
+        GeckoLib.initialize();
 
-		ModRegistries.registerAttributes();
+        ModRegistries.registerAttributes();
 
-		LOGGER.info("Hello Fabric world!");
-	}
+        LOGGER.info("Hello Fabric world!");
+    }
 }

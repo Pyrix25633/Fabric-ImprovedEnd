@@ -24,7 +24,7 @@ public class BlastlingModel extends AnimatedGeoModel<BlastlingEntity> {
         return new Identifier(ImprovedEnd.MOD_ID, "animations/blastling.animations.json");
     }
 
-    @SuppressWarnings({ "unchecked", "rawtypes" })
+    @SuppressWarnings({"unchecked", "rawtypes"})
     @Override
     public void setLivingAnimations(BlastlingEntity entity, Integer uniqueID, AnimationEvent customPredicate) {
         super.setLivingAnimations(entity, uniqueID, customPredicate);

@@ -1,24 +1,19 @@
 {
-	"key" : 
-	{
-		"#" : 
-		{
-			"item" : "minecraft:crimson_planks"
-		},
-		"X" : 
-		{
-			"item" : "minecraft:lantern"
-		}
-	},
-	"pattern" : 
-	[
-		"###",
-		"#X#",
-		"###"
-	],
-	"result" : 
-	{
-		"item" : "improved_end:waylamp"
-	},
-	"type" : "minecraft:crafting_shaped"
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_planks"
+    },
+    "X": {
+      "item": "minecraft:lantern"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "result": {
+    "item": "improved_end:waylamp"
+  },
+  "type": "minecraft:crafting_shaped"
 }

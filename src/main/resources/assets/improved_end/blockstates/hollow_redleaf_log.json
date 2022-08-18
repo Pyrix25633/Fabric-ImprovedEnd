@@ -1,102 +1,83 @@
 {
-	"multipart" : 
-	[
-		{
-			"apply" : 
-			{
-				"model" : "improved_end:block/redleaf/hollow_redleaf_log_horizontal",
-				"y" : 90
-			},
-			"when" : 
-			{
-				"axis" : "x"
-			}
-		},
-		{
-			"apply" : 
-			{
-				"model" : "improved_end:block/redleaf/hollow_redleaf_log"
-			},
-			"when" : 
-			{
-				"axis" : "y"
-			}
-		},
-		{
-			"apply" : 
-			{
-				"model" : "improved_end:block/redleaf/hollow_redleaf_log_horizontal"
-			},
-			"when" : 
-			{
-				"axis" : "z"
-			}
-		},
-		{
-			"apply" :
-			{
-				"model" : "improved_end:block/hollow_log_moss_x"
-			},
-			"when" :
-			{
-				"axis" : "x",
-				"mossy" : "moss"
-			}
-		},
-		{
-			"apply" :
-			{
-				"model" : "improved_end:block/hollow_log_wasp_moss_x"
-			},
-			"when" :
-			{
-				"axis" : "x",
-				"mossy" : "wasp_moss"
-			}
-		},
-		{
-			"apply" :
-			{
-				"model" : "improved_end:block/hollow_log_moss_y"
-			},
-			"when" :
-			{
-				"axis" : "y",
-				"mossy" : "moss"
-			}
-		},
-		{
-			"apply" :
-			{
-				"model" : "improved_end:block/hollow_log_wasp_moss_y"
-			},
-			"when" :
-			{
-				"axis" : "y",
-				"mossy" : "wasp_moss"
-			}
-		},
-		{
-			"apply" :
-			{
-				"model" : "improved_end:block/hollow_log_moss_z"
-			},
-			"when" :
-			{
-				"axis" : "z",
-				"mossy" : "moss"
-			}
-		},
-		{
-			"apply" :
-			{
-				"model" : "improved_end:block/hollow_log_wasp_moss_z"
-			},
-			"when" :
-			{
-				"axis" : "z",
-				"mossy" : "wasp_moss"
-			}
-		}
-	]
+  "multipart": [
+    {
+      "apply": {
+        "model": "improved_end:block/redleaf/hollow_redleaf_log_horizontal",
+        "y": 90
+      },
+      "when": {
+        "axis": "x"
+      }
+    },
+    {
+      "apply": {
+        "model": "improved_end:block/redleaf/hollow_redleaf_log"
+      },
+      "when": {
+        "axis": "y"
+      }
+    },
+    {
+      "apply": {
+        "model": "improved_end:block/redleaf/hollow_redleaf_log_horizontal"
+      },
+      "when": {
+        "axis": "z"
+      }
+    },
+    {
+      "apply": {
+        "model": "improved_end:block/hollow_log_moss_x"
+      },
+      "when": {
+        "axis": "x",
+        "mossy": "moss"
+      }
+    },
+    {
+      "apply": {
+        "model": "improved_end:block/hollow_log_wasp_moss_x"
+      },
+      "when": {
+        "axis": "x",
+        "mossy": "wasp_moss"
+      }
+    },
+    {
+      "apply": {
+        "model": "improved_end:block/hollow_log_moss_y"
+      },
+      "when": {
+        "axis": "y",
+        "mossy": "moss"
+      }
+    },
+    {
+      "apply": {
+        "model": "improved_end:block/hollow_log_wasp_moss_y"
+      },
+      "when": {
+        "axis": "y",
+        "mossy": "wasp_moss"
+      }
+    },
+    {
+      "apply": {
+        "model": "improved_end:block/hollow_log_moss_z"
+      },
+      "when": {
+        "axis": "z",
+        "mossy": "moss"
+      }
+    },
+    {
+      "apply": {
+        "model": "improved_end:block/hollow_log_wasp_moss_z"
+      },
+      "when": {
+        "axis": "z",
+        "mossy": "wasp_moss"
+      }
+    }
+  ]
 }

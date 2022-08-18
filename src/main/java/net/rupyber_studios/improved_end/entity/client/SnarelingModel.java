@@ -24,7 +24,7 @@ public class SnarelingModel extends AnimatedGeoModel<SnarelingEntity> {
         return new Identifier(ImprovedEnd.MOD_ID, "animations/snareling.animations.json");
     }
 
-    @SuppressWarnings({ "unchecked", "rawtypes" })
+    @SuppressWarnings({"unchecked", "rawtypes"})
     @Override
     public void setLivingAnimations(SnarelingEntity entity, Integer uniqueID, AnimationEvent customPredicate) {
         super.setLivingAnimations(entity, uniqueID, customPredicate);

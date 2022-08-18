@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/budding/budding_leaves"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/budding/budding_leaves"
+    }
+  }
 }

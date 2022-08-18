@@ -25,7 +25,7 @@ public class MawlingModel extends AnimatedGeoModel<MawlingEntity> {
         return new Identifier(ImprovedEnd.MOD_ID, "animations/mawling.animations.json");
     }
 
-    @SuppressWarnings({ "unchecked", "rawtypes" })
+    @SuppressWarnings({"unchecked", "rawtypes"})
     @Override
     public void setLivingAnimations(MawlingEntity entity, Integer uniqueID, AnimationEvent customPredicate) {
         super.setLivingAnimations(entity, uniqueID, customPredicate);

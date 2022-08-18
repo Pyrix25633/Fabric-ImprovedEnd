@@ -1,17 +1,13 @@
 {
-	"variants" : 
-	{
-		"type=bottom" : 
-		{
-			"model" : "improved_end:block/dark/cut_dark_sandstone_slab"
-		},
-		"type=double" : 
-		{
-			"model" : "improved_end:block/dark/cut_dark_sandstone"
-		},
-		"type=top" : 
-		{
-			"model" : "improved_end:block/dark/cut_dark_sandstone_slab_top"
-		}
-	}
+  "variants": {
+    "type=bottom": {
+      "model": "improved_end:block/dark/cut_dark_sandstone_slab"
+    },
+    "type=double": {
+      "model": "improved_end:block/dark/cut_dark_sandstone"
+    },
+    "type=top": {
+      "model": "improved_end:block/dark/cut_dark_sandstone_slab_top"
+    }
+  }
 }

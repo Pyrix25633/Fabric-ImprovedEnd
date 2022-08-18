@@ -1,13 +1,10 @@
 {
-	"variants" : 
-	{
-		"powered=false" : 
-		{
-			"model" : "improved_end:block/redleaf/redleaf_pressure_plate"
-		},
-		"powered=true" : 
-		{
-			"model" : "improved_end:block/redleaf/redleaf_pressure_plate_down"
-		}
-	}
+  "variants": {
+    "powered=false": {
+      "model": "improved_end:block/redleaf/redleaf_pressure_plate"
+    },
+    "powered=true": {
+      "model": "improved_end:block/redleaf/redleaf_pressure_plate_down"
+    }
+  }
 }

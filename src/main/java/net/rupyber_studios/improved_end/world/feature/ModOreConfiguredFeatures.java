@@ -7,7 +7,8 @@ import net.rupyber_studios.improved_end.util.ModTags;
 public class ModOreConfiguredFeatures {
     public static final RuleTest END_STONE_ORE_REPLACEABLES;
 
-    public ModOreConfiguredFeatures() {}
+    public ModOreConfiguredFeatures() {
+    }
 
     static {
         END_STONE_ORE_REPLACEABLES = new TagMatchRuleTest(ModTags.Blocks.END_STONE_ORE_REPLACEABLES);

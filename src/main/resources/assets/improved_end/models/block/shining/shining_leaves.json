@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/leaves",
-	"textures" : 
-	{
-		"all" : "improved_end:block/shining/shining_leaves"
-	}
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "improved_end:block/shining/shining_leaves"
+  }
 }

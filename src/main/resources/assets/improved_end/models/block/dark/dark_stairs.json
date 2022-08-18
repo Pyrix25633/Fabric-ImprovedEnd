@@ -1,9 +1,8 @@
 {
-	"parent" : "minecraft:block/stairs",
-	"textures" : 
-	{
-		"bottom" : "improved_end:block/dark/dark_planks",
-		"side" : "improved_end:block/dark/dark_planks",
-		"top" : "improved_end:block/dark/dark_planks"
-	}
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "improved_end:block/dark/dark_planks",
+    "side": "improved_end:block/dark/dark_planks",
+    "top": "improved_end:block/dark/dark_planks"
+  }
 }

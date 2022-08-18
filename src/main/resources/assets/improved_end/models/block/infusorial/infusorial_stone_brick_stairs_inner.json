@@ -1,9 +1,8 @@
 {
-	"parent" : "minecraft:block/inner_stairs",
-	"textures" : 
-	{
-		"bottom" : "improved_end:block/infusorial/infusorial_stone_bricks",
-		"side" : "improved_end:block/infusorial/infusorial_stone_bricks",
-		"top" : "improved_end:block/infusorial/infusorial_stone_bricks"
-	}
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "improved_end:block/infusorial/infusorial_stone_bricks",
+    "side": "improved_end:block/infusorial/infusorial_stone_bricks",
+    "top": "improved_end:block/infusorial/infusorial_stone_bricks"
+  }
 }

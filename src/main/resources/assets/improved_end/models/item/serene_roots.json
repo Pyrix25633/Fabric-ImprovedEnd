@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:item/generated",
-	"textures" : 
-	{
-		"layer0" : "improved_end:block/serene/serene_roots"
-	}
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "improved_end:block/serene/serene_roots"
+  }
 }

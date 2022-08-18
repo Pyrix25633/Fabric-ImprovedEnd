@@ -71,9 +71,9 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return HostileEntity.createHostileAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 40.0)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.30000001192092896)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 7.0)
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 64.0);
+            .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.30000001192092896)
+            .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 7.0)
+            .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 64.0);
     }
 
     @Override
@@ -91,11 +91,11 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        if(this.isAttacking()) {
+        if (this.isAttacking()) {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.attack", true));
             return PlayState.CONTINUE;
         }
-        if(event.isMoving()) {
+        if (event.isMoving()) {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.blastling.walk", true));
             return PlayState.CONTINUE;
         }
@@ -106,7 +106,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     @Override
     public void registerControllers(AnimationData animationData) {
         animationData.addAnimationController(new AnimationController(this, "controller",
-                0, this::predicate));
+            0, this::predicate));
     }
 
     @Override
@@ -217,14 +217,14 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     @Override
     public void tickMovement() {
         if (this.world.isClient) {
-            for(int i = 0; i < 2; ++i) {
+            for (int i = 0; i < 2; ++i) {
                 this.world.addParticle(ParticleTypes.PORTAL, this.getParticleX(0.5), this.getRandomBodyY() - 0.25, this.getParticleZ(0.5), (this.random.nextDouble() - 0.5) * 2.0, -this.random.nextDouble(), (this.random.nextDouble() - 0.5) * 2.0);
             }
         }
 
         this.jumping = false;
         if (!this.world.isClient) {
-            this.tickAngerLogic((ServerWorld)this.world, true);
+            this.tickAngerLogic((ServerWorld) this.world, true);
         }
 
         super.tickMovement();
@@ -251,7 +251,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     protected boolean teleportRandomly() {
         if (!this.world.isClient() && this.isAlive()) {
             double d = this.getX() + (this.random.nextDouble() - 0.5) * 64.0;
-            double e = this.getY() + (double)(this.random.nextInt(64) - 32);
+            double e = this.getY() + (double) (this.random.nextInt(64) - 32);
             double f = this.getZ() + (this.random.nextDouble() - 0.5) * 64.0;
             return this.teleportTo(d, e, f);
         } else {
@@ -263,7 +263,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         Vec3d vec3d = new Vec3d(this.getX() - entity.getX(), this.getBodyY(0.5) - entity.getEyeY(), this.getZ() - entity.getZ());
         vec3d = vec3d.normalize();
         double e = this.getX() + (this.random.nextDouble() - 0.5) * 8.0 - vec3d.x * 16.0;
-        double f = this.getY() + (double)(this.random.nextInt(16) - 8) - vec3d.y * 16.0;
+        double f = this.getY() + (double) (this.random.nextInt(16) - 8) - vec3d.y * 16.0;
         double g = this.getZ() + (this.random.nextDouble() - 0.5) * 8.0 - vec3d.z * 16.0;
         return this.teleportTo(e, f, g);
     }
@@ -271,7 +271,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
     private boolean teleportTo(double x, double y, double z) {
         BlockPos.Mutable mutable = new BlockPos.Mutable(x, y, z);
 
-        while(mutable.getY() > this.world.getBottomY() && !this.world.getBlockState(mutable).getMaterial().blocksMovement()) {
+        while (mutable.getY() > this.world.getBottomY() && !this.world.getBlockState(mutable).getMaterial().blocksMovement()) {
             mutable.move(Direction.DOWN);
         }
 
@@ -319,12 +319,12 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
             Entity entity = source.getSource();
             boolean bl;
             if (entity instanceof PotionEntity) {
-                bl = this.damageFromPotion(source, (PotionEntity)entity, amount);
+                bl = this.damageFromPotion(source, (PotionEntity) entity, amount);
             } else {
                 bl = false;
             }
 
-            for(int i = 0; i < 64; ++i) {
+            for (int i = 0; i < 64; ++i) {
                 if (this.teleportRandomly()) {
                     return true;
                 }
@@ -418,7 +418,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
         public TeleportTowardsPlayerGoal(BlastlingEntity enderman, @Nullable Predicate<LivingEntity> targetPredicate) {
             super(enderman, PlayerEntity.class, 10, false, false, targetPredicate);
             this.enderman = enderman;
-            this.staringPlayerPredicate = TargetPredicate.createAttackable().setBaseMaxDistance(this.getFollowRange()).setPredicate((playerEntity) -> enderman.isPlayerStaring((PlayerEntity)playerEntity));
+            this.staringPlayerPredicate = TargetPredicate.createAttackable().setBaseMaxDistance(this.getFollowRange()).setPredicate((playerEntity) -> enderman.isPlayerStaring((PlayerEntity) playerEntity));
         }
 
         @Override
@@ -467,7 +467,7 @@ public class BlastlingEntity extends HostileEntity implements IAnimatable, Anger
                 }
             } else {
                 if (this.targetEntity != null && !this.enderman.hasVehicle()) {
-                    if (this.enderman.isPlayerStaring((PlayerEntity)this.targetEntity)) {
+                    if (this.enderman.isPlayerStaring((PlayerEntity) this.targetEntity)) {
                         if (this.targetEntity.squaredDistanceTo(this.enderman) < 16.0) {
                             this.enderman.teleportRandomly();
                         }

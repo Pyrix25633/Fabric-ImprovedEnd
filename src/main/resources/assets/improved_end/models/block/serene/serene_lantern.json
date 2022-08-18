@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/template_lantern",
-	"textures" : 
-	{
-		"lantern" : "improved_end:block/serene/serene_lantern"
-	}
+  "parent": "minecraft:block/template_lantern",
+  "textures": {
+    "lantern": "improved_end:block/serene/serene_lantern"
+  }
 }

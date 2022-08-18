@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/button_pressed",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/indigo/indigo_planks"
-	}
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "improved_end:block/indigo/indigo_planks"
+  }
 }

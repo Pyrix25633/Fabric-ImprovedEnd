@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/infusorial/infusorial_planks"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/infusorial/infusorial_planks"
+    }
+  }
 }

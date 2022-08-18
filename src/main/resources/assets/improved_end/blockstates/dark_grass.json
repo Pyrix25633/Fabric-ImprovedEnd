@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/dark/dark_grass"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/dark/dark_grass"
+    }
+  }
 }

@@ -1,17 +1,13 @@
 {
-	"variants" : 
-	{
-		"type=bottom" : 
-		{
-			"model" : "improved_end:block/fire/fire_slab"
-		},
-		"type=double" : 
-		{
-			"model" : "improved_end:block/fire/fire_planks"
-		},
-		"type=top" : 
-		{
-			"model" : "improved_end:block/fire/fire_slab_top"
-		}
-	}
+  "variants": {
+    "type=bottom": {
+      "model": "improved_end:block/fire/fire_slab"
+    },
+    "type=double": {
+      "model": "improved_end:block/fire/fire_planks"
+    },
+    "type=top": {
+      "model": "improved_end:block/fire/fire_slab_top"
+    }
+  }
 }

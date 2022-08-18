@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/fence_post",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/serene/serene_planks"
-	}
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "improved_end:block/serene/serene_planks"
+  }
 }

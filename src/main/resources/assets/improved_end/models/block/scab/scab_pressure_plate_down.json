@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/pressure_plate_down",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/scab/scab_planks"
-	}
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "improved_end:block/scab/scab_planks"
+  }
 }

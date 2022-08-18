@@ -1,21 +1,17 @@
 {
-	"group" : "bark",
-	"key" : 
-	{
-		"#" : 
-		{
-			"item" : "improved_end:stripped_indigo_log"
-		}
-	},
-	"pattern" : 
-	[
-		"##",
-		"##"
-	],
-	"result" : 
-	{
-		"count" : 3,
-		"item" : "improved_end:stripped_indigo_wood"
-	},
-	"type" : "minecraft:crafting_shaped"
+  "group": "bark",
+  "key": {
+    "#": {
+      "item": "improved_end:stripped_indigo_log"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "improved_end:stripped_indigo_wood"
+  },
+  "type": "minecraft:crafting_shaped"
 }

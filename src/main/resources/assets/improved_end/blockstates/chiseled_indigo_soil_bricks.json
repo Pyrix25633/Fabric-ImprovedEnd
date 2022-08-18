@@ -1,9 +1,7 @@
 {
-  "variants" :
-  {
-    "" :
-    {
-      "model" : "improved_end:block/indigo/chiseled_indigo_soil_bricks"
+  "variants": {
+    "": {
+      "model": "improved_end:block/indigo/chiseled_indigo_soil_bricks"
     }
   }
 }

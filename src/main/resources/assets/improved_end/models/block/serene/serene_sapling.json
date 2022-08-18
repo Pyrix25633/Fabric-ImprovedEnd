@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/cross",
-	"textures" : 
-	{
-		"cross" : "improved_end:block/serene/serene_sapling"
-	}
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "improved_end:block/serene/serene_sapling"
+  }
 }

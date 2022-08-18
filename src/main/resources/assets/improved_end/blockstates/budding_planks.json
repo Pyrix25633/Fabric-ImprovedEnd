@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/budding/budding_planks"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/budding/budding_planks"
+    }
+  }
 }

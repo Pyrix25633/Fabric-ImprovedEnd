@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/cube_all",
-	"textures" : 
-	{
-		"all" : "improved_end:block/scab/scab_planks"
-	}
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "improved_end:block/scab/scab_planks"
+  }
 }

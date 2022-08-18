@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/template_fence_gate_wall",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/dark/dark_planks"
-	}
+  "parent": "minecraft:block/template_fence_gate_wall",
+  "textures": {
+    "texture": "improved_end:block/dark/dark_planks"
+  }
 }

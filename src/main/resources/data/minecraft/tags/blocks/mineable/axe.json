@@ -37,7 +37,6 @@
     "improved_end:stripped_indigo_log",
     "improved_end:indigo_wood",
     "improved_end:stripped_indigo_wood",
-
     "improved_end:dark_planks",
     "improved_end:infusorial_planks",
     "improved_end:budding_planks",
@@ -47,7 +46,6 @@
     "improved_end:serene_planks",
     "improved_end:scab_planks",
     "improved_end:indigo_planks",
-
     "improved_end:dark_slab",
     "improved_end:infusorial_slab",
     "improved_end:budding_slab",
@@ -57,7 +55,6 @@
     "improved_end:serene_slab",
     "improved_end:scab_slab",
     "improved_end:indigo_slab",
-
     "improved_end:dark_stairs",
     "improved_end:infusorial_stairs",
     "improved_end:budding_stairs",
@@ -67,7 +64,6 @@
     "improved_end:serene_stairs",
     "improved_end:scab_stairs",
     "improved_end:indigo_stairs",
-
     "improved_end:dark_button",
     "improved_end:infusorial_button",
     "improved_end:budding_button",
@@ -77,7 +73,6 @@
     "improved_end:serene_button",
     "improved_end:scab_button",
     "improved_end:indigo_button",
-
     "improved_end:dark_pressure_plate",
     "improved_end:infusorial_pressure_plate",
     "improved_end:budding_pressure_plate",
@@ -87,7 +82,6 @@
     "improved_end:serene_pressure_plate",
     "improved_end:scab_pressure_plate",
     "improved_end:indigo_pressure_plate",
-
     "improved_end:dark_trapdoor",
     "improved_end:infusorial_trapdoor",
     "improved_end:budding_trapdoor",
@@ -97,7 +91,6 @@
     "improved_end:serene_trapdoor",
     "improved_end:scab_trapdoor",
     "improved_end:indigo_trapdoor",
-
     "improved_end:dark_door",
     "improved_end:infusorial_door",
     "improved_end:budding_door",
@@ -107,7 +100,6 @@
     "improved_end:serene_door",
     "improved_end:scab_door",
     "improved_end:indigo_door",
-
     "improved_end:dark_fence",
     "improved_end:infusorial_fence",
     "improved_end:budding_fence",
@@ -117,7 +109,6 @@
     "improved_end:serene_fence",
     "improved_end:scab_fence",
     "improved_end:indigo_fence",
-
     "improved_end:dark_fence_gate",
     "improved_end:infusorial_fence_gate",
     "improved_end:budding_fence_gate",
@@ -127,7 +118,6 @@
     "improved_end:serene_fence_gate",
     "improved_end:scab_fence_gate",
     "improved_end:indigo_fence_gate",
-
     "improved_end:dark_vertical_slab",
     "improved_end:infusorial_vertical_slab",
     "improved_end:budding_vertical_slab",
@@ -137,7 +127,6 @@
     "improved_end:serene_vertical_slab",
     "improved_end:scab_vertical_slab",
     "improved_end:indigo_vertical_slab",
-
     "improved_end:hollow_dark_log",
     "improved_end:hollow_infusorial_log",
     "improved_end:hollow_budding_log",
@@ -147,7 +136,6 @@
     "improved_end:hollow_serene_log",
     "improved_end:hollow_scab_log",
     "improved_end:hollow_indigo_log",
-
     "improved_end:stripped_hollow_dark_log",
     "improved_end:stripped_hollow_infusorial_log",
     "improved_end:stripped_hollow_budding_log",
@@ -157,7 +145,6 @@
     "improved_end:stripped_hollow_serene_log",
     "improved_end:stripped_hollow_scab_log",
     "improved_end:stripped_hollow_indigo_log",
-
     "improved_end:dark_sign",
     "improved_end:infusorial_sign",
     "improved_end:budding_sign",
@@ -176,7 +163,6 @@
     "improved_end:serene_wall_sign",
     "improved_end:scab_wall_sign",
     "improved_end:indigo_wall_sign",
-
     "improved_end:dark_waylamp",
     "improved_end:infusorial_waylamp",
     "improved_end:budding_waylamp",
@@ -186,7 +172,6 @@
     "improved_end:serene_waylamp",
     "improved_end:scab_waylamp",
     "improved_end:indigo_waylamp",
-
     "improved_end:dark_bookshelf",
     "improved_end:infusorial_bookshelf",
     "improved_end:budding_bookshelf",
@@ -196,7 +181,6 @@
     "improved_end:serene_bookshelf",
     "improved_end:scab_bookshelf",
     "improved_end:indigo_bookshelf",
-
     "improved_end:waylamp"
   ]
 }

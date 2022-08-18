@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/scab/scab_waylamp"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/scab/scab_waylamp"
+    }
+  }
 }

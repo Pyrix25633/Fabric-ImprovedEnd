@@ -8,7 +8,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 
-public class ModShortFernBlock extends ModFernBlock{
+public class ModShortFernBlock extends ModFernBlock {
     protected static final VoxelShape SHAPE = Block.createCuboidShape(2.0, 0.0, 2.0, 14.0, 3.0, 14.0);
 
     public ModShortFernBlock(Settings settings) {

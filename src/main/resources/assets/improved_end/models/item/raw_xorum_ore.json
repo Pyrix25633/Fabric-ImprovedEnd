@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:item/generated",
-	"textures" : 
-	{
-		"layer0" : "improved_end:item/xorum/raw_xorum_ore"
-	}
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "improved_end:item/xorum/raw_xorum_ore"
+  }
 }

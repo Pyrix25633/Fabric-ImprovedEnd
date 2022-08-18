@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/waylamp"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/waylamp"
+    }
+  }
 }

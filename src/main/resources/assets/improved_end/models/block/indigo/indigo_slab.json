@@ -1,9 +1,8 @@
 {
-	"parent" : "minecraft:block/slab",
-	"textures" : 
-	{
-		"bottom" : "improved_end:block/indigo/indigo_planks",
-		"side" : "improved_end:block/indigo/indigo_planks",
-		"top" : "improved_end:block/indigo/indigo_planks"
-	}
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "improved_end:block/indigo/indigo_planks",
+    "side": "improved_end:block/indigo/indigo_planks",
+    "top": "improved_end:block/indigo/indigo_planks"
+  }
 }

@@ -1,17 +1,13 @@
 {
-	"variants" : 
-	{
-		"type=bottom" : 
-		{
-			"model" : "improved_end:block/scab/polished_scab_stone_slab"
-		},
-		"type=double" : 
-		{
-			"model" : "improved_end:block/scab/polished_scab_stone"
-		},
-		"type=top" : 
-		{
-			"model" : "improved_end:block/scab/polished_scab_stone_slab_top"
-		}
-	}
+  "variants": {
+    "type=bottom": {
+      "model": "improved_end:block/scab/polished_scab_stone_slab"
+    },
+    "type=double": {
+      "model": "improved_end:block/scab/polished_scab_stone"
+    },
+    "type=top": {
+      "model": "improved_end:block/scab/polished_scab_stone_slab_top"
+    }
+  }
 }

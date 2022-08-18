@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "improved_end",
   "version": "${version}",
-
   "name": "Improved End",
   "description": "This is a fabric mod to improve the end dimension, adding new blocks, biomes and mobs!",
   "authors": [
@@ -19,10 +18,8 @@
     "sources": "https://github.com/Pyrix25633/Fabric-ImprovedEnd",
     "issues": "https://github.com/Pyrix25633/Fabric-ImprovedEnd/issues"
   },
-
   "license": "GPL-3.0",
   "icon": "assets/improved_end/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -47,7 +44,6 @@
   "mixins": [
     "improved_end.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",

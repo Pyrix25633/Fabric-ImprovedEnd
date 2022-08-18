@@ -9,37 +9,37 @@ public class ModOreGeneration {
     public static void generateOres() {
         //Wave end stones
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DARK_WAVE_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DARK_WAVE_STONE_ORE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INFUSORIAL_WAVE_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INFUSORIAL_WAVE_STONE_ORE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.REDLEAF_WAVE_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.REDLEAF_WAVE_STONE_ORE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SHINING_WAVE_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SHINING_WAVE_STONE_ORE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SCAB_WAVE_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SCAB_WAVE_STONE_ORE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INDIGO_WAVE_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INDIGO_WAVE_STONE_ORE_PLACED.getKey().get());
 
         //Sand
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DARK_SAND_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.DARK_SAND_ORE_PLACED.getKey().get());
         //Stones
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INFUSORIAL_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INFUSORIAL_STONE_ORE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.REDLEAF_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.REDLEAF_STONE_ORE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SCAB_STONE_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.SCAB_STONE_ORE_PLACED.getKey().get());
         //Soil
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INDIGO_SOIL_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.INDIGO_SOIL_ORE_PLACED.getKey().get());
         //Moss
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.WASP_MOSS_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.WASP_MOSS_ORE_PLACED.getKey().get());
 
         //Xorum generates last, eventually replacing some wave stone blocks
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                        GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.XORUM_ORE_PLACED.getKey().get());
+            GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.XORUM_ORE_PLACED.getKey().get());
     }
 }

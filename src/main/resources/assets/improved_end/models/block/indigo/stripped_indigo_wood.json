@@ -1,8 +1,7 @@
 {
-	"parent" : "minecraft:block/cube_column_horizontal",
-	"textures" : 
-	{
-		"end" : "improved_end:block/indigo/stripped_indigo_log",
-		"side" : "improved_end:block/indigo/stripped_indigo_log"
-	}
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "improved_end:block/indigo/stripped_indigo_log",
+    "side": "improved_end:block/indigo/stripped_indigo_log"
+  }
 }

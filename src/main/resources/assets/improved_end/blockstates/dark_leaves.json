@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/dark/dark_leaves"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/dark/dark_leaves"
+    }
+  }
 }

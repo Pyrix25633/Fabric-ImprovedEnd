@@ -1,21 +1,17 @@
 {
-	"key" : 
-	{
-		"#" : 
-		{
-			"item" : "improved_end:fire_log"
-		}
-	},
-	"pattern" : 
-	[
-		"###",
-		"# #",
-		"###"
-	],
-	"result" : 
-	{
-		"count" : 8,
-		"item" : "improved_end:hollow_fire_log"
-	},
-	"type" : "minecraft:crafting_shaped"
+  "key": {
+    "#": {
+      "item": "improved_end:fire_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "improved_end:hollow_fire_log"
+  },
+  "type": "minecraft:crafting_shaped"
 }

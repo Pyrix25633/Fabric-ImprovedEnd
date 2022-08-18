@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/fence_post",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/shining/shining_planks"
-	}
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "improved_end:block/shining/shining_planks"
+  }
 }

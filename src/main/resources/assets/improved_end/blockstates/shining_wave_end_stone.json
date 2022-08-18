@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/shining/shining_wave_end_stone"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/shining/shining_wave_end_stone"
+    }
+  }
 }

@@ -1,13 +1,10 @@
 {
-	"variants" : 
-	{
-		"hanging=false" : 
-		{
-			"model" : "improved_end:block/indigo/indigo_lantern"
-		},
-		"hanging=true" : 
-		{
-			"model" : "improved_end:block/indigo/indigo_lantern_hanging"
-		}
-	}
+  "variants": {
+    "hanging=false": {
+      "model": "improved_end:block/indigo/indigo_lantern"
+    },
+    "hanging=true": {
+      "model": "improved_end:block/indigo/indigo_lantern_hanging"
+    }
+  }
 }

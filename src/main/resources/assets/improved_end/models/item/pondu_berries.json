@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:item/generated",
-	"textures" : 
-	{
-		"layer0" : "improved_end:item/dark/pondu_berries"
-	}
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "improved_end:item/dark/pondu_berries"
+  }
 }

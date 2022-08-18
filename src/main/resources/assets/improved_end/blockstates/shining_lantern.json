@@ -1,13 +1,10 @@
 {
-	"variants" : 
-	{
-		"hanging=false" : 
-		{
-			"model" : "improved_end:block/shining/shining_lantern"
-		},
-		"hanging=true" : 
-		{
-			"model" : "improved_end:block/shining/shining_lantern_hanging"
-		}
-	}
+  "variants": {
+    "hanging=false": {
+      "model": "improved_end:block/shining/shining_lantern"
+    },
+    "hanging=true": {
+      "model": "improved_end:block/shining/shining_lantern_hanging"
+    }
+  }
 }

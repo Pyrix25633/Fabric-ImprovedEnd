@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/fire/fire_bookshelf"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/fire/fire_bookshelf"
+    }
+  }
 }

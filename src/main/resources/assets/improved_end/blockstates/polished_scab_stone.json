@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/scab/polished_scab_stone"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/scab/polished_scab_stone"
+    }
+  }
 }

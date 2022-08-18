@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/indigo/indigo_grass"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/indigo/indigo_grass"
+    }
+  }
 }

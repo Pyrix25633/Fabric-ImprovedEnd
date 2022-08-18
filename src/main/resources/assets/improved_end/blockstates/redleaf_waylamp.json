@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/redleaf/redleaf_waylamp"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/redleaf/redleaf_waylamp"
+    }
+  }
 }

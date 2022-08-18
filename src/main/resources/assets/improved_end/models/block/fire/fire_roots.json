@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/cross",
-	"textures" : 
-	{
-		"cross" : "improved_end:block/fire/fire_roots"
-	}
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "improved_end:block/fire/fire_roots"
+  }
 }

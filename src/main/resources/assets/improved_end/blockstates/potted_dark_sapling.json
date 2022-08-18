@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/dark/potted_dark_sapling"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/dark/potted_dark_sapling"
+    }
+  }
 }

@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/redleaf/potted_redleaf_sapling"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/redleaf/potted_redleaf_sapling"
+    }
+  }
 }

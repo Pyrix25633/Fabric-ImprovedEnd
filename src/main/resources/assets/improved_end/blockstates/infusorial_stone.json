@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/infusorial/infusorial_stone"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/infusorial/infusorial_stone"
+    }
+  }
 }

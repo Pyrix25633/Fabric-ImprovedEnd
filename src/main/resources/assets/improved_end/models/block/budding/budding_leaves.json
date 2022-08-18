@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/leaves",
-	"textures" : 
-	{
-		"all" : "improved_end:block/budding/budding_leaves"
-	}
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "improved_end:block/budding/budding_leaves"
+  }
 }

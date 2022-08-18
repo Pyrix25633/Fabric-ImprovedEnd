@@ -76,7 +76,8 @@ public class VerticalSlabBlock extends Block implements Waterloggable {
     public BlockState getPlacementState(ItemPlacementContext context) {
         BlockPos blockpos = context.getBlockPos();
         BlockState blockstate = context.getWorld().getBlockState(blockpos);
-        if (blockstate.getBlock() == this) return blockstate.with(TYPE, VerticalSlabType.DOUBLE).with(WATERLOGGED, false);
+        if (blockstate.getBlock() == this)
+            return blockstate.with(TYPE, VerticalSlabType.DOUBLE).with(WATERLOGGED, false);
 
         FluidState fluid = context.getWorld().getFluidState(blockpos);
         BlockState retState = getDefaultState().with(WATERLOGGED, fluid.getFluid() == Fluids.WATER);

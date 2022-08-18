@@ -1,8 +1,7 @@
 {
-	"parent" : "minecraft:block/cube_column",
-	"textures" : 
-	{
-		"end" : "improved_end:block/infusorial/infusorial_planks",
-		"side" : "improved_end:block/infusorial/infusorial_bookshelf"
-	}
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "improved_end:block/infusorial/infusorial_planks",
+    "side": "improved_end:block/infusorial/infusorial_bookshelf"
+  }
 }

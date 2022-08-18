@@ -1,17 +1,13 @@
 {
-	"variants" : 
-	{
-		"type=bottom" : 
-		{
-			"model" : "improved_end:block/serene/serene_slab"
-		},
-		"type=double" : 
-		{
-			"model" : "improved_end:block/serene/serene_planks"
-		},
-		"type=top" : 
-		{
-			"model" : "improved_end:block/serene/serene_slab_top"
-		}
-	}
+  "variants": {
+    "type=bottom": {
+      "model": "improved_end:block/serene/serene_slab"
+    },
+    "type=double": {
+      "model": "improved_end:block/serene/serene_planks"
+    },
+    "type=top": {
+      "model": "improved_end:block/serene/serene_slab_top"
+    }
+  }
 }

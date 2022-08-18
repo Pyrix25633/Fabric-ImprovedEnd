@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/cross",
-	"textures" : 
-	{
-		"cross" : "improved_end:block/redleaf/redleaf_grass"
-	}
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "improved_end:block/redleaf/redleaf_grass"
+  }
 }

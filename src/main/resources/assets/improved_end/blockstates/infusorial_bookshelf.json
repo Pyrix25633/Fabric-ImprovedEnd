@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/infusorial/infusorial_bookshelf"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/infusorial/infusorial_bookshelf"
+    }
+  }
 }

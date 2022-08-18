@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/flower_pot_cross",
-	"textures" : 
-	{
-		"plant" : "improved_end:block/budding/potted_budding_sapling"
-	}
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "improved_end:block/budding/potted_budding_sapling"
+  }
 }

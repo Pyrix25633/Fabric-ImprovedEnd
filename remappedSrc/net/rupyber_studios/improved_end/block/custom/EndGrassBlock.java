@@ -29,10 +29,10 @@ public class EndGrassBlock extends Block {
         if (!canSurvive(world, pos)) {
             world.setBlockState(pos, Blocks.END_STONE.getDefaultState());
         } else {
-            for(int i = 0; i < 4; ++i) {
+            for (int i = 0; i < 4; ++i) {
                 BlockPos blockPos = pos.add(random.nextInt(3) - 1, random.nextInt(5) - 3, random.nextInt(3) - 1);
                 if (world.getBlockState(blockPos).isOf(Blocks.END_STONE) && canSurvive(world, blockPos)
-                        && canSpread(world, pos) && world.getBlockState(blockPos.up()).getBlock() != Blocks.CHORUS_PLANT) {
+                    && canSpread(world, pos) && world.getBlockState(blockPos.up()).getBlock() != Blocks.CHORUS_PLANT) {
                     world.setBlockState(blockPos, state);
                 }
             }

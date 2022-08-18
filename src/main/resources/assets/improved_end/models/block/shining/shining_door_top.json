@@ -1,8 +1,7 @@
 {
-	"parent" : "minecraft:block/door_top",
-	"textures" : 
-	{
-		"bottom" : "improved_end:block/shining/shining_door_bottom",
-		"top" : "improved_end:block/shining/shining_door_top"
-	}
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "bottom": "improved_end:block/shining/shining_door_bottom",
+    "top": "improved_end:block/shining/shining_door_top"
+  }
 }

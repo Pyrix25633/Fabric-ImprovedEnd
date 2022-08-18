@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/scab/scab_sprouts"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/scab/scab_sprouts"
+    }
+  }
 }

@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/redleaf/redleaf_wave_end_stone"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/redleaf/redleaf_wave_end_stone"
+    }
+  }
 }

@@ -48,7 +48,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
 
     public IndigoSquidEntity(EntityType<? extends WaterCreatureEntity> entityType, World world) {
         super(entityType, world);
-        this.random.setSeed((long)this.getId());
+        this.random.setSeed((long) this.getId());
         this.thrustTimerSpeed = 1.0F / (this.random.nextFloat() + 1.0F) * 0.2F;
         setAttributes();
         initGoals();
@@ -56,7 +56,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
 
     public static DefaultAttributeContainer.Builder setAttributes() {
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0);
+            .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
     @Override
     public void registerControllers(AnimationData animationData) {
         animationData.addAnimationController(new AnimationController(this, "controller",
-                0, this::predicate));
+            0, this::predicate));
     }
 
     @Override
@@ -128,7 +128,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
         this.prevThrustTimer = this.thrustTimer;
         this.prevTentacleAngle = this.tentacleAngle;
         this.thrustTimer += this.thrustTimerSpeed;
-        if ((double)this.thrustTimer > 6.283185307179586) {
+        if ((double) this.thrustTimer > 6.283185307179586) {
             if (this.world.isClient) {
                 this.thrustTimer = 6.2831855F;
             } else {
@@ -137,14 +137,14 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
                     this.thrustTimerSpeed = 1.0F / (this.random.nextFloat() + 1.0F) * 0.2F;
                 }
 
-                this.world.sendEntityStatus(this, (byte)19);
+                this.world.sendEntityStatus(this, (byte) 19);
             }
         }
         if (this.isInsideWaterOrBubbleColumn()) {
             if (this.thrustTimer < 3.1415927F) {
                 float f = this.thrustTimer / 3.1415927F;
                 this.tentacleAngle = MathHelper.sin(f * f * 3.1415927F) * 3.1415927F * 0.25F;
-                if ((double)f > 0.75) {
+                if ((double) f > 0.75) {
                     this.swimVelocityScale = 1.0F;
                     this.turningSpeed = 1.0F;
                 } else {
@@ -156,20 +156,20 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
                 this.turningSpeed *= 0.99F;
             }
             if (!this.world.isClient) {
-                this.setVelocity((this.swimX * this.swimVelocityScale), (double)(this.swimY * this.swimVelocityScale), (this.swimZ * this.swimVelocityScale));
+                this.setVelocity((this.swimX * this.swimVelocityScale), (double) (this.swimY * this.swimVelocityScale), (this.swimZ * this.swimVelocityScale));
             }
             Vec3d vec3d = this.getVelocity();
             double d = vec3d.horizontalLength();
-            this.bodyYaw += (-((float)MathHelper.atan2(vec3d.x, vec3d.z)) * 57.295776F - this.bodyYaw) * 0.1F;
+            this.bodyYaw += (-((float) MathHelper.atan2(vec3d.x, vec3d.z)) * 57.295776F - this.bodyYaw) * 0.1F;
             this.setYaw(this.bodyYaw);
             this.rollAngle += 3.1415927F * this.turningSpeed * 1.5F;
-            this.tiltAngle += (-((float)MathHelper.atan2(d, vec3d.y)) * 57.295776F - this.tiltAngle) * 0.1F;
+            this.tiltAngle += (-((float) MathHelper.atan2(d, vec3d.y)) * 57.295776F - this.tiltAngle) * 0.1F;
         } else {
             this.tentacleAngle = MathHelper.abs(MathHelper.sin(this.thrustTimer)) * 3.1415927F * 0.25F;
             if (!this.world.isClient) {
                 double e = this.getVelocity().y;
                 if (this.hasStatusEffect(StatusEffects.LEVITATION)) {
-                    e = 0.05 * (double)(this.getStatusEffect(StatusEffects.LEVITATION).getAmplifier() + 1);
+                    e = 0.05 * (double) (this.getStatusEffect(StatusEffects.LEVITATION).getAmplifier() + 1);
                 } else if (!this.hasNoGravity()) {
                     e -= 0.08;
                 }
@@ -201,10 +201,10 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
         this.playSound(this.getSquirtSound(), this.getSoundVolume(), this.getSoundPitch());
         Vec3d vec3d = this.applyBodyRotations(new Vec3d(0.0, -1.0, 0.0)).add(this.getX(), this.getY(), this.getZ());
 
-        for(int i = 0; i < 30; ++i) {
-            Vec3d vec3d2 = this.applyBodyRotations(new Vec3d((double)this.random.nextFloat() * 0.6 - 0.3, -1.0, (double)this.random.nextFloat() * 0.6 - 0.3));
-            Vec3d vec3d3 = vec3d2.multiply(0.3 + (double)(this.random.nextFloat() * 2.0F));
-            ((ServerWorld)this.world).spawnParticles(this.getInkParticle(), vec3d.x, vec3d.y + 0.5, vec3d.z, 0, vec3d3.x, vec3d3.y, vec3d3.z, 0.10000000149011612);
+        for (int i = 0; i < 30; ++i) {
+            Vec3d vec3d2 = this.applyBodyRotations(new Vec3d((double) this.random.nextFloat() * 0.6 - 0.3, -1.0, (double) this.random.nextFloat() * 0.6 - 0.3));
+            Vec3d vec3d3 = vec3d2.multiply(0.3 + (double) (this.random.nextFloat() * 2.0F));
+            ((ServerWorld) this.world).spawnParticles(this.getInkParticle(), vec3d.x, vec3d.y + 0.5, vec3d.z, 0, vec3d3.x, vec3d3.y, vec3d3.z, 0.10000000149011612);
         }
 
     }
@@ -296,14 +296,14 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
             LivingEntity livingEntity = IndigoSquidEntity.this.getAttacker();
             if (livingEntity != null) {
                 Vec3d vec3d = new Vec3d(IndigoSquidEntity.this.getX() - livingEntity.getX(),
-                        IndigoSquidEntity.this.getY() - livingEntity.getY(),
-                        IndigoSquidEntity.this.getZ() - livingEntity.getZ());
+                    IndigoSquidEntity.this.getY() - livingEntity.getY(),
+                    IndigoSquidEntity.this.getZ() - livingEntity.getZ());
                 BlockState blockState = IndigoSquidEntity.this.world.getBlockState(
-                        new BlockPos(IndigoSquidEntity.this.getX() + vec3d.x, IndigoSquidEntity.this.getY() + vec3d.y,
-                                IndigoSquidEntity.this.getZ() + vec3d.z));
+                    new BlockPos(IndigoSquidEntity.this.getX() + vec3d.x, IndigoSquidEntity.this.getY() + vec3d.y,
+                        IndigoSquidEntity.this.getZ() + vec3d.z));
                 FluidState fluidState = IndigoSquidEntity.this.world.getFluidState(
-                        new BlockPos(IndigoSquidEntity.this.getX() + vec3d.x, IndigoSquidEntity.this.getY() + vec3d.y,
-                                IndigoSquidEntity.this.getZ() + vec3d.z));
+                    new BlockPos(IndigoSquidEntity.this.getX() + vec3d.x, IndigoSquidEntity.this.getY() + vec3d.y,
+                        IndigoSquidEntity.this.getZ() + vec3d.z));
                 if (fluidState.isIn(FluidTags.WATER) || blockState.isAir()) {
                     double d = vec3d.length();
                     if (d > 0.0) {
@@ -322,7 +322,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
                         vec3d = vec3d.subtract(0.0, vec3d.y, 0.0);
                     }
 
-                    IndigoSquidEntity.this.setSwimmingVector((float)vec3d.x / 20.0F, (float)vec3d.y / 20.0F, (float)vec3d.z / 20.0F);
+                    IndigoSquidEntity.this.setSwimmingVector((float) vec3d.x / 20.0F, (float) vec3d.y / 20.0F, (float) vec3d.z / 20.0F);
                 }
 
                 if (this.timer % 10 == 5) {

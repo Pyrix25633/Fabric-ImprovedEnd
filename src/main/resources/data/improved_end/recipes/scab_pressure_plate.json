@@ -1,19 +1,15 @@
 {
-	"group" : "wooden_pressure_plate",
-	"key" : 
-	{
-		"#" : 
-		{
-			"item" : "improved_end:scab_planks"
-		}
-	},
-	"pattern" : 
-	[
-		"##"
-	],
-	"result" : 
-	{
-		"item" : "improved_end:scab_pressure_plate"
-	},
-	"type" : "minecraft:crafting_shaped"
+  "group": "wooden_pressure_plate",
+  "key": {
+    "#": {
+      "item": "improved_end:scab_planks"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "improved_end:scab_pressure_plate"
+  },
+  "type": "minecraft:crafting_shaped"
 }

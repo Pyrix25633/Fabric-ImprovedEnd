@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/dark/dark_planks"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/dark/dark_planks"
+    }
+  }
 }

@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/fence_inventory",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/dark/dark_planks"
-	}
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "improved_end:block/dark/dark_planks"
+  }
 }

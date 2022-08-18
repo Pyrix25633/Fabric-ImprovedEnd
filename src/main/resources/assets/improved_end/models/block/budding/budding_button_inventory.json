@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/button_inventory",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/budding/budding_planks"
-	}
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "improved_end:block/budding/budding_planks"
+  }
 }

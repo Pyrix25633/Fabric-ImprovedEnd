@@ -8,23 +8,23 @@ import net.rupyber_studios.improved_end.world.feature.ModPlacedFeatures;
 public class ModTreeGeneration {
     public static void generateTrees() {
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.DARK_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.DARK_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.INFUSORIAL_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.INFUSORIAL_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BUDDING_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.BUDDING_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.REDLEAF_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.REDLEAF_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.FIRE_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.FIRE_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SHINING_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SHINING_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SERENE_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SERENE_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCAB_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCAB_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.INDIGO_TREE_PLACED.getKey().get());
+            GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.INDIGO_TREE_PLACED.getKey().get());
 
     }
 }

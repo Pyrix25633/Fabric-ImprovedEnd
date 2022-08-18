@@ -1,9 +1,8 @@
 {
-	"parent" : "minecraft:block/stairs",
-	"textures" : 
-	{
-		"bottom" : "improved_end:block/dark/dark_sandstone_top",
-		"side" : "improved_end:block/dark/cut_dark_sandstone",
-		"top" : "improved_end:block/dark/dark_sandstone_top"
-	}
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "improved_end:block/dark/dark_sandstone_top",
+    "side": "improved_end:block/dark/cut_dark_sandstone",
+    "top": "improved_end:block/dark/dark_sandstone_top"
+  }
 }

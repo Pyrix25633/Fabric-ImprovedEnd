@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/budding/budding_sapling"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/budding/budding_sapling"
+    }
+  }
 }

@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/cross",
-	"textures" : 
-	{
-		"cross" : "improved_end:block/shining/shining_sapling"
-	}
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "improved_end:block/shining/shining_sapling"
+  }
 }

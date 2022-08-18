@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:item/generated",
-	"textures" : 
-	{
-		"layer0" : "improved_end:item/shining/shining_grass"
-	}
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "improved_end:item/shining/shining_grass"
+  }
 }

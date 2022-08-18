@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/fire/fire_planks"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/fire/fire_planks"
+    }
+  }
 }

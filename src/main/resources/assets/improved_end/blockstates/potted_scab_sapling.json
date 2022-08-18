@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/scab/potted_scab_sapling"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/scab/potted_scab_sapling"
+    }
+  }
 }

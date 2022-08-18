@@ -1,8 +1,7 @@
 {
-	"parent" : "minecraft:block/cube_column_horizontal",
-	"textures" : 
-	{
-		"end" : "improved_end:block/redleaf/redleaf_log_top",
-		"side" : "improved_end:block/redleaf/redleaf_log"
-	}
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "improved_end:block/redleaf/redleaf_log_top",
+    "side": "improved_end:block/redleaf/redleaf_log"
+  }
 }

@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/infusorial/infusorial_wave_end_stone"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/infusorial/infusorial_wave_end_stone"
+    }
+  }
 }

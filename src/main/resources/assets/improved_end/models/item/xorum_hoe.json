@@ -1,7 +1,6 @@
 {
-  "parent" : "minecraft:item/handheld",
-  "textures" :
-  {
-    "layer0" : "improved_end:item/xorum/xorum_hoe"
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "improved_end:item/xorum/xorum_hoe"
   }
 }

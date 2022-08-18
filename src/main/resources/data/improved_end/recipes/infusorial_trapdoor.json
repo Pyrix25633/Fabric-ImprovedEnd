@@ -1,21 +1,17 @@
 {
-	"group" : "wooden_trapdoor",
-	"key" : 
-	{
-		"#" : 
-		{
-			"item" : "improved_end:infusorial_planks"
-		}
-	},
-	"pattern" : 
-	[
-		"###",
-		"###"
-	],
-	"result" : 
-	{
-		"count" : 2,
-		"item" : "improved_end:infusorial_trapdoor"
-	},
-	"type" : "minecraft:crafting_shaped"
+  "group": "wooden_trapdoor",
+  "key": {
+    "#": {
+      "item": "improved_end:infusorial_planks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "item": "improved_end:infusorial_trapdoor"
+  },
+  "type": "minecraft:crafting_shaped"
 }

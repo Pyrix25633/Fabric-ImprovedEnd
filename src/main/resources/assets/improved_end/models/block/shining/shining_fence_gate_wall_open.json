@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/template_fence_gate_wall_open",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/shining/shining_planks"
-	}
+  "parent": "minecraft:block/template_fence_gate_wall_open",
+  "textures": {
+    "texture": "improved_end:block/shining/shining_planks"
+  }
 }

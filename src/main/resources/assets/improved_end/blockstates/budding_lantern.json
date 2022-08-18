@@ -1,13 +1,10 @@
 {
-	"variants" : 
-	{
-		"hanging=false" : 
-		{
-			"model" : "improved_end:block/budding/budding_lantern"
-		},
-		"hanging=true" : 
-		{
-			"model" : "improved_end:block/budding/budding_lantern_hanging"
-		}
-	}
+  "variants": {
+    "hanging=false": {
+      "model": "improved_end:block/budding/budding_lantern"
+    },
+    "hanging=true": {
+      "model": "improved_end:block/budding/budding_lantern_hanging"
+    }
+  }
 }

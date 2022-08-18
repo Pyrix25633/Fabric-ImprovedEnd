@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/fire/fire_grass"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/fire/fire_grass"
+    }
+  }
 }

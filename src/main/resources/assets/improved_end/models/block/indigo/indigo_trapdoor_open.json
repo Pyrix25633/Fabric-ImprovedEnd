@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/template_trapdoor_open",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/indigo/indigo_trapdoor"
-	}
+  "parent": "minecraft:block/template_trapdoor_open",
+  "textures": {
+    "texture": "improved_end:block/indigo/indigo_trapdoor"
+  }
 }

@@ -38,7 +38,7 @@ public interface Pondu {
 
     static ToIntFunction<BlockState> getLuminanceSupplier(int luminance) {
         return (state) -> {
-            return (Boolean)state.get(Properties.BERRIES) ? luminance : 0;
+            return (Boolean) state.get(Properties.BERRIES) ? luminance : 0;
         };
     }
 }

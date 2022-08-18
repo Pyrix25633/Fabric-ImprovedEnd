@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/cross",
-	"textures" : 
-	{
-		"cross" : "improved_end:block/infusorial/infusorial_sapling"
-	}
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "improved_end:block/infusorial/infusorial_sapling"
+  }
 }

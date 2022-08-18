@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/shining/shining_planks"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/shining/shining_planks"
+    }
+  }
 }

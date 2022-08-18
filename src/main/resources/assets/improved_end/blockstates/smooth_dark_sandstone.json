@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/dark/smooth_dark_sandstone"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/dark/smooth_dark_sandstone"
+    }
+  }
 }

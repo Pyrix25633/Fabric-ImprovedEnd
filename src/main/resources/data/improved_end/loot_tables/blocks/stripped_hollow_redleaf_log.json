@@ -1,75 +1,64 @@
 {
-	"pools" : 
-	[
-		{
-			"conditions" : 
-			[
-				{
-					"condition" : "minecraft:survives_explosion"
-				}
-			],
-			"entries" : 
-			[
-				{
-					"name" : "improved_end:stripped_hollow_redleaf_log",
-					"type" : "minecraft:item"
-				}
-			],
-			"rolls" : 1
-		},
-		{
-			"conditions" :
-			[
-				{
-					"condition" : "minecraft:survives_explosion"
-				}
-			],
-			"entries" :
-			[
-				{
-					"conditions" :
-					[
-						{
-							"block" : "improved_end:stripped_hollow_redleaf_log",
-							"condition" : "minecraft:block_state_property",
-							"properties" :
-							{
-								"mossy" : "moss"
-							}
-						}
-					],
-					"name" : "minecraft:moss_carpet",
-					"type" : "minecraft:item"
-				}
-			],
-			"rolls" : 1
-		},
-		{
-			"conditions" :
-			[
-				{
-					"condition" : "minecraft:survives_explosion"
-				}
-			],
-			"entries" :
-			[
-				{
-					"conditions" :
-					[
-						{
-							"block" : "improved_end:stripped_hollow_redleaf_log",
-							"condition" : "minecraft:block_state_property",
-							"properties" :
-							{
-								"mossy" : "wasp_moss"
-							}
-						}
-					],
-					"name" : "improved_end:wasp_moss_carpet",
-					"type" : "minecraft:item"
-				}
-			],
-			"rolls" : 1
-		}
-	]
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "name": "improved_end:stripped_hollow_redleaf_log",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "conditions": [
+            {
+              "block": "improved_end:stripped_hollow_redleaf_log",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "mossy": "moss"
+              }
+            }
+          ],
+          "name": "minecraft:moss_carpet",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "conditions": [
+            {
+              "block": "improved_end:stripped_hollow_redleaf_log",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "mossy": "wasp_moss"
+              }
+            }
+          ],
+          "name": "improved_end:wasp_moss_carpet",
+          "type": "minecraft:item"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
 }

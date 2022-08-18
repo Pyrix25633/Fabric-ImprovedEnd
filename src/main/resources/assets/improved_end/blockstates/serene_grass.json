@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/serene/serene_grass"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/serene/serene_grass"
+    }
+  }
 }

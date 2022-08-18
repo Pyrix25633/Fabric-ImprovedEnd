@@ -1,21 +1,17 @@
 {
-	"key" : 
-	{
-		"#" : 
-		{
-			"item" : "improved_end:cut_dark_sandstone"
-		}
-	},
-	"pattern" : 
-	[
-		"#",
-		"#",
-		"#"
-	],
-	"result" : 
-	{
-		"count" : 6,
-		"item" : "improved_end:cut_dark_sandstone_vertical_slab"
-	},
-	"type" : "minecraft:crafting_shaped"
+  "key": {
+    "#": {
+      "item": "improved_end:cut_dark_sandstone"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 6,
+    "item": "improved_end:cut_dark_sandstone_vertical_slab"
+  },
+  "type": "minecraft:crafting_shaped"
 }

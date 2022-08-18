@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/leaves",
-	"textures" : 
-	{
-		"all" : "improved_end:block/dark/dark_leaves"
-	}
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "improved_end:block/dark/dark_leaves"
+  }
 }

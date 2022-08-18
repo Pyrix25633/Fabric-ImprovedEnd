@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/fire/fire_sapling"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/fire/fire_sapling"
+    }
+  }
 }

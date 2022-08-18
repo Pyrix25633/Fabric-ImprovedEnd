@@ -1,14 +1,12 @@
 {
-	"group" : "wooden_button",
-	"ingredients" : 
-	[
-		{
-			"item" : "improved_end:infusorial_planks"
-		}
-	],
-	"result" : 
-	{
-		"item" : "improved_end:infusorial_button"
-	},
-	"type" : "minecraft:crafting_shapeless"
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "improved_end:infusorial_planks"
+    }
+  ],
+  "result": {
+    "item": "improved_end:infusorial_button"
+  },
+  "type": "minecraft:crafting_shapeless"
 }

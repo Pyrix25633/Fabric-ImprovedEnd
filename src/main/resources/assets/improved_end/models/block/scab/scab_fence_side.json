@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/fence_side",
-	"textures" : 
-	{
-		"texture" : "improved_end:block/scab/scab_planks"
-	}
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "improved_end:block/scab/scab_planks"
+  }
 }

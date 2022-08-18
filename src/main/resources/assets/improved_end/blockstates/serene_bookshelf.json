@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/serene/serene_bookshelf"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/serene/serene_bookshelf"
+    }
+  }
 }

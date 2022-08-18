@@ -25,7 +25,7 @@ public class PonduBodyBlock extends AbstractPlantBlock implements Fertilizable, 
     }
 
     protected AbstractPlantStemBlock getStem() {
-        return (AbstractPlantStemBlock)ModBlocks.PONDU;
+        return (AbstractPlantStemBlock) ModBlocks.PONDU;
     }
 
     protected BlockState copyState(BlockState from, BlockState to) {
@@ -46,7 +46,7 @@ public class PonduBodyBlock extends AbstractPlantBlock implements Fertilizable, 
     }
 
     public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {
-        return !(Boolean)state.get(BERRIES);
+        return !(Boolean) state.get(BERRIES);
     }
 
     public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {

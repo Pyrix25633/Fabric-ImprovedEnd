@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/template_hanging_lantern",
-	"textures" : 
-	{
-		"lantern" : "improved_end:block/infusorial/infusorial_lantern"
-	}
+  "parent": "minecraft:block/template_hanging_lantern",
+  "textures": {
+    "lantern": "improved_end:block/infusorial/infusorial_lantern"
+  }
 }

@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/serene/serene_sapling"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/serene/serene_sapling"
+    }
+  }
 }

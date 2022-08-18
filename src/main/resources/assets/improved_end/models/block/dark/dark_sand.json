@@ -1,7 +1,6 @@
 {
-	"parent" : "minecraft:block/cube_all",
-	"textures" : 
-	{
-		"all" : "improved_end:block/dark/dark_sand"
-	}
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "improved_end:block/dark/dark_sand"
+  }
 }

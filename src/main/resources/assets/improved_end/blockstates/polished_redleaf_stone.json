@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/redleaf/polished_redleaf_stone"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/redleaf/polished_redleaf_stone"
+    }
+  }
 }

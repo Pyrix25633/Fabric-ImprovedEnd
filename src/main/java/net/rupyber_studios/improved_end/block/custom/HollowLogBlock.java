@@ -29,7 +29,7 @@ import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.block.type.MossType;
 import net.rupyber_studios.improved_end.item.ModItems;
 
-public class HollowLogBlock extends Block implements Waterloggable{
+public class HollowLogBlock extends Block implements Waterloggable {
     public static final EnumProperty<Direction.Axis> AXIS;
     public static final EnumProperty<MossType> MOSSY;
     public static final BooleanProperty WATERLOGGED;
@@ -37,7 +37,7 @@ public class HollowLogBlock extends Block implements Waterloggable{
     public HollowLogBlock(AbstractBlock.Settings settings) {
         super(settings);
         this.setDefaultState(this.getDefaultState().with(AXIS, Direction.Axis.Y).with(MOSSY, MossType.VOID)
-                .with(WATERLOGGED, false));
+            .with(WATERLOGGED, false));
     }
 
     @Override
@@ -80,25 +80,25 @@ public class HollowLogBlock extends Block implements Waterloggable{
         return super.getStateForNeighborUpdate(state, direction, newState, world, pos, posFrom);
     }
 
-    private static final VoxelShape X_1 = Block.createCuboidShape(0,0,0,16,2,16);
-    private static final VoxelShape X_2 = Block.createCuboidShape(0,14,0,16,16,16);
-    private static final VoxelShape X_3 = Block.createCuboidShape(0,2,0,16,14,2);
-    private static final VoxelShape X_4 = Block.createCuboidShape(0,2,14,16,14,16);
-    private static final VoxelShape X_MOSS = Block.createCuboidShape(0,2,2,16,3,14);
+    private static final VoxelShape X_1 = Block.createCuboidShape(0, 0, 0, 16, 2, 16);
+    private static final VoxelShape X_2 = Block.createCuboidShape(0, 14, 0, 16, 16, 16);
+    private static final VoxelShape X_3 = Block.createCuboidShape(0, 2, 0, 16, 14, 2);
+    private static final VoxelShape X_4 = Block.createCuboidShape(0, 2, 14, 16, 14, 16);
+    private static final VoxelShape X_MOSS = Block.createCuboidShape(0, 2, 2, 16, 3, 14);
     private static final VoxelShape X = VoxelShapes.union(X_1, X_2, X_3, X_4);
     private static final VoxelShape X_MOSSY = VoxelShapes.union(X_1, X_2, X_3, X_4, X_MOSS);
-    private static final VoxelShape Y_1 = Block.createCuboidShape(0,0,0,16,16,2);
-    private static final VoxelShape Y_2 = Block.createCuboidShape(0,0,2,2,16,14);
-    private static final VoxelShape Y_3 = Block.createCuboidShape(0,0,14,16,16,16);
-    private static final VoxelShape Y_4 = Block.createCuboidShape(14,0,2,16,16,14);
-    private static final VoxelShape Y_MOSS = Block.createCuboidShape(2,0,2,14,1,14);
+    private static final VoxelShape Y_1 = Block.createCuboidShape(0, 0, 0, 16, 16, 2);
+    private static final VoxelShape Y_2 = Block.createCuboidShape(0, 0, 2, 2, 16, 14);
+    private static final VoxelShape Y_3 = Block.createCuboidShape(0, 0, 14, 16, 16, 16);
+    private static final VoxelShape Y_4 = Block.createCuboidShape(14, 0, 2, 16, 16, 14);
+    private static final VoxelShape Y_MOSS = Block.createCuboidShape(2, 0, 2, 14, 1, 14);
     private static final VoxelShape Y = VoxelShapes.union(Y_1, Y_2, Y_3, Y_4);
     private static final VoxelShape Y_MOSSY = VoxelShapes.union(Y_1, Y_2, Y_3, Y_4, Y_MOSS);
-    private static final VoxelShape Z_1 = Block.createCuboidShape(0,0,0,16,2,16);
-    private static final VoxelShape Z_2 = Block.createCuboidShape(0,14,0,16,16,16);
-    private static final VoxelShape Z_3 = Block.createCuboidShape(0,2,0,2,14,16);
-    private static final VoxelShape Z_4 = Block.createCuboidShape(14,2,0,16,14,16);
-    private static final VoxelShape Z_MOSS = Block.createCuboidShape(2,2,0,14,3,16);
+    private static final VoxelShape Z_1 = Block.createCuboidShape(0, 0, 0, 16, 2, 16);
+    private static final VoxelShape Z_2 = Block.createCuboidShape(0, 14, 0, 16, 16, 16);
+    private static final VoxelShape Z_3 = Block.createCuboidShape(0, 2, 0, 2, 14, 16);
+    private static final VoxelShape Z_4 = Block.createCuboidShape(14, 2, 0, 16, 14, 16);
+    private static final VoxelShape Z_MOSS = Block.createCuboidShape(2, 2, 0, 14, 3, 16);
     private static final VoxelShape Z = VoxelShapes.union(Z_1, Z_2, Z_3, Z_4);
     private static final VoxelShape Z_MOSSY = VoxelShapes.union(Z_1, Z_2, Z_3, Z_4, Z_MOSS);
 
@@ -122,19 +122,19 @@ public class HollowLogBlock extends Block implements Waterloggable{
 
     public VoxelShape getShape(BlockState state) {
         VoxelShape toReturn;
-        if(state.get(AXIS) == Direction.Axis.X) {
-            if(state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
+        if (state.get(AXIS) == Direction.Axis.X) {
+            if (state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
                 return X_MOSSY;
             }
             return X;
         }
-        if(state.get(AXIS) == Direction.Axis.Z) {
-            if(state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
+        if (state.get(AXIS) == Direction.Axis.Z) {
+            if (state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
                 return Z_MOSSY;
             }
             return Z;
         }
-        if(state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
+        if (state.get(MOSSY) == MossType.MOSS || state.get(MOSSY) == MossType.WASP_MOSS) {
             return Y_MOSSY;
         }
         return Y;
@@ -146,101 +146,90 @@ public class HollowLogBlock extends Block implements Waterloggable{
         ItemStack playerItem = player.getStackInHand(hand);
         boolean finished = false;
         Block toPlace = Blocks.AIR;
-        if(state.isOf(this)) {
-            if(playerItem.getItem() == Items.MOSS_CARPET) {
-                if(state.get(MOSSY) == MossType.VOID) {
+        if (state.isOf(this)) {
+            if (playerItem.getItem() == Items.MOSS_CARPET) {
+                if (state.get(MOSSY) == MossType.VOID) {
                     //All
                     world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, MossType.MOSS)
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                        .with(WATERLOGGED, state.get(WATERLOGGED)));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
-                            SoundEvents.BLOCK_MOSS_CARPET_PLACE, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    if(!player.isCreative()) {
+                        SoundEvents.BLOCK_MOSS_CARPET_PLACE, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+                    if (!player.isCreative()) {
                         playerItem.decrement(1);
                     }
                     finished = true;
                 }
             }
-            if(playerItem.getItem() == ModItems.WASP_MOSS_CARPET) {
-                if(state.get(MOSSY) == MossType.VOID) {
+            if (playerItem.getItem() == ModItems.WASP_MOSS_CARPET) {
+                if (state.get(MOSSY) == MossType.VOID) {
                     //All
                     world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, MossType.WASP_MOSS)
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                        .with(WATERLOGGED, state.get(WATERLOGGED)));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
-                            SoundEvents.BLOCK_MOSS_CARPET_PLACE, SoundCategory.NEUTRAL, 1.0f, 1.0f);
-                    if(!player.isCreative()) {
+                        SoundEvents.BLOCK_MOSS_CARPET_PLACE, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+                    if (!player.isCreative()) {
                         playerItem.decrement(1);
                     }
                     finished = true;
                 }
-            }
-            else if(playerItem.getItem() == Items.SHEARS) {
-                if(state.get(MOSSY) == MossType.MOSS) {
+            } else if (playerItem.getItem() == Items.SHEARS) {
+                if (state.get(MOSSY) == MossType.MOSS) {
                     //All
                     world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, MossType.VOID)
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                        .with(WATERLOGGED, state.get(WATERLOGGED)));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
-                            SoundEvents.BLOCK_MOSS_CARPET_BREAK, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+                        SoundEvents.BLOCK_MOSS_CARPET_BREAK, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                     world.addBlockBreakParticles(pos, Blocks.MOSS_CARPET.getDefaultState());
                     dropStack(world, pos, new ItemStack(Items.MOSS_CARPET));
                     playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     finished = true;
-                }
-                else if(state.get(MOSSY) == MossType.WASP_MOSS) {
+                } else if (state.get(MOSSY) == MossType.WASP_MOSS) {
                     //All
                     world.setBlockState(pos, state.with(AXIS, state.get(AXIS)).with(MOSSY, MossType.VOID)
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                        .with(WATERLOGGED, state.get(WATERLOGGED)));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
-                            SoundEvents.BLOCK_MOSS_CARPET_BREAK, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+                        SoundEvents.BLOCK_MOSS_CARPET_BREAK, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                     world.addBlockBreakParticles(pos, ModBlocks.WASP_MOSS_CARPET.getDefaultState());
                     dropStack(world, pos, new ItemStack(ModItems.WASP_MOSS_CARPET));
                     playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     finished = true;
                 }
-            }
-            else if(playerItem.getItem() == Items.WOODEN_AXE || playerItem.getItem() == Items.STONE_AXE ||
-                    playerItem.getItem() == Items.IRON_AXE || playerItem.getItem() == Items.GOLDEN_AXE ||
-                    playerItem.getItem() == Items.DIAMOND_AXE || playerItem.getItem() == Items.NETHERITE_AXE) {
+            } else if (playerItem.getItem() == Items.WOODEN_AXE || playerItem.getItem() == Items.STONE_AXE ||
+                playerItem.getItem() == Items.IRON_AXE || playerItem.getItem() == Items.GOLDEN_AXE ||
+                playerItem.getItem() == Items.DIAMOND_AXE || playerItem.getItem() == Items.NETHERITE_AXE) {
                 finished = true;
 
-                if(state.isOf(ModBlocks.HOLLOW_DARK_LOG)) {
+                if (state.isOf(ModBlocks.HOLLOW_DARK_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_DARK_LOG;
-                }
-                else if(state.isOf(ModBlocks.HOLLOW_INFUSORIAL_LOG)) {
+                } else if (state.isOf(ModBlocks.HOLLOW_INFUSORIAL_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_INFUSORIAL_LOG;
-                }
-                else if(state.isOf(ModBlocks.HOLLOW_BUDDING_LOG)) {
+                } else if (state.isOf(ModBlocks.HOLLOW_BUDDING_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_BUDDING_LOG;
-                }
-                else if(state.isOf(ModBlocks.HOLLOW_REDLEAF_LOG)) {
+                } else if (state.isOf(ModBlocks.HOLLOW_REDLEAF_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_REDLEAF_LOG;
-                }
-                else if(state.isOf(ModBlocks.HOLLOW_FIRE_LOG)) {
+                } else if (state.isOf(ModBlocks.HOLLOW_FIRE_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_FIRE_LOG;
-                }
-                else if(state.isOf(ModBlocks.HOLLOW_SHINING_LOG)) {
+                } else if (state.isOf(ModBlocks.HOLLOW_SHINING_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_SERENE_LOG;
-                }
-                else if(state.isOf(ModBlocks.HOLLOW_SCAB_LOG)) {
+                } else if (state.isOf(ModBlocks.HOLLOW_SCAB_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_SCAB_LOG;
-                }
-                else if(state.isOf(ModBlocks.HOLLOW_INDIGO_LOG)) {
+                } else if (state.isOf(ModBlocks.HOLLOW_INDIGO_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_INDIGO_LOG;
-                }
-                else {
+                } else {
                     finished = false;
                 }
-                if(finished) {
+                if (finished) {
                     world.setBlockState(pos, toPlace.getDefaultState()
-                            .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
-                            .with(WATERLOGGED, state.get(WATERLOGGED)));
+                        .with(AXIS, state.get(AXIS)).with(MOSSY, state.get(MOSSY))
+                        .with(WATERLOGGED, state.get(WATERLOGGED)));
                     playerItem.damage(1, player, (p) -> p.sendToolBreakStatus(hand));
                     world.playSound(player, player.getX(), player.getY(), player.getZ(),
-                            SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
+                        SoundEvents.ITEM_AXE_STRIP, SoundCategory.NEUTRAL, 1.0f, 1.0f);
                 }
             }
         }
 
-        if(finished){
+        if (finished) {
             return ActionResult.success(true);
         }
 

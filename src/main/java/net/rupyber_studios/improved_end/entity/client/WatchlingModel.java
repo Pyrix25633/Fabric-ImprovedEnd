@@ -24,7 +24,7 @@ public class WatchlingModel extends AnimatedGeoModel<WatchlingEntity> {
         return new Identifier(ImprovedEnd.MOD_ID, "animations/watchling.animations.json");
     }
 
-    @SuppressWarnings({ "unchecked", "rawtypes" })
+    @SuppressWarnings({"unchecked", "rawtypes"})
     @Override
     public void setLivingAnimations(WatchlingEntity entity, Integer uniqueID, AnimationEvent customPredicate) {
         super.setLivingAnimations(entity, uniqueID, customPredicate);

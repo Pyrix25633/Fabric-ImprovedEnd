@@ -1,21 +1,17 @@
 {
-	"key" : 
-	{
-		"#" : 
-		{
-			"item" : "improved_end:stripped_infusorial_log"
-		}
-	},
-	"pattern" : 
-	[
-		"###",
-		"# #",
-		"###"
-	],
-	"result" : 
-	{
-		"count" : 8,
-		"item" : "improved_end:stripped_hollow_infusorial_log"
-	},
-	"type" : "minecraft:crafting_shaped"
+  "key": {
+    "#": {
+      "item": "improved_end:stripped_infusorial_log"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "result": {
+    "count": 8,
+    "item": "improved_end:stripped_hollow_infusorial_log"
+  },
+  "type": "minecraft:crafting_shaped"
 }

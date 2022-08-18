@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/fire/potted_fire_sapling"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/fire/potted_fire_sapling"
+    }
+  }
 }

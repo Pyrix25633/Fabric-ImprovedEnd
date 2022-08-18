@@ -1,33 +1,27 @@
 {
-	"variants" : 
-	{
-		"type=double" : 
-		{
-			"model" : "improved_end:block/redleaf/polished_redleaf_stone"
-		},
-		"type=east" : 
-		{
-			"model" : "improved_end:block/redleaf/polished_redleaf_stone_vertical_slab",
-			"uvlock" : true,
-			"y" : 90
-		},
-		"type=north" : 
-		{
-			"model" : "improved_end:block/redleaf/polished_redleaf_stone_vertical_slab",
-			"uvlock" : true,
-			"y" : 0
-		},
-		"type=south" : 
-		{
-			"model" : "improved_end:block/redleaf/polished_redleaf_stone_vertical_slab",
-			"uvlock" : true,
-			"y" : 180
-		},
-		"type=west" : 
-		{
-			"model" : "improved_end:block/redleaf/polished_redleaf_stone_vertical_slab",
-			"uvlock" : true,
-			"y" : 270
-		}
-	}
+  "variants": {
+    "type=double": {
+      "model": "improved_end:block/redleaf/polished_redleaf_stone"
+    },
+    "type=east": {
+      "model": "improved_end:block/redleaf/polished_redleaf_stone_vertical_slab",
+      "uvlock": true,
+      "y": 90
+    },
+    "type=north": {
+      "model": "improved_end:block/redleaf/polished_redleaf_stone_vertical_slab",
+      "uvlock": true,
+      "y": 0
+    },
+    "type=south": {
+      "model": "improved_end:block/redleaf/polished_redleaf_stone_vertical_slab",
+      "uvlock": true,
+      "y": 180
+    },
+    "type=west": {
+      "model": "improved_end:block/redleaf/polished_redleaf_stone_vertical_slab",
+      "uvlock": true,
+      "y": 270
+    }
+  }
 }

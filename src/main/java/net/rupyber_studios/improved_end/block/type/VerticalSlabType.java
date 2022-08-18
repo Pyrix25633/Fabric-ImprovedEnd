@@ -43,7 +43,7 @@ public enum VerticalSlabType implements StringIdentifiable {
     }
 
     public static VerticalSlabType fromDirection(Direction direction) {
-        for (VerticalSlabType type: VerticalSlabType.values())
+        for (VerticalSlabType type : VerticalSlabType.values())
             if (type.direction != null && direction == type.direction) return type;
 
         return null;

@@ -1,7 +1,7 @@
 {
-	"parent": "minecraft:block/cube_column",
-	"textures": {
-		"end": "improved_end:block/dark/dark_sandstone_top",
-		"side": "improved_end:block/dark/cut_dark_sandstone"
-	}
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "improved_end:block/dark/dark_sandstone_top",
+    "side": "improved_end:block/dark/cut_dark_sandstone"
+  }
 }

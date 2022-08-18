@@ -1,22 +1,18 @@
 {
-	"group" : "wooden_door",
-	"key" : 
-	{
-		"#" : 
-		{
-			"item" : "improved_end:budding_planks"
-		}
-	},
-	"pattern" : 
-	[
-		"##",
-		"##",
-		"##"
-	],
-	"result" : 
-	{
-		"count" : 3,
-		"item" : "improved_end:budding_door"
-	},
-	"type" : "minecraft:crafting_shaped"
+  "group": "wooden_door",
+  "key": {
+    "#": {
+      "item": "improved_end:budding_planks"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "item": "improved_end:budding_door"
+  },
+  "type": "minecraft:crafting_shaped"
 }

@@ -1,8 +1,7 @@
 {
-	"parent" : "minecraft:block/door_bottom",
-	"textures" : 
-	{
-		"bottom" : "improved_end:block/dark/dark_door_bottom",
-		"top" : "improved_end:block/dark/dark_door_top"
-	}
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "bottom": "improved_end:block/dark/dark_door_bottom",
+    "top": "improved_end:block/dark/dark_door_top"
+  }
 }

@@ -1,9 +1,7 @@
 {
-	"variants" : 
-	{
-		"" : 
-		{
-			"model" : "improved_end:block/indigo/indigo_wave_end_stone"
-		}
-	}
+  "variants": {
+    "": {
+      "model": "improved_end:block/indigo/indigo_wave_end_stone"
+    }
+  }
 }
