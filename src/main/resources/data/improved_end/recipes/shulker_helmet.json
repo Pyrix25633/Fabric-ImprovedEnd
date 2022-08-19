@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond_helmet"
+  },
+  "addition": {
+    "item": "improved_end:shulker_ingot"
+  },
+  "result": {
+    "item": "improved_end:shulker_helmet"
+  }
+}

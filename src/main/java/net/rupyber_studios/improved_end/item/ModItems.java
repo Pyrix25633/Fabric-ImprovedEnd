@@ -1,6 +1,7 @@
 package net.rupyber_studios.improved_end.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -90,6 +91,18 @@ public class ModItems {
     //Shulker
     public static final Item SHULKER_INGOT = registerItem("shulker_ingot",
         new Item(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(64)));
+    public static final Item SHULKER_HELMET = registerItem("shulker_helmet",
+        new ArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.HEAD,
+            new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS)));
+    public static final Item SHULKER_CHESTPLATE = registerItem("shulker_chestplate",
+        new ArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.CHEST,
+            new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS)));
+    public static final Item SHULKER_LEGGINGS = registerItem("shulker_leggings",
+        new ArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.LEGS,
+            new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS)));
+    public static final Item SHULKER_BOOTS = registerItem("shulker_boots",
+        new ArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.FEET,
+            new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS)));
 
     //Discs
     public static final Item MUSIC_DISC_TWO_WORLDS_COLLIDE = registerItem("music_disc_two_worlds_collide",
