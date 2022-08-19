@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "improved_end:block/infusorial/stripped_infusorial_wood_horizontal",
+      "model": "improved_end:block/infusorial/stripped_infusorial_wood",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "improved_end:block/infusorial/stripped_infusorial_wood"
     },
     "axis=z": {
-      "model": "improved_end:block/infusorial/stripped_infusorial_wood_horizontal",
+      "model": "improved_end:block/infusorial/stripped_infusorial_wood",
       "x": 90
     }
   }

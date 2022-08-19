@@ -131,43 +131,43 @@ public class ModBlocks {
 
     //Wood
     public static final Block DARK_WOOD = registerBiomesBlock("dark_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block INFUSORIAL_WOOD = registerBiomesBlock("infusorial_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block BUDDING_WOOD = registerBiomesBlock("budding_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
     public static final Block REDLEAF_WOOD = registerBiomesBlock("redleaf_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block FIRE_WOOD = registerBiomesBlock("fire_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final Block SHINING_WOOD = registerBiomesBlock("shining_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final Block SERENE_WOOD = registerBiomesBlock("serene_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
     public static final Block SCAB_WOOD = registerBiomesBlock("scab_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_WOOD = registerBiomesBlock("indigo_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Stripped Wood
     public static final Block STRIPPED_DARK_WOOD = registerBiomesBlock("stripped_dark_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block STRIPPED_INFUSORIAL_WOOD = registerBiomesBlock("stripped_infusorial_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block STRIPPED_BUDDING_WOOD = registerBiomesBlock("stripped_budding_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
     public static final Block STRIPPED_REDLEAF_WOOD = registerBiomesBlock("stripped_redleaf_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block STRIPPED_FIRE_WOOD = registerBiomesBlock("stripped_fire_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final Block STRIPPED_SHINING_WOOD = registerBiomesBlock("stripped_shining_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final Block STRIPPED_SERENE_WOOD = registerBiomesBlock("stripped_serene_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
     public static final Block STRIPPED_SCAB_WOOD = registerBiomesBlock("stripped_scab_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block STRIPPED_INDIGO_WOOD = registerBiomesBlock("stripped_indigo_wood",
-        new ModLogBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+        new PillarBlock(woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Planks
     public static final Block DARK_PLANKS = registerBiomesBlock("dark_planks",
