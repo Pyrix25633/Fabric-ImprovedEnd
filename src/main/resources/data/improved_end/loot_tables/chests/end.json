@@ -198,7 +198,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 8,
           "name": "minecraft:coal",
           "functions": [
             {
@@ -212,7 +212,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 10,
           "name": "minecraft:bread",
           "functions": [
             {
@@ -223,6 +223,16 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "improved_end:music_disc_two_worlds_collide"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "improved_end:music_disc_never_forgive"
         }
       ]
     },
