@@ -8,10 +8,7 @@ import net.minecraft.util.registry.Registry;
 import net.rupyber_studios.improved_end.ImprovedEnd;
 import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.entity.ModEntities;
-import net.rupyber_studios.improved_end.item.custom.ModAxeItem;
-import net.rupyber_studios.improved_end.item.custom.ModHoeItem;
-import net.rupyber_studios.improved_end.item.custom.ModMusicDiscItem;
-import net.rupyber_studios.improved_end.item.custom.ModPickaxeItem;
+import net.rupyber_studios.improved_end.item.custom.*;
 import net.rupyber_studios.improved_end.sounds.ModSounds;
 
 public class ModItems {
@@ -92,16 +89,16 @@ public class ModItems {
     public static final Item SHULKER_INGOT = registerItem("shulker_ingot",
         new Item(new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(64)));
     public static final Item SHULKER_HELMET = registerItem("shulker_helmet",
-        new ArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.HEAD,
+        new ModArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.HEAD,
             new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS)));
     public static final Item SHULKER_CHESTPLATE = registerItem("shulker_chestplate",
-        new ArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.CHEST,
+        new ModArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.CHEST,
             new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS)));
     public static final Item SHULKER_LEGGINGS = registerItem("shulker_leggings",
-        new ArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.LEGS,
+        new ModArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.LEGS,
             new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS)));
     public static final Item SHULKER_BOOTS = registerItem("shulker_boots",
-        new ArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.FEET,
+        new ModArmorItem(ModArmorMaterials.SHULKER, EquipmentSlot.FEET,
             new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS)));
 
     //Discs
