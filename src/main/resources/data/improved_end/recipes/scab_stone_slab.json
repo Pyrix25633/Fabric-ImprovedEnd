@@ -11,5 +11,6 @@
     "count": 4,
     "item": "improved_end:scab_stone_slab"
   },
-  "type": "minecraft:crafting_shaped"
+  "type": "minecraft:crafting_shaped",
+  "group": "scab_stone"
 }

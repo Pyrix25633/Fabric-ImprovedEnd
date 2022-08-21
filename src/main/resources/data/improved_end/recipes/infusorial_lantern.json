@@ -1,15 +1,37 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "lanterns",
   "ingredients": [
     {
-      "item": "minecraft:purple_dye"
+      "item": "minecraft:lantern"
     },
     {
       "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "improved_end:infusorial_planks"
     }
   ],
   "result": {
     "item": "improved_end:infusorial_lantern",
-    "count": 1
+    "count": 8
   }
 }

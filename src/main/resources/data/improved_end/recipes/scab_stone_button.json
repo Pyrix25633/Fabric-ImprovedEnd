@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "scab_stone",
   "ingredients": [
     {
       "item": "improved_end:scab_stone"

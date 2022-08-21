@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "infusorial_stone",
   "ingredients": [
     {
       "item": "improved_end:infusorial_stone"

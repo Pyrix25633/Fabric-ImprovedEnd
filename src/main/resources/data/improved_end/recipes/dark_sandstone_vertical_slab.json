@@ -13,5 +13,6 @@
     "count": 6,
     "item": "improved_end:dark_sandstone_vertical_slab"
   },
-  "type": "minecraft:crafting_shaped"
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_stone"
 }

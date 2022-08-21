@@ -13,5 +13,6 @@
     "count": 8,
     "item": "improved_end:stripped_hollow_dark_log"
   },
-  "type": "minecraft:crafting_shaped"
+  "type": "minecraft:crafting_shaped",
+  "group": "infusorial_stone"
 }

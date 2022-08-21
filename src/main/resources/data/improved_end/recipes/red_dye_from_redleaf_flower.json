@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dyes",
+  "ingredients": [
+    {
+      "item": "improved_end:redleaf_flower"
+    }
+  ],
+  "result": {
+    "item": "minecraft:red_dye"
+  }
+}

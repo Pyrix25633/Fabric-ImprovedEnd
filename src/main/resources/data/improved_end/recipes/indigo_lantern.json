@@ -1,15 +1,37 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "lanterns",
   "ingredients": [
     {
-      "item": "minecraft:blue_dye"
+      "item": "minecraft:lantern"
     },
     {
       "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "improved_end:indigo_planks"
     }
   ],
   "result": {
     "item": "improved_end:indigo_lantern",
-    "count": 1
+    "count": 8
   }
 }

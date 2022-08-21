@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wave_end_stones",
+  "ingredients": [
+    {
+      "item": "minecraft:end_stone"
+    },
+    {
+      "item": "improved_end:redleaf_stone"
+    }
+  ],
+  "result": {
+    "item": "improved_end:redleaf_wave_end_stone"
+  }
+}

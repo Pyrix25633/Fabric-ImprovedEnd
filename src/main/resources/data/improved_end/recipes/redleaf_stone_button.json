@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "redleaf_stone",
   "ingredients": [
     {
       "item": "improved_end:redleaf_stone"

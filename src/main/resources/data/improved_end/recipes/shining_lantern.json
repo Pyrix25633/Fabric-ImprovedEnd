@@ -1,15 +1,37 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "lanterns",
   "ingredients": [
     {
-      "item": "minecraft:yellow_dye"
+      "item": "minecraft:lantern"
     },
     {
       "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "improved_end:shining_planks"
     }
   ],
   "result": {
     "item": "improved_end:shining_lantern",
-    "count": 1
+    "count": 8
   }
 }

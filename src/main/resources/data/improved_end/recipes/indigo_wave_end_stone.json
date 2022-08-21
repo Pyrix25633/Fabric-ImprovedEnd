@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wave_end_stones",
+  "ingredients": [
+    {
+      "item": "minecraft:end_stone"
+    },
+    {
+      "item": "improved_end:indigo_soil"
+    }
+  ],
+  "result": {
+    "item": "improved_end:indigo_wave_end_stone"
+  }
+}

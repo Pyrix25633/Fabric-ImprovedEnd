@@ -15,5 +15,6 @@
   "result": {
     "item": "improved_end:fire_bookshelf"
   },
-  "type": "minecraft:crafting_shaped"
+  "type": "minecraft:crafting_shaped",
+  "group": "bookshelves"
 }

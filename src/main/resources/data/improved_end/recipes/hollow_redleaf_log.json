@@ -13,5 +13,6 @@
     "count": 8,
     "item": "improved_end:hollow_redleaf_log"
   },
-  "type": "minecraft:crafting_shaped"
+  "type": "minecraft:crafting_shaped",
+  "group": "hollow_logs"
 }

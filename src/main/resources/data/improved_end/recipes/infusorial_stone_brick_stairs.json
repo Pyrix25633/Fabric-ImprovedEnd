@@ -13,5 +13,6 @@
     "count": 4,
     "item": "improved_end:infusorial_stone_brick_stairs"
   },
-  "type": "minecraft:crafting_shaped"
+  "type": "minecraft:crafting_shaped",
+  "group": "infusorial_stone"
 }

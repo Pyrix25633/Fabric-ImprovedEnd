@@ -1,15 +1,37 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "group": "lanterns",
   "ingredients": [
     {
-      "item": "minecraft:black_dye"
+      "item": "minecraft:lantern"
     },
     {
       "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "minecraft:lantern"
+    },
+    {
+      "item": "improved_end:dark_planks"
     }
   ],
   "result": {
     "item": "improved_end:dark_lantern",
-    "count": 1
+    "count": 8
   }
 }

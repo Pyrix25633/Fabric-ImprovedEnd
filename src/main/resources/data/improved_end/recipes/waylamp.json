@@ -15,5 +15,6 @@
   "result": {
     "item": "improved_end:waylamp"
   },
-  "type": "minecraft:crafting_shaped"
+  "type": "minecraft:crafting_shaped",
+  "group": "waylamps"
 }
