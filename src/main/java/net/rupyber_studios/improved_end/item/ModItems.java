@@ -131,6 +131,6 @@ public class ModItems {
             new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
 
     public static void registerModItems() {
-        System.out.println("Registering Mod Items for " + ImprovedEnd.MOD_ID);
+        System.out.println("Registering ModItems for " + ImprovedEnd.MOD_ID);
     }
 }
