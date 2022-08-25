@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "improved_end:shining_house/start_pool",
+    "size": 2
+  },
+  "biomes": "#improved_end:has_structure/end_houses_biomes",
+  "adapt_noise": true,
+  "spawn_overrides": {
+  }
+}

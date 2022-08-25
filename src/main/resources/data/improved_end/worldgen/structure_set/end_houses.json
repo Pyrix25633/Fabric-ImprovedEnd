@@ -3,6 +3,38 @@
     {
       "structure": "improved_end:dark_house",
       "weight": 1
+    },
+    {
+      "structure": "improved_end:infusorial_house",
+      "weight": 1
+    },
+    {
+      "structure": "improved_end:budding_house",
+      "weight": 1
+    },
+    {
+      "structure": "improved_end:redleaf_house",
+      "weight": 1
+    },
+    {
+      "structure": "improved_end:fire_house",
+      "weight": 1
+    },
+    {
+      "structure": "improved_end:shining_house",
+      "weight": 1
+    },
+    {
+      "structure": "improved_end:serene_house",
+      "weight": 1
+    },
+    {
+      "structure": "improved_end:scab_house",
+      "weight": 1
+    },
+    {
+      "structure": "improved_end:indigo_house",
+      "weight": 1
     }
   ],
   "placement": {
