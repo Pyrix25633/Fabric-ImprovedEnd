@@ -1,8 +1,6 @@
 package net.rupyber_studios.improved_end.block.custom;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.WorldView;
@@ -15,7 +13,9 @@ public class EndGrassBlock extends Block {
     }
 
     private static boolean canSurvive(WorldView world, BlockPos pos) {
-        return !world.getBlockState(pos.up()).isOpaque();
+        Block block = world.getBlockState(pos.up()).getBlock();
+        return !block.getDefaultState().isOpaque() || block instanceof VerticalSlabBlock || block instanceof SlabBlock
+            || block instanceof StairsBlock;
     }
 
     private static boolean canSpread(WorldView world, BlockPos pos) {

@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:village",
+  "type": "improved_end:end_house",
   "config": {
     "start_pool": "improved_end:indigo_house/start_pool",
     "size": 2

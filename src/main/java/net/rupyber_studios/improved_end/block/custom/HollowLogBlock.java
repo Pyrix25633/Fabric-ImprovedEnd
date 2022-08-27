@@ -210,6 +210,8 @@ public class HollowLogBlock extends Block implements Waterloggable {
                 } else if (state.isOf(ModBlocks.HOLLOW_FIRE_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_FIRE_LOG;
                 } else if (state.isOf(ModBlocks.HOLLOW_SHINING_LOG)) {
+                    toPlace = ModBlocks.STRIPPED_HOLLOW_SHINING_LOG;
+                } else if (state.isOf(ModBlocks.HOLLOW_SERENE_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_SERENE_LOG;
                 } else if (state.isOf(ModBlocks.HOLLOW_SCAB_LOG)) {
                     toPlace = ModBlocks.STRIPPED_HOLLOW_SCAB_LOG;
