@@ -6,7 +6,7 @@ This is a fabric mod to improve the end dimension, adding new blocks, biomes and
 
 ## Visit our [Website](https://rupyberstudios.github.io/website/)!
 
-![Improved End Logo](https://raw.githubusercontent.com/Pyrix25633/Fabric-ImprovedEnd/main/improved_end_logo.png)
+![Improved End Logo](https://github.com/RupyberStudios/website/blob/main/img/improved_end_logo_small.png?raw=true)
 ![requires Fabric API](https://i.imgur.com/HabVZJR.png)
 
 ### Installation:
