@@ -12,7 +12,7 @@ public class BlastlingRenderer extends GeoEntityRenderer<BlastlingEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(BlastlingEntity instance) {
+    public Identifier getTextureResource(BlastlingEntity instance) {
         return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/enderman/blastling.png");
     }
 }

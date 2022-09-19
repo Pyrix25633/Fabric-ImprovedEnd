@@ -10,17 +10,17 @@ import software.bernie.geckolib3.model.provider.data.EntityModelData;
 
 public class WatchlingModel extends AnimatedGeoModel<WatchlingEntity> {
     @Override
-    public Identifier getModelLocation(WatchlingEntity object) {
+    public Identifier getModelResource(WatchlingEntity object) {
         return new Identifier(ImprovedEnd.MOD_ID, "geo/watchling.geo.json");
     }
 
     @Override
-    public Identifier getTextureLocation(WatchlingEntity object) {
+    public Identifier getTextureResource(WatchlingEntity object) {
         return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/enderman/watchling.png");
     }
 
     @Override
-    public Identifier getAnimationFileLocation(WatchlingEntity animatable) {
+    public Identifier getAnimationResource(WatchlingEntity animatable) {
         return new Identifier(ImprovedEnd.MOD_ID, "animations/watchling.animations.json");
     }
 

@@ -12,7 +12,7 @@ public class SnarelingRenderer extends GeoEntityRenderer<SnarelingEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(SnarelingEntity instance) {
+    public Identifier getTextureResource(SnarelingEntity instance) {
         return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/enderman/snareling.png");
     }
 }

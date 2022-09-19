@@ -12,7 +12,7 @@ public class IndigoSquidRenderer extends GeoEntityRenderer<IndigoSquidEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(IndigoSquidEntity instance) {
+    public Identifier getTextureResource(IndigoSquidEntity instance) {
         return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/squid/indigo_squid.png");
     }
 }

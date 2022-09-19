@@ -1,18 +1,22 @@
 package net.rupyber_studios.improved_end.world.structure;
 
+import com.mojang.serialization.Codec;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.structure.Structure;
+import net.minecraft.world.gen.structure.StructureType;
 import net.rupyber_studios.improved_end.ImprovedEnd;
-import net.minecraft.world.gen.GenerationStep;
-import net.minecraft.world.gen.feature.StructureFeature;
-import net.rupyber_studios.improved_end.mixin.StructureFeatureAccessor;
 
 public class ModStructures {
-    public static StructureFeature<?> END_HOUSE = new EndHouse();
-    public static StructureFeature<?> END_TREE = new EndTree();
+    public static StructureType<?> END_HOUSE;
+    public static StructureType<?> END_TREE;
 
     public static void registerStructureFeatures() {
-        StructureFeatureAccessor.callRegister(ImprovedEnd.MOD_ID + ":end_house",
-            END_HOUSE, GenerationStep.Feature.SURFACE_STRUCTURES);
-        StructureFeatureAccessor.callRegister(ImprovedEnd.MOD_ID + ":end_tree",
-            END_TREE, GenerationStep.Feature.SURFACE_STRUCTURES);
+        END_HOUSE = register(new Identifier(ImprovedEnd.MOD_ID, "end_house"), EndHouse.CODEC);
+        END_TREE = register(new Identifier(ImprovedEnd.MOD_ID, "end_tree"), EndTree.CODEC);
+    }
+
+    private static <S extends Structure> StructureType<S> register(Identifier id, Codec<S> codec) {
+        return Registry.register(Registry.STRUCTURE_TYPE, id, () -> codec);
     }
 }

@@ -2,11 +2,10 @@
   "required": true,
   "minVersion": "0.8",
   "package": "net.rupyber_studios.improved_end.mixin",
-  "compatibilityLevel": "JAVA_16",
+  "compatibilityLevel": "JAVA_17",
   "mixins": [
     "SignTypeAccessor",
-    "BlockEntityTypeMixin",
-    "StructureFeatureAccessor"
+    "BlockEntityTypeMixin"
   ],
   "client": [
     "ExampleMixin"

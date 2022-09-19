@@ -12,7 +12,7 @@ public class MawlingRenderer extends GeoEntityRenderer<MawlingEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(MawlingEntity instance) {
+    public Identifier getTextureResource(MawlingEntity instance) {
         return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/enderman/mawling.png");
     }
 }

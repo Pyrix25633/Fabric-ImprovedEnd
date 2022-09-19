@@ -26,6 +26,5 @@ public class ModTreeGeneration {
             GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.SCAB_TREE_PLACED.getKey().get());
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.END_BARRENS),
             GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.INDIGO_TREE_PLACED.getKey().get());
-
     }
 }

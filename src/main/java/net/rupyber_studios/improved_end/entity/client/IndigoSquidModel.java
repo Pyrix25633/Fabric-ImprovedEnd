@@ -9,21 +9,20 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class IndigoSquidModel extends AnimatedGeoModel<IndigoSquidEntity> {
     @Override
-    public Identifier getModelLocation(IndigoSquidEntity object) {
+    public Identifier getModelResource(IndigoSquidEntity object) {
         return new Identifier(ImprovedEnd.MOD_ID, "geo/indigo_squid.geo.json");
     }
 
     @Override
-    public Identifier getTextureLocation(IndigoSquidEntity object) {
+    public Identifier getTextureResource(IndigoSquidEntity object) {
         return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/squid/indigo_squid.png");
     }
 
     @Override
-    public Identifier getAnimationFileLocation(IndigoSquidEntity animatable) {
+    public Identifier getAnimationResource(IndigoSquidEntity animatable) {
         return new Identifier(ImprovedEnd.MOD_ID, "animations/indigo_squid.animations.json");
     }
 
-    @SuppressWarnings({"unchecked", "rawtypes"})
     @Override
     public void setLivingAnimations(IndigoSquidEntity entity, Integer uniqueID, AnimationEvent customPredicate) {
         super.setLivingAnimations(entity, uniqueID, customPredicate);

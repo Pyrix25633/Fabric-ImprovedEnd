@@ -46,8 +46,8 @@ public class ModItems {
             ModBlocks.INDIGO_SIGN, ModBlocks.INDIGO_WALL_SIGN));
 
     //Indigo Lily Pad
-    public static final Item LILY_PAD = registerItem("indigo_lily_pad",
-        new LilyPadItem(ModBlocks.INDIGO_LILY_PAD, new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
+    public static final Item INDIGO_LILY_PAD = registerItem("indigo_lily_pad",
+        new PlaceableOnWaterItem(ModBlocks.INDIGO_LILY_PAD, new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BIOMES_BLOCKS)));
 
     //Pondu
     public static final Item PONDU_BERRIES = registerItem("pondu_berries",
@@ -104,10 +104,10 @@ public class ModItems {
     //Discs
     public static final Item MUSIC_DISC_TWO_WORLDS_COLLIDE = registerItem("music_disc_two_worlds_collide",
         new ModMusicDiscItem(4, ModSounds.TWO_WORLDS_COLLIDE, new FabricItemSettings()
-            .group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+            .group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1), 320));
     public static final Item MUSIC_DISC_NEVER_FORGIVE = registerItem("music_disc_never_forgive",
         new ModMusicDiscItem(4, ModSounds.NEVER_FORGIVE, new FabricItemSettings()
-            .group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+            .group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1), 102));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name), item);

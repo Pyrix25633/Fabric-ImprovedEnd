@@ -7,10 +7,9 @@ import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.rupyber_studios.improved_end.block.ModBlocks;
-
-import java.util.Random;
 
 public class ModSaplingBlock extends SaplingBlock {
     public ModSaplingBlock(SaplingGenerator generator, Settings settings) {

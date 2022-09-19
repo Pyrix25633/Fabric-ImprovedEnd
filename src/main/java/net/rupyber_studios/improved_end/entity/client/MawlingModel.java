@@ -11,17 +11,17 @@ import software.bernie.geckolib3.model.provider.data.EntityModelData;
 
 public class MawlingModel extends AnimatedGeoModel<MawlingEntity> {
     @Override
-    public Identifier getModelLocation(MawlingEntity object) {
+    public Identifier getModelResource(MawlingEntity object) {
         return new Identifier(ImprovedEnd.MOD_ID, "geo/mawling.geo.json");
     }
 
     @Override
-    public Identifier getTextureLocation(MawlingEntity object) {
+    public Identifier getTextureResource(MawlingEntity object) {
         return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/enderman/mawling.png");
     }
 
     @Override
-    public Identifier getAnimationFileLocation(MawlingEntity animatable) {
+    public Identifier getAnimationResource(MawlingEntity animatable) {
         return new Identifier(ImprovedEnd.MOD_ID, "animations/mawling.animations.json");
     }
 

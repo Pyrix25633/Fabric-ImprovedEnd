@@ -12,7 +12,7 @@ public class WatchlingRenderer extends GeoEntityRenderer<WatchlingEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(WatchlingEntity instance) {
+    public Identifier getTextureResource(WatchlingEntity instance) {
         return new Identifier(ImprovedEnd.MOD_ID, "textures/entity/enderman/watchling.png");
     }
 }
