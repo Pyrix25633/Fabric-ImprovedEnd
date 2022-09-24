@@ -67,6 +67,11 @@ public class EndTree extends Structure {
                 false,
                 this.projectStartToHeightmap,
                 this.maxDistanceFromCenter);
+
+        BlockPos pos = structurePiecesGenerator.get().position();
+        if (pos.getY() <= 16) {
+            return Optional.empty();
+        }
         return structurePiecesGenerator;
     }
 
