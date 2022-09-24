@@ -7,7 +7,6 @@ import net.minecraft.structure.pool.StructurePoolBasedGenerator;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.ChunkPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.gen.HeightContext;
@@ -35,7 +34,6 @@ public class EndHouse extends Structure {
     private final Optional<Heightmap.Type> projectStartToHeightmap;
     private final int maxDistanceFromCenter;
 
-
     public EndHouse(Structure.Config config, RegistryEntry<StructurePool> startPool, Optional<Identifier> startJigsawName,
                     int size, HeightProvider startHeight, Optional<Heightmap.Type> projectStartToHeightmap, int maxDistanceFromCenter) {
         super(config);
@@ -47,25 +45,18 @@ public class EndHouse extends Structure {
         this.maxDistanceFromCenter = maxDistanceFromCenter;
     }
 
-    private static boolean extraSpawningChecks(Structure.Context context) {
-        BlockPos blockpos = context.chunkPos().getCenterAtY(0);
-        boolean corner1 = context.chunkGenerator().getHeightOnGround(blockpos.getX(), blockpos.getZ(), Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, context.world(), context.noiseConfig()) > 16;
-        blockpos = blockpos.offset(Direction.Axis.X, 5);
-        boolean corner2 = context.chunkGenerator().getHeightOnGround(blockpos.getX(), blockpos.getZ(), Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, context.world(), context.noiseConfig()) > 16;
-        blockpos = blockpos.offset(Direction.Axis.Z, 5);
-        boolean corner3 = context.chunkGenerator().getHeightOnGround(blockpos.getX(), blockpos.getZ(), Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, context.world(), context.noiseConfig()) > 16;
-        return corner1 && corner2 && corner3;
+    private static boolean extraSpawningChecks(BlockPos blockPos, Structure.Context context) {
+        return context.chunkGenerator().getHeightOnGround(blockPos.getX(), blockPos.getZ(), Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, context.world(), context.noiseConfig()) > 16;
     }
 
     @Override
     public Optional<Structure.StructurePosition> getStructurePosition(Structure.Context context) {
-        if (!EndHouse.extraSpawningChecks(context)) {
-            return Optional.empty();
-        }
         int startY = this.startHeight.get(context.random(), new HeightContext(context.chunkGenerator(), context.world()));
         ChunkPos chunkPos = context.chunkPos();
         BlockPos blockPos = new BlockPos(chunkPos.getStartX(), startY, chunkPos.getStartZ());
-
+        if(!EndHouse.extraSpawningChecks(blockPos, context)) {
+            return Optional.empty();
+        }
         Optional<StructurePosition> structurePiecesGenerator =
             StructurePoolBasedGenerator.generate(
                 context,
@@ -78,7 +69,6 @@ public class EndHouse extends Structure {
                 this.maxDistanceFromCenter);
         return structurePiecesGenerator;
     }
-
 
     @Override
     public StructureType<?> getType() {

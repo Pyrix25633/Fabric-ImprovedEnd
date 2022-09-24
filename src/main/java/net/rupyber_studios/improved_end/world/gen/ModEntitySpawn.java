@@ -23,7 +23,7 @@ public class ModEntitySpawn {
         BiomeModifications.addSpawn(BiomeSelectors.foundInTheEnd(),
             SpawnGroup.CREATURE, ModEntities.WATCHLING, 25, 1, 3);
 
-        SpawnRestriction.register(ModEntities.INDIGO_SQUID, SpawnRestriction.Location.ON_GROUND,
+        SpawnRestriction.register(ModEntities.INDIGO_SQUID, SpawnRestriction.Location.IN_WATER,
             Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, WaterCreatureEntity::canMobSpawn);
 
         SpawnRestriction.register(ModEntities.BLASTLING, SpawnRestriction.Location.ON_GROUND,
