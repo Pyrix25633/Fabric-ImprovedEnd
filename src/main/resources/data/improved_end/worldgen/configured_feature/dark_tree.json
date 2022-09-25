@@ -3,11 +3,11 @@
   "config": {
     "nbt_entries": [
       {
-        "resourcelocation": "improved_end:wells/dark_tree_0_test",
+        "resourcelocation": "improved_end:dark_tree_0_test",
         "weight": 1
       },
       {
-        "resourcelocation": "improved_end:wells/dark_tree_1_test",
+        "resourcelocation": "improved_end:dark_tree_1_test",
         "weight": 1
       }
     ],

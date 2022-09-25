@@ -11,7 +11,7 @@ import net.rupyber_studios.improved_end.ImprovedEnd;
 
 public class ModNbtFeatureGeneration {
     public static void generateNbtFeatures() {
-        addToBiome("wells/dark_tree", GenerationStep.Feature.SURFACE_STRUCTURES, "end_highlands");
+        addToBiome("dark_tree", GenerationStep.Feature.SURFACE_STRUCTURES, "end_highlands");
     }
 
     private static void addToBiome(String featureName, GenerationStep.Feature step, String biomeTag) {
