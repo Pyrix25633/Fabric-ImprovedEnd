@@ -5,6 +5,7 @@ import net.rupyber_studios.improved_end.block.ModBlocks;
 import net.rupyber_studios.improved_end.item.ModItems;
 import net.rupyber_studios.improved_end.sounds.ModSounds;
 import net.rupyber_studios.improved_end.util.ModRegistries;
+import net.rupyber_studios.improved_end.world.feature.ModFeatures;
 import net.rupyber_studios.improved_end.world.structure.ModStructures;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,6 +30,8 @@ public class ImprovedEnd implements ModInitializer {
         ModBlocks.registerModBlocks();
 
         ModItems.registerModItems();
+
+        ModFeatures.registerFeatures();
 
         GeckoLib.initialize();
 

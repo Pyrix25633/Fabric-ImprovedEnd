@@ -1,0 +1,18 @@
+{
+  "type": "improved_end:nbt_feature",
+  "config": {
+    "nbt_entries": [
+      {
+        "resourcelocation": "improved_end:wells/dark_tree_0_test",
+        "weight": 1
+      },
+      {
+        "resourcelocation": "improved_end:wells/dark_tree_1_test",
+        "weight": 1
+      }
+    ],
+    "allow_liquid": false,
+    "processors": "minecraft:empty",
+    "height_offset": -1
+  }
+}
