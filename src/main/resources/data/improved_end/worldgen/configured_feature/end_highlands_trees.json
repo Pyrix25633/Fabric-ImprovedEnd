@@ -1,0 +1,33 @@
+{
+  "type": "improved_end:nbt_feature",
+  "config": {
+    "nbt_entries": [
+      {
+        "resourcelocation": "improved_end:dark_tree_0",
+        "weight": 1
+      },
+      {
+        "resourcelocation": "improved_end:dark_tree_1",
+        "weight": 1
+      },
+      {
+        "resourcelocation": "improved_end:infusorial_tree_0",
+        "weight": 1
+      },
+      {
+        "resourcelocation": "improved_end:infusorial_tree_1",
+        "weight": 1
+      },
+      {
+        "resourcelocation": "improved_end:budding_tree_0",
+        "weight": 1
+      },
+      {
+        "resourcelocation": "improved_end:budding_tree_1",
+        "weight": 1
+      }
+    ],
+    "processors": "minecraft:empty",
+    "height_offset": -1
+  }
+}

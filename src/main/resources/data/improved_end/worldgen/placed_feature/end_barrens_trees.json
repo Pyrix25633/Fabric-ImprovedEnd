@@ -1,9 +1,9 @@
 {
-  "feature": "improved_end:dark_tree",
+  "feature": "improved_end:end_barrens_trees",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 4
+      "chance": 12
     },
     {
       "type": "minecraft:in_square"
