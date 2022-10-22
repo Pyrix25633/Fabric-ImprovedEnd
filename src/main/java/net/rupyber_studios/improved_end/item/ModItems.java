@@ -109,10 +109,6 @@ public class ModItems {
         new ModMusicDiscItem(4, ModSounds.NEVER_FORGIVE, new FabricItemSettings()
             .group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1), 102));
 
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name), item);
-    }
-
     //Spawn Eggs
     public static final Item INDIGO_SQUID_SPAWN_EGG = registerItem("indigo_squid_spawn_egg",
         new SpawnEggItem(ModEntities.INDIGO_SQUID, 0x43546F, 0x94FFE7,
@@ -129,6 +125,10 @@ public class ModItems {
     public static final Item WATCHLING_SPAWN_EGG = registerItem("watchling_spawn_egg",
         new SpawnEggItem(ModEntities.WATCHLING, 0x1B1224, 0x8017BD,
             new FabricItemSettings().group(ModItemGroup.IMPROVED_END_BLOCKS).maxCount(1)));
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registry.ITEM, new Identifier(ImprovedEnd.MOD_ID, name), item);
+    }
 
     public static void registerModItems() {
         System.out.println("Registering ModItems for " + ImprovedEnd.MOD_ID);
