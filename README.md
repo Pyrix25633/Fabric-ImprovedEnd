@@ -12,8 +12,8 @@ This is a fabric mod to improve the end dimension, adding new blocks, biomes and
 ### Installation:
 
 - Download [Fabric](https://fabricmc.net/use/installer/);
-- Download the [Fabric API](https://modrinth.com/mod/fabric-api/version/0.62.0%2B1.19.2);
-- Download the version of the mod you want to install (latest version: 1.19.2-1.0.2);
+- Download the [Fabric API](https://modrinth.com/mod/fabric-api);
+- Download the version of the mod you want to install;
 - Execute the Fabric installer;
 - Open the .minecraft folder:
   Windows: use Ctrl+R and type %appdata%, then go into .minecraft/ folder,

@@ -5,6 +5,7 @@ import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliage.JungleFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
@@ -91,14 +92,14 @@ public class ModConfiguredFeatures {
 
     //Trees
     private static final int i = 5, j = 6, k = 3;
-    private static final int radius = 2, offset = 0, height = 4;
-    private static final int limit = 1, lowerSize = 0, upperSize = 2;
+    private static final int radius = 2, offset = 1;
+    private static final int limit = 1, lowerSize = 1, upperSize = 1;
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> DARK_TREE =
         ConfiguredFeatures.register("dark_tree", Feature.TREE, new TreeFeatureConfig.Builder(
             BlockStateProvider.of(ModBlocks.DARK_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.DARK_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> INFUSORIAL_TREE =
@@ -106,7 +107,7 @@ public class ModConfiguredFeatures {
             BlockStateProvider.of(ModBlocks.INFUSORIAL_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.INFUSORIAL_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BUDDING_TREE =
@@ -114,7 +115,7 @@ public class ModConfiguredFeatures {
             BlockStateProvider.of(ModBlocks.BUDDING_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.BUDDING_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> REDLEAF_TREE =
@@ -122,7 +123,7 @@ public class ModConfiguredFeatures {
             BlockStateProvider.of(ModBlocks.REDLEAF_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.REDLEAF_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> FIRE_TREE =
@@ -130,7 +131,7 @@ public class ModConfiguredFeatures {
             BlockStateProvider.of(ModBlocks.FIRE_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.FIRE_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SHINING_TREE =
@@ -138,7 +139,7 @@ public class ModConfiguredFeatures {
             BlockStateProvider.of(ModBlocks.SHINING_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.SHINING_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SERENE_TREE =
@@ -146,7 +147,7 @@ public class ModConfiguredFeatures {
             BlockStateProvider.of(ModBlocks.SERENE_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.SERENE_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SCAB_TREE =
@@ -154,7 +155,7 @@ public class ModConfiguredFeatures {
             BlockStateProvider.of(ModBlocks.SCAB_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.SCAB_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> INDIGO_TREE =
@@ -162,7 +163,7 @@ public class ModConfiguredFeatures {
             BlockStateProvider.of(ModBlocks.INDIGO_LOG),
             new ForkingTrunkPlacer(i, j, k),
             BlockStateProvider.of(ModBlocks.INDIGO_LEAVES),
-            new JungleFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset), height),
+            new AcaciaFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(offset)),
             new TwoLayersFeatureSize(limit, lowerSize, upperSize))
             .dirtProvider(BlockStateProvider.of(Blocks.END_STONE)).build());
 
