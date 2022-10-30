@@ -2,7 +2,7 @@
 
 ### *A mod by Rupyber Studios*
 
-This is a fabric mod to improve the end dimension, adding new blocks, biomes and mobs!
+This is a Fabric and Quilt mod to improve the end dimension, adding new blocks, biomes and mobs!
 
 ## Visit our [Website](https://rupyberstudios.github.io/website/)!
 

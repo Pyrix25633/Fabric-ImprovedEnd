@@ -3,7 +3,7 @@
   "id": "improved_end",
   "version": "${version}",
   "name": "Improved End",
-  "description": "This is a fabric mod to improve the end dimension, adding new blocks, biomes and mobs!",
+  "description": "This is a Fabric and Quilt mod to improve the end dimension, adding new blocks, biomes and mobs!",
   "authors": [
     "Rupyber Studios",
     "Pyrix25633",
