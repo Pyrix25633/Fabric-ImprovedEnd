@@ -11,15 +11,14 @@ This is a Fabric and Quilt mod to improve the end dimension, adding new blocks, 
 
 ### Installation:
 
-- Download the [Fabric Loader](https://fabricmc.net/use/installer/) or the [Quilt Loader](https://quiltmc.org/en/install/);
-- Download the [Fabric API](https://modrinth.com/mod/fabric-api);
-- Download the version of the mod you want to install;
-- Execute the Fabric or Quilt installer;
+- Download the [Fabric Loader](https://fabricmc.net/use/installer/) or the [Quilt Loader](https://quiltmc.org/en/install/)
+- Download the [Fabric API](https://modrinth.com/mod/fabric-api/) or the [Quilted Fabric API](https://modrinth.com/mod/qsl/)
+- Download the version of the mod you want to install
+- Execute the Fabric or Quilt installer
 - Open the .minecraft folder:
-  - Windows: use Ctrl+R and type %appdata%, then go into .minecraft/ folder,
-  - Linux: open your Home folder and go to .minecraft/ (the folder is hidden);
-- Open the mods/ folder;
-- Copy and paste the Fabric API file and the Mod .jar;
-- Launch the correct version from the Minecraft Launcher.
+    - Windows: use Ctrl+R and type %appdata%, then go into .minecraft/ folder
+    - Linux: open your Home folder and go to .minecraft/ (the folder is hidden)
+- Open the mods/ folder and move there the .jar files
+- Launch the correct version from your Launcher
 
 ## [The team](https://rupyberstudios.github.io/website/pages/about)
