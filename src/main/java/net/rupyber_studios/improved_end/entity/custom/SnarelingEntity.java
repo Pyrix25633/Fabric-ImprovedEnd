@@ -33,6 +33,7 @@ import net.minecraft.util.math.*;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -79,17 +80,13 @@ public class SnarelingEntity extends HostileEntity implements IAnimatable, Anger
         this.goalSelector.add(8, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
         this.goalSelector.add(8, new LookAroundGoal(this));
         this.targetSelector.add(1, new TeleportTowardsPlayerGoal(this, this::shouldAngerAt));
-        this.targetSelector.add(2, new RevengeGoal(this, new Class[0]));
-        this.targetSelector.add(3, new ActiveTargetGoal(this, EndermiteEntity.class, true, false));
-        this.targetSelector.add(4, new UniversalAngerGoal(this, false));
+        this.targetSelector.add(2, new RevengeGoal(this));
+        this.targetSelector.add(3, new ActiveTargetGoal<>(this, EndermiteEntity.class, true, false));
+        this.targetSelector.add(4, new UniversalAngerGoal<>(this, false));
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        if (this.isAttacking()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.attack", true));
-            return PlayState.CONTINUE;
-        }
-        if (event.isMoving()) {
+        if(event.isMoving()) {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.walk", true));
             return PlayState.CONTINUE;
         }
@@ -97,10 +94,18 @@ public class SnarelingEntity extends HostileEntity implements IAnimatable, Anger
         return PlayState.CONTINUE;
     }
 
+    private <E extends IAnimatable> PlayState attackPredicate(AnimationEvent<E> event) {
+        if(this.isAttacking() && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
+            event.getController().markNeedsReload();
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.snareling.attack", false));
+        }
+        return PlayState.CONTINUE;
+    }
+
     @Override
     public void registerControllers(AnimationData animationData) {
-        animationData.addAnimationController(new AnimationController(this, "controller",
-            0, this::predicate));
+        animationData.addAnimationController(new AnimationController<>(this, "controller", 0, this::predicate));
+        animationData.addAnimationController(new AnimationController<>(this, "attackController", 0, this::attackPredicate));
     }
 
     @Override
