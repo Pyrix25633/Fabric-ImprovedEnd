@@ -1,7 +1,7 @@
 ---
-name: 'VPMB-XXX: Brief bug description'
+name: 'IEB-XXX: Brief bug description'
 about: Create a report to help us improve
-title: 'VPM-XXX: Brief bug description'
+title: 'IEB-XXX: Brief bug description'
 labels: "\U0001F41B bug, \U0001F4D6 open"
 assignees: Pyrix25633
 
