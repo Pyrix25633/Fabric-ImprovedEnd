@@ -13,7 +13,7 @@ This is a Fabric and Quilt mod to improve the end dimension, adding new blocks, 
 
 - Download the [Fabric Loader](https://fabricmc.net/use/installer/) or the [Quilt Loader](https://quiltmc.org/en/install/)
 - Download the [Fabric API](https://modrinth.com/mod/fabric-api/) or the [Quilted Fabric API](https://modrinth.com/mod/qsl/)
-- Download [Geckolib](https://modrinth.com/mod/geckolib) for the correct loader and Minecraft version
+- Download [GeckoLib](https://modrinth.com/mod/geckolib) for the correct loader and Minecraft version
 - Download the version of the mod you want to install
 - Execute the Fabric or Quilt installer
 - Open the .minecraft folder:
