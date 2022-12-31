@@ -9,6 +9,6 @@ This is a Fabric and Quilt mod to improve the end dimension, adding new blocks, 
 ![Improved End Logo](https://github.com/RupyberStudios/website/blob/main/img/improved_end_logo_small.png?raw=true)
 ![requires Fabric API](https://i.imgur.com/HabVZJR.png)
 
-### [Installation](https://rupyberstudios.github.io/website/pages/installation)
+## [Installation](https://rupyberstudios.github.io/website/pages/installation)
 
 ## [The team](https://rupyberstudios.github.io/website/pages/about)
