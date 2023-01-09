@@ -1,7 +1,11 @@
 {
-  "latest": "1.0.4",
+  "latest": "1.0.5",
   "keep": [],
   "releases": [
+    {
+      "tag": "1.0.5",
+      "cross": "improved_end-1.19.2-1.0.5.jar"
+    },
     {
       "tag": "1.0.4",
       "cross": "improved_end-1.19.2-1.0.4.jar"
