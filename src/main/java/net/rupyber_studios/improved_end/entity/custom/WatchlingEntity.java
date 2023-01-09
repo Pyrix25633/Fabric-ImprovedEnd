@@ -45,6 +45,7 @@ import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
+import software.bernie.geckolib3.util.GeckoLibUtil;
 
 import java.util.EnumSet;
 import java.util.List;
@@ -52,7 +53,7 @@ import java.util.UUID;
 import java.util.function.Predicate;
 
 public class WatchlingEntity extends HostileEntity implements IAnimatable, Angerable {
-    private final AnimationFactory factory = new AnimationFactory(this);
+    private final AnimationFactory factory = GeckoLibUtil.createFactory(this);
     private static final UUID ATTACKING_SPEED_BOOST_ID = UUID.fromString("020E0DFB-87AE-4653-9556-831010E291A0");
     private static final EntityAttributeModifier ATTACKING_SPEED_BOOST;
     private static final TrackedData<Boolean> ANGRY;
@@ -93,17 +94,17 @@ public class WatchlingEntity extends HostileEntity implements IAnimatable, Anger
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if(event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.walk"));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.idle", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.idle"));
         return PlayState.CONTINUE;
     }
 
     private <E extends IAnimatable> PlayState attackPredicate(AnimationEvent<E> event) {
         if(this.isAttacking() && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
             event.getController().markNeedsReload();
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.attack", false));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.watchling.attack"));
         }
         return PlayState.CONTINUE;
     }
@@ -127,10 +128,12 @@ public class WatchlingEntity extends HostileEntity implements IAnimatable, Anger
             this.ageWhenTargetSet = 0;
             this.dataTracker.set(ANGRY, false);
             this.dataTracker.set(PROVOKED, false);
+            assert entityAttributeInstance != null;
             entityAttributeInstance.removeModifier(ATTACKING_SPEED_BOOST);
         } else {
             this.ageWhenTargetSet = this.age;
             this.dataTracker.set(ANGRY, true);
+            assert entityAttributeInstance != null;
             if (!entityAttributeInstance.hasModifier(ATTACKING_SPEED_BOOST)) {
                 entityAttributeInstance.addTemporaryModifier(ATTACKING_SPEED_BOOST);
             }

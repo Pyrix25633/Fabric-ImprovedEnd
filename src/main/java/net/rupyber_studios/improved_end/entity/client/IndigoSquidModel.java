@@ -24,8 +24,8 @@ public class IndigoSquidModel extends AnimatedGeoModel<IndigoSquidEntity> {
     }
 
     @Override
-    public void setLivingAnimations(IndigoSquidEntity entity, Integer uniqueID, AnimationEvent customPredicate) {
-        super.setLivingAnimations(entity, uniqueID, customPredicate);
+    public void setCustomAnimations(IndigoSquidEntity entity, int uniqueID, AnimationEvent customPredicate) {
+        super.setCustomAnimations(entity, uniqueID, customPredicate);
         IBone head = this.getAnimationProcessor().getBone("body");
 
         if (head != null) {

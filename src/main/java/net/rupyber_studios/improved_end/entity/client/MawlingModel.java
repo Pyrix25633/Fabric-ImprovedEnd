@@ -2,7 +2,6 @@ package net.rupyber_studios.improved_end.entity.client;
 
 import net.minecraft.util.Identifier;
 import net.rupyber_studios.improved_end.ImprovedEnd;
-import net.rupyber_studios.improved_end.entity.custom.BlastlingEntity;
 import net.rupyber_studios.improved_end.entity.custom.MawlingEntity;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.processor.IBone;
@@ -25,10 +24,10 @@ public class MawlingModel extends AnimatedGeoModel<MawlingEntity> {
         return new Identifier(ImprovedEnd.MOD_ID, "animations/mawling.animations.json");
     }
 
-    @SuppressWarnings({"unchecked", "rawtypes"})
+    @SuppressWarnings("unchecked")
     @Override
-    public void setLivingAnimations(MawlingEntity entity, Integer uniqueID, AnimationEvent customPredicate) {
-        super.setLivingAnimations(entity, uniqueID, customPredicate);
+    public void setCustomAnimations(MawlingEntity entity, int uniqueID, AnimationEvent customPredicate) {
+        super.setCustomAnimations(entity, uniqueID, customPredicate);
         IBone head = this.getAnimationProcessor().getBone("head");
 
         EntityModelData extraData = (EntityModelData) customPredicate.getExtraDataOfType(EntityModelData.class).get(0);

@@ -28,9 +28,12 @@ import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
+import software.bernie.geckolib3.util.GeckoLibUtil;
+
+import java.util.Objects;
 
 public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatable {
-    private final AnimationFactory factory = new AnimationFactory(this);
+    private final AnimationFactory factory = GeckoLibUtil.createFactory(this);
     public float tiltAngle;
     public float prevTiltAngle;
     public float rollAngle;
@@ -48,7 +51,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
 
     public IndigoSquidEntity(EntityType<? extends WaterCreatureEntity> entityType, World world) {
         super(entityType, world);
-        this.random.setSeed((long) this.getId());
+        this.random.setSeed(this.getId());
         this.thrustTimerSpeed = 1.0F / (this.random.nextFloat() + 1.0F) * 0.2F;
         setAttributes();
         initGoals();
@@ -66,7 +69,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.indigo_squid.swim", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.indigo_squid.swim"));
         return PlayState.CONTINUE;
     }
 
@@ -156,7 +159,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
                 this.turningSpeed *= 0.99F;
             }
             if (!this.world.isClient) {
-                this.setVelocity((this.swimX * this.swimVelocityScale), (double) (this.swimY * this.swimVelocityScale), (this.swimZ * this.swimVelocityScale));
+                this.setVelocity((this.swimX * this.swimVelocityScale), (this.swimY * this.swimVelocityScale), (this.swimZ * this.swimVelocityScale));
             }
             Vec3d vec3d = this.getVelocity();
             double d = vec3d.horizontalLength();
@@ -169,7 +172,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
             if (!this.world.isClient) {
                 double e = this.getVelocity().y;
                 if (this.hasStatusEffect(StatusEffects.LEVITATION)) {
-                    e = 0.05 * (double) (this.getStatusEffect(StatusEffects.LEVITATION).getAmplifier() + 1);
+                    e = 0.05 * (double) (Objects.requireNonNull(this.getStatusEffect(StatusEffects.LEVITATION)).getAmplifier() + 1);
                 } else if (!this.hasNoGravity()) {
                     e -= 0.08;
                 }
@@ -238,7 +241,7 @@ public class IndigoSquidEntity extends WaterCreatureEntity implements IAnimatabl
         return this.swimX != 0.0F || this.swimY != 0.0F || this.swimZ != 0.0F;
     }
 
-    class SwimGoal extends Goal {
+    static class SwimGoal extends Goal {
         private final IndigoSquidEntity squid;
 
         public SwimGoal(IndigoSquidEntity squid) {
