@@ -211,23 +211,23 @@ public class ModBlocks {
 
     //Stairs
     public static final Block DARK_STAIRS = registerBiomesBlock("dark_stairs",
-        new ModStairsBlock(ModBlocks.DARK_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new StairsBlock(ModBlocks.DARK_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block INFUSORIAL_STAIRS = registerBiomesBlock("infusorial_stairs",
-        new ModStairsBlock(ModBlocks.INFUSORIAL_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+        new StairsBlock(ModBlocks.INFUSORIAL_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block BUDDING_STAIRS = registerBiomesBlock("budding_stairs",
-        new ModStairsBlock(ModBlocks.BUDDING_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+        new StairsBlock(ModBlocks.BUDDING_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_PINK)));
     public static final Block REDLEAF_STAIRS = registerBiomesBlock("redleaf_stairs",
-        new ModStairsBlock(ModBlocks.REDLEAF_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new StairsBlock(ModBlocks.REDLEAF_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block FIRE_STAIRS = registerBiomesBlock("fire_stairs",
-        new ModStairsBlock(ModBlocks.FIRE_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+        new StairsBlock(ModBlocks.FIRE_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final Block SHINING_STAIRS = registerBiomesBlock("shining_stairs",
-        new ModStairsBlock(ModBlocks.SHINING_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+        new StairsBlock(ModBlocks.SHINING_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final Block SERENE_STAIRS = registerBiomesBlock("serene_stairs",
-        new ModStairsBlock(ModBlocks.SERENE_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+        new StairsBlock(ModBlocks.SERENE_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_LIME)));
     public static final Block SCAB_STAIRS = registerBiomesBlock("scab_stairs",
-        new ModStairsBlock(ModBlocks.SCAB_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+        new StairsBlock(ModBlocks.SCAB_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_STAIRS = registerBiomesBlock("indigo_stairs",
-        new ModStairsBlock(ModBlocks.INDIGO_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+        new StairsBlock(ModBlocks.INDIGO_PLANKS.getDefaultState(), woodSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Vertical Slabs
     public static final Block DARK_VERTICAL_SLAB = registerBiomesBlock("dark_vertical_slab",
@@ -251,92 +251,92 @@ public class ModBlocks {
 
     //Buttons
     public static final Block DARK_BUTTON = registerBiomesBlock("dark_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block INFUSORIAL_BUTTON = registerBiomesBlock("infusorial_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block BUDDING_BUTTON = registerBiomesBlock("budding_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_PINK)));
     public static final Block REDLEAF_BUTTON = registerBiomesBlock("redleaf_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block FIRE_BUTTON = registerBiomesBlock("fire_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final Block SHINING_BUTTON = registerBiomesBlock("shining_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final Block SERENE_BUTTON = registerBiomesBlock("serene_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_LIME)));
     public static final Block SCAB_BUTTON = registerBiomesBlock("scab_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_BUTTON = registerBiomesBlock("indigo_button",
-        new ModWoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+        new WoodenButtonBlock(buttonSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Pressure Plates
     public static final Block DARK_PRESSURE_PLATE = registerBiomesBlock("dark_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block INFUSORIAL_PRESSURE_PLATE = registerBiomesBlock("infusorial_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block BUDDING_PRESSURE_PLATE = registerBiomesBlock("budding_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_PINK)));
     public static final Block REDLEAF_PRESSURE_PLATE = registerBiomesBlock("redleaf_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block FIRE_PRESSURE_PLATE = registerBiomesBlock("fire_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final Block SHINING_PRESSURE_PLATE = registerBiomesBlock("shining_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final Block SERENE_PRESSURE_PLATE = registerBiomesBlock("serene_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_LIME)));
     public static final Block SCAB_PRESSURE_PLATE = registerBiomesBlock("scab_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_PRESSURE_PLATE = registerBiomesBlock("indigo_pressure_plate",
-        new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+        new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
             pressurePlateSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Trapdoors
     public static final Block DARK_TRAPDOOR = registerBiomesBlock("dark_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block INFUSORIAL_TRAPDOOR = registerBiomesBlock("infusorial_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block BUDDING_TRAPDOOR = registerBiomesBlock("budding_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_PINK)));
     public static final Block REDLEAF_TRAPDOOR = registerBiomesBlock("redleaf_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block FIRE_TRAPDOOR = registerBiomesBlock("fire_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final Block SHINING_TRAPDOOR = registerBiomesBlock("shining_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final Block SERENE_TRAPDOOR = registerBiomesBlock("serene_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_LIME)));
     public static final Block SCAB_TRAPDOOR = registerBiomesBlock("scab_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_TRAPDOOR = registerBiomesBlock("indigo_trapdoor",
-        new ModTrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+        new TrapdoorBlock(trapdoorSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Doors
     public static final Block DARK_DOOR = registerBiomesBlock("dark_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block INFUSORIAL_DOOR = registerBiomesBlock("infusorial_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block BUDDING_DOOR = registerBiomesBlock("budding_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_PINK)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_PINK)));
     public static final Block REDLEAF_DOOR = registerBiomesBlock("redleaf_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block FIRE_DOOR = registerBiomesBlock("fire_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final Block SHINING_DOOR = registerBiomesBlock("shining_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_YELLOW)));
     public static final Block SERENE_DOOR = registerBiomesBlock("serene_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_LIME)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_LIME)));
     public static final Block SCAB_DOOR = registerBiomesBlock("scab_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block INDIGO_DOOR = registerBiomesBlock("indigo_door",
-        new ModDoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+        new DoorBlock(doorSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
 
     //Fences
     public static final Block DARK_FENCE = registerBiomesBlock("dark_fence",
@@ -637,7 +637,7 @@ public class ModBlocks {
 
     //Indigo Lily Pad
     public static final Block INDIGO_LILY_PAD = registerBlockOnly("indigo_lily_pad",
-        new ModLilyPadBlock(lilyPadSettings));
+        new LilyPadBlock(lilyPadSettings));
 
     //Pondu
     public static final Block PONDU = registerBlockOnly("pondu",
@@ -688,7 +688,7 @@ public class ModBlocks {
     public static final Block DARK_SANDSTONE_SLAB = registerBiomesBlock("dark_sandstone_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block DARK_SANDSTONE_STAIRS = registerBiomesBlock("dark_sandstone_stairs",
-        new ModStairsBlock(ModBlocks.DARK_SANDSTONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new StairsBlock(ModBlocks.DARK_SANDSTONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block DARK_SANDSTONE_VERTICAL_SLAB = registerBiomesBlock("dark_sandstone_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     //Smooth Dark Sandstone
@@ -697,7 +697,7 @@ public class ModBlocks {
     public static final Block SMOOTH_DARK_SANDSTONE_SLAB = registerBiomesBlock("smooth_dark_sandstone_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block SMOOTH_DARK_SANDSTONE_STAIRS = registerBiomesBlock("smooth_dark_sandstone_stairs",
-        new ModStairsBlock(ModBlocks.SMOOTH_DARK_SANDSTONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new StairsBlock(ModBlocks.SMOOTH_DARK_SANDSTONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block SMOOTH_DARK_SANDSTONE_VERTICAL_SLAB = registerBiomesBlock("smooth_dark_sandstone_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     //Cut Dark Sandstone
@@ -706,7 +706,7 @@ public class ModBlocks {
     public static final Block CUT_DARK_SANDSTONE_SLAB = registerBiomesBlock("cut_dark_sandstone_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block CUT_DARK_SANDSTONE_STAIRS = registerBiomesBlock("cut_dark_sandstone_stairs",
-        new ModStairsBlock(ModBlocks.CUT_DARK_SANDSTONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
+        new StairsBlock(ModBlocks.CUT_DARK_SANDSTONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     public static final Block CUT_DARK_SANDSTONE_VERTICAL_SLAB = registerBiomesBlock("cut_dark_sandstone_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLACK)));
     //Chiseled Dark Sandstone
@@ -719,7 +719,7 @@ public class ModBlocks {
     public static final Block INFUSORIAL_STONE_SLAB = registerBiomesBlock("infusorial_stone_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_STAIRS = registerBiomesBlock("infusorial_stone_stairs",
-        new ModStairsBlock(ModBlocks.INFUSORIAL_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+        new StairsBlock(ModBlocks.INFUSORIAL_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_VERTICAL_SLAB = registerBiomesBlock("infusorial_stone_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_BUTTON = registerBiomesBlock("infusorial_stone_button",
@@ -740,7 +740,7 @@ public class ModBlocks {
     public static final Block INFUSORIAL_STONE_BRICK_SLAB = registerBiomesBlock("infusorial_stone_brick_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_BRICK_STAIRS = registerBiomesBlock("infusorial_stone_brick_stairs",
-        new ModStairsBlock(ModBlocks.INFUSORIAL_STONE_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
+        new StairsBlock(ModBlocks.INFUSORIAL_STONE_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_BRICK_VERTICAL_SLAB = registerBiomesBlock("infusorial_stone_brick_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_PURPLE)));
     public static final Block INFUSORIAL_STONE_BRICK_WALL = registerBiomesBlock("infusorial_stone_brick_wall",
@@ -752,7 +752,7 @@ public class ModBlocks {
     public static final Block REDLEAF_STONE_SLAB = registerBiomesBlock("redleaf_stone_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block REDLEAF_STONE_STAIRS = registerBiomesBlock("redleaf_stone_stairs",
-        new ModStairsBlock(ModBlocks.REDLEAF_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new StairsBlock(ModBlocks.REDLEAF_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block REDLEAF_STONE_VERTICAL_SLAB = registerBiomesBlock("redleaf_stone_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block REDLEAF_STONE_BUTTON = registerBiomesBlock("redleaf_stone_button",
@@ -766,7 +766,7 @@ public class ModBlocks {
     public static final Block POLISHED_REDLEAF_STONE_SLAB = registerBiomesBlock("polished_redleaf_stone_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block POLISHED_REDLEAF_STONE_STAIRS = registerBiomesBlock("polished_redleaf_stone_stairs",
-        new ModStairsBlock(ModBlocks.POLISHED_REDLEAF_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new StairsBlock(ModBlocks.POLISHED_REDLEAF_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block POLISHED_REDLEAF_STONE_VERTICAL_SLAB = registerBiomesBlock("polished_redleaf_stone_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     //Redleaf Stone Bricks
@@ -775,7 +775,7 @@ public class ModBlocks {
     public static final Block REDLEAF_STONE_BRICK_SLAB = registerBiomesBlock("redleaf_stone_brick_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block REDLEAF_STONE_BRICK_STAIRS = registerBiomesBlock("redleaf_stone_brick_stairs",
-        new ModStairsBlock(ModBlocks.REDLEAF_STONE_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
+        new StairsBlock(ModBlocks.REDLEAF_STONE_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block REDLEAF_STONE_BRICK_VERTICAL_SLAB = registerBiomesBlock("redleaf_stone_brick_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_RED)));
     public static final Block REDLEAF_STONE_BRICK_WALL = registerBiomesBlock("redleaf_stone_brick_wall",
@@ -787,7 +787,7 @@ public class ModBlocks {
     public static final Block SCAB_STONE_SLAB = registerBiomesBlock("scab_stone_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block SCAB_STONE_STAIRS = registerBiomesBlock("scab_stone_stairs",
-        new ModStairsBlock(ModBlocks.SCAB_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+        new StairsBlock(ModBlocks.SCAB_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block SCAB_STONE_VERTICAL_SLAB = registerBiomesBlock("scab_stone_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block SCAB_STONE_BUTTON = registerBiomesBlock("scab_stone_button",
@@ -801,7 +801,7 @@ public class ModBlocks {
     public static final Block POLISHED_SCAB_STONE_SLAB = registerBiomesBlock("polished_scab_stone_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block POLISHED_SCAB_STONE_STAIRS = registerBiomesBlock("polished_scab_stone_stairs",
-        new ModStairsBlock(ModBlocks.POLISHED_SCAB_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
+        new StairsBlock(ModBlocks.POLISHED_SCAB_STONE.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
     public static final Block POLISHED_SCAB_STONE_VERTICAL_SLAB = registerBiomesBlock("polished_scab_stone_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE)));
 
@@ -814,7 +814,7 @@ public class ModBlocks {
     public static final Block INDIGO_SOIL_BRICK_SLAB = registerBiomesBlock("indigo_soil_brick_slab",
         new SlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block INDIGO_SOIL_BRICK_STAIRS = registerBiomesBlock("indigo_soil_brick_stairs",
-        new ModStairsBlock(ModBlocks.INDIGO_SOIL_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
+        new StairsBlock(ModBlocks.INDIGO_SOIL_BRICKS.getDefaultState(), stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block INDIGO_SOIL_VERTICAL_SLAB = registerBiomesBlock("indigo_soil_brick_vertical_slab",
         new VerticalSlabBlock(stoneSettings.mapColor(MapColor.TERRACOTTA_BLUE)));
     public static final Block INDIGO_SOIL_BRICK_WALL = registerBiomesBlock("indigo_soil_brick_wall",
