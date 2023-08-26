@@ -12,3 +12,5 @@ This is a Fabric and Quilt mod to improve the end dimension, adding new blocks, 
 ## [Installation](https://rupyberstudios.github.io/website/pages/installation)
 
 ## [The team](https://rupyberstudios.github.io/website/pages/about)
+
+## [Patreon](https://www.patreon.com/Pyrix25633ModsandSoftware)
