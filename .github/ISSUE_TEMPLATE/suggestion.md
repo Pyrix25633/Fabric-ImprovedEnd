@@ -1,7 +1,7 @@
 ---
-name: 'IES-XXX: Brief suggestion description'
-about: Suggest an idea for this project
-title: 'IES-XXX: Brief suggestion description'
+name: 'Improved End Suggestion'
+about: 'Suggest an idea for this project'
+title: 'IES-<N>: <Brief suggestion description>'
 labels: "\U0001F4D6 open, \U0001FAA7 suggestion"
 assignees: Pyrix25633
 
